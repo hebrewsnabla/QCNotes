@@ -1,0 +1,308 @@
+%\documentclass[UTF8]{ctexart} % use larger type; default would be 10pt
+\documentclass[a4paper]{article}
+\usepackage{xeCJK}
+%\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\geometry{margin=1in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\setlength{\parindent}{0pt}
+\usepackage{physics}
+\usepackage{amsmath}
+%\usepackage{symbols}
+\usepackage{AMSFonts}
+\usepackage{bm}
+%\usepackage{eucal}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{abstract}
+\usepackage{empheq}
+\usepackage{extarrows}
+\usepackage{textcomp}
+\usepackage{fontspec}
+\usepackage{braket}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+
+\setmonofont[Mapping={}]{Consolas}	%英文引号之类的正常显示，相当于设置英文字体
+%\setsansfont{Monaco} %设置英文字体 Monaco, Consolas,  Fantasque Sans Mono
+%\setmainfont{} %设置英文字体
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ 
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\footnotesize\ttfamily,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	firstnumber=1,                % start line enumeration with line 1000
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Octave,                 % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=4,	                   % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\sisetup{
+	separate-uncertainty = true,
+	inter-unit-product = \ensuremath{{}\cdot{}}
+}
+
+\DeclareMathOperator{\p}{\prime}
+\DeclareMathOperator{\ti}{\times}
+\DeclareMathOperator{\intinf}{\int_0^\infty}
+\DeclareMathOperator{\intdinf}{\int_{-\infty}^\infty}
+\DeclareMathOperator{\intzpi}{\int_0^\pi}
+\DeclareMathOperator{\intztpi}{\int_0^{2\pi}}
+\DeclareMathOperator{\suminf}{\sum_{n=1}^{\infty}}
+\DeclareMathOperator{\suminfz}{\sum_{n=0}^\infty}
+\DeclareMathOperator{\sumkinf}{\sum_{k=1}^{\infty}}
+\DeclareMathOperator{\sumkinfz}{\sum_{k=0}^\infty}
+\DeclareMathOperator{\e}{\mathrm{e}}
+\DeclareMathOperator{\I}{\mathrm{i}}
+\DeclareMathOperator{\Arg}{\mathrm{Arg}}
+\DeclareMathOperator{\ra}{\rightarrow}
+\DeclareMathOperator{\llra}{\longleftrightarrow}
+\DeclareMathOperator{\lra}{\longrightarrow}
+\DeclareMathOperator{\dlra}{\Leftrightarrow}
+\DeclareMathOperator{\dra}{\Rightarrow}
+\newcommand{\bkk}[1]{\Braket{#1|#1}}
+\newcommand{\bk}[2]{\Braket{#1|#2}}
+\newcommand{\bkev}[2]{\Braket{#2|#1|#2}}
+
+
+
+\DeclareMathOperator{\hV}{\hat{\vb{V}}}
+
+\DeclareMathOperator{\hx}{\hat{\vb{x}}}
+\DeclareMathOperator{\hy}{\hat{\vb{y}}}
+\DeclareMathOperator{\hz}{\hat{\vb{z}}}
+
+\DeclareMathOperator{\hA}{\hat{\vb{A}}}
+
+\DeclareMathOperator{\hQ}{\hat{\vb{Q}}}
+\DeclareMathOperator{\hI}{\hat{\vb{I}}}
+\DeclareMathOperator{\psis}{\psi^\ast}
+\DeclareMathOperator{\Psis}{\Psi^\ast}
+\DeclareMathOperator{\hi}{\hat{\vb{i}}}
+\DeclareMathOperator{\hj}{\hat{\vb{j}}}
+\DeclareMathOperator{\hk}{\hat{\vb{k}}}
+\DeclareMathOperator{\hr}{\hat{\vb{r}}}
+\DeclareMathOperator{\hT}{\hat{\vb{T}}}
+\DeclareMathOperator{\hH}{\hat{H}}
+\DeclareMathOperator{\hh}{\hat{h}}               % helicity
+\DeclareMathOperator{\hL}{\hat{\vb{L}}}
+\DeclareMathOperator{\hp}{\hat{\vb{p}}}
+
+\DeclareMathOperator{\ha}{\hat{\vb{a}}}
+\DeclareMathOperator{\hS}{\hat{\vb{S}}}
+\DeclareMathOperator{\hSigma}{\hat{\bm\Sigma}}
+\DeclareMathOperator{\hJ}{\hat{\vb{J}}}
+\DeclareMathOperator{\hP}{\hat{\vb{P}}}          % Parity
+\DeclareMathOperator{\hC}{\hat{\vb{C}}} 
+\DeclareMathOperator{\Tdv}{-\dfrac{\hbar^2}{2m}\dv[2]{x}}
+\DeclareMathOperator{\Tna}{-\dfrac{\hbar^2}{2m}\nabla^2}
+\DeclareMathOperator{\vna}{\vnabla}
+\DeclareMathOperator{\nna}{\nabla^2}
+\newcommand{\naCarExpd}[1]{\pdv[2]{#1}{x} + \pdv[2]{#1}{y} + \pdv[2]{#1}{z}}
+\newcommand{\naCyl}{\qty[\dfrac{1}{\rho}\pdv{\rho}\qty(\rho\pdv{\rho}) + \dfrac{1}{\rho^2}\pdv[2]{\phi} + \pdv[2]{z}]}
+
+%\DeclareMathOperator{\g#0}{\gamma^0}
+%\DeclareMathOperator{\g1}{\gamma^1}
+%\DeclareMathOperator{\g2}{\gamma^2}
+%\DeclareMathOperator{\g3}{\gamma^3}
+%\DeclareMathOperator{\g5}{\gamma^5}
+\newcommand{\g}[1]{\gamma^{#1}}
+\DeclareMathOperator{\gmuu}{\gamma^\mu}
+\DeclareMathOperator{\gmud}{\gamma_\mu}
+%\newcommand{\G}[2]{g^{#1#2}}
+
+%% Code
+\definecolor{codegray}{gray}{0.9}
+\newcommand{\code}[1]{\colorbox{codegray}{\texttt{#1}}}
+
+\newcommand{\subsbul}{\subsection*{$ \bullet $}}
+\newcommand{\dis}{\displaystyle}
+%\numberwithin{equation}{section}
+%\allowdisplaybreaks[4]
+
+\title{Daily Notes}
+\author{王石嵘\\
+%\vspace{5pt}\\
+%161240065\\
+wsr@smail.nju.edu.cn
+}
+\date{\today} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+% \boldmath
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{06/23}
+\subsection{PySCF dft routine}
+in \code{dft.rks}
+\begin{lstlisting}[language=python]
+def get_veff(ks, mol=None, dm=None, dm_last=0, vhf_last=0, hermi=1):
+    ...
+    n, exc, vxc = ks._numint.nr_rks(mol, ks.grids, ks.xc, dm)
+    # add vj,ecoul
+    # add vk, HF-X if hyb
+\end{lstlisting}
+in \code{dft.numint}
+\begin{lstlisting}[language=python]
+def nr_rks(ni, mol, grids, xc_code, dms, relativity=0, hermi=0, max_memory=2000, verbose=None):
+    ...
+    xctype = ni._xc_type(xc_code)
+    make_rho, nset, nao = ni._gen_rho_evaluator(mol, dms, hermi)
+    
+    shls_slice = (0, mol.nbas)
+    ao_loc = mol.ao_loc_nr()
+    
+    nelec = numpy.zeros(nset)
+    excsum = numpy.zeros(nset)
+    vmat = numpy.zeros((nset,nao,nao))
+    aow = None
+    if xctype == 'LDA':
+	    ao_deriv = 0
+	    for ao, mask, weight, coords in ni.block_loop(mol, grids, nao, ao_deriv, max_memory):
+	 	    aow = numpy.ndarray(ao.shape, order='F', buffer=aow)
+	        for idm in range(nset):
+		 	    rho = make_rho(idm, ao, mask, 'LDA')
+		 	    exc, vxc = ni.eval_xc(xc_code, rho, 0, relativity, 1, verbose)[:2]
+			    vrho = vxc[0]
+			    den = rho * weight
+			    nelec[idm] += den.sum()
+			    excsum[idm] += (den * exc).sum()  # E_xc 
+			    # *.5 because vmat + vmat.T
+			    aow = numpy.einsum('pi,p->pi', ao, .5*weight*vrho, out=aow)
+			    vmat[idm] += _dot_ao_ao(mol, ao, aow, mask, shls_slice, ao_loc)
+			    rho = exc = vxc = vrho = None
+\end{lstlisting}
+thus
+\begin{equation}\label{key}
+E_{xc} = \sum_i \varepsilon_{xc}(\vb{r}_i)\rho(\vb{r}_i) w(\vb{r}_i)
+\end{equation}
+
+But how we allocate \code{exc, rho, weight} to each atom?\\
+Let's try \code{dft.gen\_grid}
+\begin{lstlisting}[language=python]
+class Grids(lib.StreamObject):
+    def build(self, mol=None, with_non0tab=False):
+        atom_grids_tab = self.gen_atomic_grids(mol, self.atom_grid, self.radi_method, self.level, self.prune)
+        self.coords, self.weights = self.gen_partition(mol, atom_grids_tab, self.radii_adjust, self.atomic_radii, self.becke_scheme)
+        if with_non0tab:
+            self.non0tab = self.make_mask(mol, self.coords)
+        else:
+            self.non0tab = None
+        return self.coords, self.weights
+\end{lstlisting}
+\begin{lstlisting}[language=python]
+def gen_partition(mol, atom_grids_tab, radii_adjust=None, atomic_radii=radi.BRAGG_RADII, 
+                  becke_scheme=original_becke):
+    atm_coords = numpy.asarray(mol.atom_coords() , order='C')
+    atm_dist = radi._inter_distance(mol)
+    #  if default settings
+    def gen_grid_partition(coords):
+        coords = numpy.asarray(coords, order='F')
+        ngrids = coords.shape[0]
+        pbecke = numpy.empty((mol.natm,ngrids))
+        libdft.VXCgen_grid(pbecke.ctypes.data_as(ctypes.c_void_p),
+                           coords.ctypes.data_as(ctypes.c_void_p),
+                           atm_coords.ctypes.data_as(ctypes.c_void_p),
+                           p_radii_table,
+                           ctypes.c_int(mol.natm), ctypes.c_int(ngrids))
+        return pbecke
+    coords_all = []
+    weights_all = []
+    for ia in range(mol.natm):
+        coords, vol = atom_grids_tab[mol.atom_symbol(ia)] # grid coords wrt atom coord
+        coords = coords + atm_coords[ia] # get real coords
+        pbecke = gen_grid_partition(coords) # do becke partition. 
+        weights = vol * pbecke[ia] * (1./pbecke.sum(axis=0))
+        coords_all.append(coords)
+        weights_all.append(weights)
+    return numpy.vstack(coords_all), numpy.hstack(weights_all)
+\end{lstlisting}
+Actually,
+\begin{equation}\label{key}
+E_{xc} = \sum_i \varepsilon_{xc}(\vb{r}_i)\rho(\vb{r}_i) V_i W_i
+\end{equation}
+\begin{equation}\label{key}
+W_i = \dfrac{P_{i,A}}{\sum_A P_{i,A}}
+\end{equation}
+where $ W_i $ measures the extent to which a grid point belongs to some atom $ A $, in Becke partition. $ W_i = 1 $ when close to only one atom, and $ W_i = 0\sim 1 $ in other cases (i.e. shared). $ V_i $ is \code{vol} above.\\
+
+
+
+
+
+
+\end{document}
