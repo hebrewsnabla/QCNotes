@@ -1,0 +1,388 @@
+%\documentclass[UTF8]{ctexart} % use larger type; default would be 10pt
+\documentclass[a4paper]{article}
+\usepackage{xeCJK}
+%\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\geometry{margin=1in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\setlength{\parindent}{0pt}
+\usepackage{physics}
+\usepackage{amsmath}
+%\usepackage{symbols}
+\usepackage{AMSFonts}
+\usepackage{bm}
+%\usepackage{eucal}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{abstract}
+\usepackage{empheq}
+\usepackage{extarrows}
+\usepackage{textcomp}
+\usepackage{fontspec}
+\usepackage{braket}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+%\usepackage{tcolorbox}
+\usepackage[T1]{fontenc}
+\usepackage{beramono}
+\usepackage{tikz}
+\usepackage{mhchem}
+
+\setmonofont[Mapping={}]{Consolas}	%英文引号之类的正常显示，相当于设置英文字体
+%\setsansfont{Monaco} %设置英文字体 Monaco, Consolas,  Fantasque Sans Mono
+%\setmainfont{Monaco} %设置英文字体
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ 
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\footnotesize\ttfamily,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=b,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={...},            % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	firstnumber=1,                % start line enumeration with line 1000
+	frame=single,	                   % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=Octave,                 % the language of the code
+	morekeywords={*,...},            % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=2,	                   % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\sisetup{
+	separate-uncertainty = true,
+	inter-unit-product = \ensuremath{{}\cdot{}}
+}
+
+\DeclareMathOperator{\p}{\prime}
+\DeclareMathOperator{\ti}{\times}
+\DeclareMathOperator{\intinf}{\int_0^\infty}
+\DeclareMathOperator{\intdinf}{\int_{-\infty}^\infty}
+\DeclareMathOperator{\intzpi}{\int_0^\pi}
+\DeclareMathOperator{\intztpi}{\int_0^{2\pi}}
+\DeclareMathOperator{\suminf}{\sum_{n=1}^{\infty}}
+\DeclareMathOperator{\suminfz}{\sum_{n=0}^\infty}
+\DeclareMathOperator{\sumkinf}{\sum_{k=1}^{\infty}}
+\DeclareMathOperator{\sumkinfz}{\sum_{k=0}^\infty}
+\DeclareMathOperator{\e}{\mathrm{e}}
+\DeclareMathOperator{\I}{\mathrm{i}}
+\DeclareMathOperator{\Arg}{\mathrm{Arg}}
+\DeclareMathOperator{\ra}{\rightarrow}
+\DeclareMathOperator{\llra}{\longleftrightarrow}
+\DeclareMathOperator{\lra}{\longrightarrow}
+\DeclareMathOperator{\dlra}{\Leftrightarrow}
+\DeclareMathOperator{\dra}{\Rightarrow}
+\newcommand{\bkk}[1]{\Braket{#1|#1}}
+\newcommand{\bk}[2]{\Braket{#1|#2}}
+\newcommand{\bkev}[2]{\Braket{#2|#1|#2}}
+
+
+
+\DeclareMathOperator{\hV}{\hat{\vb{V}}}
+
+\DeclareMathOperator{\hx}{\hat{\vb{x}}}
+\DeclareMathOperator{\hy}{\hat{\vb{y}}}
+\DeclareMathOperator{\hz}{\hat{\vb{z}}}
+
+\DeclareMathOperator{\hA}{\hat{\vb{A}}}
+
+\DeclareMathOperator{\hQ}{\hat{\vb{Q}}}
+\DeclareMathOperator{\hI}{\hat{\vb{I}}}
+\DeclareMathOperator{\psis}{\psi^\ast}
+\DeclareMathOperator{\Psis}{\Psi^\ast}
+\DeclareMathOperator{\hi}{\hat{\vb{i}}}
+\DeclareMathOperator{\hj}{\hat{\vb{j}}}
+\DeclareMathOperator{\hk}{\hat{\vb{k}}}
+\DeclareMathOperator{\hr}{\hat{\vb{r}}}
+\DeclareMathOperator{\hT}{\hat{\vb{T}}}
+\DeclareMathOperator{\hH}{\hat{H}}
+\DeclareMathOperator{\hh}{\hat{h}}               % helicity
+\DeclareMathOperator{\hL}{\hat{\vb{L}}}
+\DeclareMathOperator{\hp}{\hat{\vb{p}}}
+
+\DeclareMathOperator{\ha}{\hat{\vb{a}}}
+\DeclareMathOperator{\hS}{\hat{\vb{S}}}
+\DeclareMathOperator{\hSigma}{\hat{\bm\Sigma}}
+\DeclareMathOperator{\hJ}{\hat{\vb{J}}}
+\DeclareMathOperator{\hP}{\hat{\vb{P}}}          % Parity
+\DeclareMathOperator{\hC}{\hat{\vb{C}}} 
+\DeclareMathOperator{\Tdv}{-\dfrac{\hbar^2}{2m}\dv[2]{x}}
+\DeclareMathOperator{\Tna}{-\dfrac{\hbar^2}{2m}\nabla^2}
+\DeclareMathOperator{\vna}{\vnabla}
+\DeclareMathOperator{\nna}{\nabla^2}
+\newcommand{\naCarExpd}[1]{\pdv[2]{#1}{x} + \pdv[2]{#1}{y} + \pdv[2]{#1}{z}}
+\newcommand{\naCyl}{\qty[\dfrac{1}{\rho}\pdv{\rho}\qty(\rho\pdv{\rho}) + \dfrac{1}{\rho^2}\pdv[2]{\phi} + \pdv[2]{z}]}
+
+%\DeclareMathOperator{\g#0}{\gamma^0}
+%\DeclareMathOperator{\g1}{\gamma^1}
+%\DeclareMathOperator{\g2}{\gamma^2}
+%\DeclareMathOperator{\g3}{\gamma^3}
+%\DeclareMathOperator{\g5}{\gamma^5}
+\newcommand{\g}[1]{\gamma^{#1}}
+\DeclareMathOperator{\gmuu}{\gamma^\mu}
+\DeclareMathOperator{\gmud}{\gamma_\mu}
+%\newcommand{\G}[2]{g^{#1#2}}
+
+%% Code
+\definecolor{codegray}{gray}{0.9}
+\newfontfamily\Consolas{Consolas}
+\newcommand{\code}[1]{\colorbox{codegray}{{\Consolas#1}}}
+\lstnewenvironment{mcode}
+{\lstset{backgroundcolor=\color{lightgray},
+		 xleftmargin=0.5cm,
+		 frame=tlbr,framesep=4pt,framerule=0pt,
+		 language=python,
+		 keepspaces=false,
+		 numbers=none
+}}%
+{}
+\newcommand{\subsbul}{\subsection*{$ \bullet $}}
+\newcommand{\dis}{\displaystyle}
+%\numberwithin{equation}{section}
+%\allowdisplaybreaks[4]
+
+\title{Intro to Polymer Science}
+\author{王石嵘\\
+%\vspace{5pt}\\
+%161240065\\
+wsr@smail.nju.edu.cn
+}
+\date{\today} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+% \boldmath
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+Prof. Ed Palermo, Rensselaer Polytechnic Institute\\
+\section{Introduction}
+\subsection{Brief History}
+"gun cotton", using cellulose, 1843\\
+Vulcanized rubber, 1844\\
+First fully-synthetic: Bakelite, 1907\\
+First linear fully-synthetic: Nylon, 1937, W. Carothers\\
+
+H. Wieland -- large mol is junk\\
+H. Staudinger -- No! (article: \"Uber Polymerisation)\\
+
+polystyrene -- most difficult to recycle, (all landfill in US)\\
+substitute: polylactic acid (decompose in land)
+
+How large is large? What's the cutoff?
+
+\subsection{Classes}
+\begin{enumerate}
+	\item Thermosets (much cross-linked, stable under heat)
+	\item Thermoplastics (no cross-linked, melt easily)
+	\begin{enumerate}
+		\item Semi-crystalline (Note: No fully crystallized polymer)
+		\item Amorphous
+	\end{enumerate}
+	\item Elastomers (little cross-linked)
+\end{enumerate}
+
+\subsection{Molecular Weight Distribution}
+
+
+
+\section{Polymer Chain Conformations}
+\subsection{Freely Joint Chain}
+1D free walk of R. Feynman\\
+\begin{equation}\label{key}
+R_1^2 = \ell^2
+\end{equation}
+\begin{equation}\label{key}
+R_N = R_{N-1}+\ell, R_{N-1}-\ell
+\end{equation}
+\begin{equation}\label{key}
+\ev{R_N^2} = R_{N-1}^2 + \ell^2 = ... = N\ell^2 
+\end{equation}
+\begin{equation}\label{key}
+\sqrt{\ev{R_N^2}} = \ell\sqrt{N}
+\end{equation}
+other ways to derive that:
+\begin{enumerate}
+	\item radial Gaussian distribution function
+\end{enumerate}
+\subsection{Real Chains}
+def: characteristic ratio $ C_\infty $
+\begin{equation}\label{key}
+\sqrt{R_N^2} = \ell\sqrt{C_\infty N}
+\end{equation}
+\subsubsection{Free Rotation}
+\begin{equation}\label{key}
+\sqrt{R_N^2} = \ell\sqrt{N} \sqrt{\dfrac{1+\cos\theta}{1-\cos\theta}}
+\end{equation}
+where $ \theta = 180\textdegree - 109.47\textdegree $, thus
+\begin{equation}\label{key}
+\sqrt{R_N^2} = \ell\sqrt{2 N}
+\end{equation}
+\subsubsection{Hindered Rotation}
+\begin{equation}\label{key}
+\sqrt{R_N^2} = \ell\sqrt{2 N}\sqrt{\dfrac{1+\ev{\cos\phi}}{1-\ev{\cos\phi}}}
+\end{equation}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cccc}
+		\hline
+		$ \phi $ & $ \cos\phi $ & $ E_i $ & $ p(E_i) $\\ \hline
+		-120 &&&\\
+		0&&&\\
+		120&&&\\ \hline
+	\end{tabular}
+\end{table}
+\begin{equation}\label{key}
+\sqrt{\ev{R_N^2}} = \ell\sqrt{6.9 N}
+\end{equation}
+%\subsubsection{Independent Rotation}
+\subsubsection{The Kuhn Length}
+def: Kuhn segment length $ \ell_k $
+\begin{equation}\label{key}
+\sqrt{R^2} = \ell_k\sqrt{N_k}
+\end{equation}
+
+\subsection{Scaling Laws for the SAW}
+\begin{equation}\label{key}
+\sqrt{\ev{R^2}} = \ell(C\cdot N)^\nu
+\end{equation}
+
+\section{Crystallization, Melting, and Glass Transition}
+
+\subsection{Nucleation}
+
+\subsection{Thermodynamics}
+critical lamellar thickness
+\begin{equation}\label{key}
+l^* = \dfrac{4\sigma_{face}}{\Delta g_{vol}} \propto \dfrac{1}{\Delta T}
+\end{equation}
+where $ \Delta T = T_m - T $\\
+crystallization requires $ l > l^* $.\\
+
+Why polymer crystallize in a chain folding manner, rather than an extended chain? -- kinetics.
+
+
+\subsection{Melting Temperature}
+Why polymers melt over a range of temerature?\\
+factors that affect $ T_m $
+\begin{enumerate}
+	\item backbone stiffness
+	\item non-covalent interaction\\
+	VdW, dipole-dipole (PVC), H-bonding (Nylon 6)
+	
+\end{enumerate}
+
+\subsection{Glass Transition Temp.}
+factors that affect $ T_g $
+\begin{enumerate}
+	\item molecular weight
+	\begin{equation}\label{key}
+	T_g = T_{g\infty} - \dfrac{K}{M_n}
+	\end{equation}
+	\item backbone stiffness
+	\item Side Chains
+	\item Non-covalent interactions
+	\item corss linking
+	\item Dilutents/Plasticizer
+	\item copolymerization and blending\\
+	blend miscibility
+\end{enumerate}
+
+\section{Thermodynamics of Polymer Phase Separation}
+\subsection{Entropy of Mixing}
+
+\subsection{Enthalpy of Mixing}
+\begin{equation}\label{key}
+\Delta H_m = n_A f_B z \Delta\varepsilon_{AB}
+\end{equation}
+def: interaction parameter
+\begin{equation}\label{key}
+\chi = \dfrac{z\Delta\varepsilon_{AB}}{kT}
+\end{equation}
+Flory-Huggins Eq.
+\begin{equation}\label{key}
+\Delta G_m = \Delta H_m - T\Delta S_m
+\end{equation}
+\begin{equation}\label{key}
+\dfrac{\Delta G}{kT} = n_A\Phi_B\chi + n_A\ln\Phi_A + n_B\ln\Phi_B
+\end{equation}
+$ m=DP $ for an approximation.
+
+UCST: Upper critical solution temperature\\
+Since $ \chi \sim 1/T $, we can calculate $ \chi_c $ at $ T_c $
+\begin{equation}\label{key}
+\chi_c = \dfrac{1}{2}\qty(\dfrac{1}{\sqrt{m_A}} + \dfrac{1}{\sqrt{m_B}})^2
+\end{equation}
+for polymer solution
+\begin{equation}\label{key}
+\chi_c = \dfrac{1}{2}\qty(1 + \dfrac{1}{\sqrt{m_p}})^2 \ra \dfrac{1}{2}
+\end{equation}
+$ \chi > \chi_c \;\dra$ can not mix at all\\ 
+
+
+\end{document}
