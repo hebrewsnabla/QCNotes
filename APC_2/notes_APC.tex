@@ -159,6 +159,7 @@
 
 \newcommand{\dis}{\displaystyle}
 \numberwithin{equation}{section}
+\setcounter{tocdepth}{4}
 
 \title{Notes of \textbf{Advanced Physical Chemistry II}}
 \author{hebrewsnabla}
@@ -184,6 +185,55 @@ $ \det(\vb{A}) = 0 \;\dra\; \vb{A} $ is a singular matrix.\\
 
 \subsection{The Exploitation of the Symm of a Mol Can Be Used to Significantly Simplify Numerical Calculations}
 
+\subsection{The Symm of Mols Can Be Described by a Set of Symm Elements}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cccc}
+		\hline
+		$ E $ & & & \\
+		$ C_n $ & & & Rotation by $ 360\textdegree/n $\\
+		$ \sigma $ && &\\
+		$ i $ &&&\\
+		$ S_n $ &&&\\
+		\hline
+	\end{tabular}
+    \caption{Symmetry elements and operators}
+\end{table}
+\paragraph{Identity}
+\paragraph{Rotation}
+\paragraph{Reflection}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cc}
+		\hline
+		$ \sigma_h $ & horizontal\\
+		$ \sigma_v $ & vertical\\
+		$ \sigma_d $ & diagonal (vertical and bisects the angle between $ C_2 $ axis)\\
+		\hline
+	\end{tabular}
+	\caption{}
+\end{table}
+\paragraph{Inversion}
+\paragraph{Rotation Reflection}
+\begin{equation}\label{key}
+\hat{S}_n = \hat\sigma_h \cross \hat{C}_n
+\end{equation}
+
+\subsection{Point Groups of Interest to Chemists}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ccc}
+		\hline
+		$ C_{nv} $ & &  \\
+		$ C_{nh} $ &  & Rotation by $ 360\textdegree/n $\\
+		$ D_{nh} $ & &\\
+		$ D_{nv} $ &&\\
+		$ D_{nd} $ &&\\
+		$ T_d $ &&\\
+		\hline
+	\end{tabular}
+	\caption{Symmetry elements and operators}
+\end{table}
 
 
 \end{document}
