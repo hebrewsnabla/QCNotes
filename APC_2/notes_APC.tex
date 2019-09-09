@@ -266,11 +266,44 @@ e.g. 一点点交错的$ \ce{C_3H_6} $, $ C_2 $在3个角平分线处
 \subsection{The $ C_{3v} $ Point Group Has a 2-D Irreducible Representation}
 
 \subsection{The Most Important Summary of the Properties of a Point Group Is Its Character Table}
+
+\paragraph{basis}
+
+\paragraph{class}
+same characters -- in a class.\\
+\# of class = \# of irred represtn.
+\paragraph{notations}
+\begin{enumerate}
+	\item $ A $:, $ B $:, $ E $:2D, $ T $:3D
+	\item $ A_1 $: symm wrt $ C_2/\sigma_v $, $ A_2 $: antisymm wrt that.
+	\item $ A' $: symm wrt $ \sigma_h $, $ A'' $: antisymm wrt that.
+	\item $ A_g $
+\end{enumerate}
+
+\subsection{Several Mathematical Relations Involve the Characters of Irreducible Representation}
+\paragraph{order}
+\begin{equation}\label{key}
+\sum_\nu n_\nu^2 = g
+\end{equation}
+\paragraph{character}
 \begin{equation}\label{key}
 \sum_R D_{il}^{(\nu)} D_{jm}^{*(\mu)} = \dfrac{g}{n_\nu} \delta_{\mu\nu}\delta_{ij}\delta_{lm}
 \end{equation}
 \begin{equation}\label{key}
 \sum_{R} \chi^{(\nu)}(R)\chi^{*(\mu)}(R) = g\delta_{\mu\nu}
 \end{equation}
+\begin{equation}\label{key}
+\sum_R \chi^{(\nu)}(R) = 0 \quad (\nu \neq A_1)
+\end{equation}
+\paragraph{reduce a given reducible repr $ \Gamma $}
+Suppose
+\begin{equation}\label{key}
+\chi(R) = \sum_\nu a_\nu \chi^{(\nu)}(R)
+\end{equation}
+thus
+\begin{equation}\label{key}
+a_\nu = \dfrac{1}{g}\sum_R\chi(R)\chi^{(\nu)}(R)
+\end{equation}
+
 
 \end{document}
