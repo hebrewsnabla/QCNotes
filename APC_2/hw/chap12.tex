@@ -71,6 +71,13 @@
 	inter-unit-product = \ensuremath{{}\cdot{}}
 }
 \usepackage{mhchem}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=cyan,
+}
 
 \DeclareMathOperator{\p}{\prime}
 \DeclareMathOperator{\ti}{\times}
@@ -141,7 +148,7 @@
 \newcommand{\g}[1]{\gamma^{#1}}
 \DeclareMathOperator{\gmuu}{\gamma^\mu}
 \DeclareMathOperator{\gmud}{\gamma_\mu}
-\newcommand{\G}[2]{g^{#1#2}}
+%\newcommand{\G}[2]{g^{#1#2}}
 
 \newcommand{\subsbul}{\subsection*{$ \bullet $}}
 \newcommand{\ex}[1]{\paragraph{12-#1}}
@@ -183,7 +190,7 @@
 \section{Group Theory: the Exploitation of Symmetry}
 4, 12, 18, 24, 26, 31, 33, 34, 37, 40\\
 \ex{4}
-The symmetry elements of $ \ce{CH_4} $ is as follows. (each $ S_4 $ axis is coincident with $ C_2 $ axis)
+The symmetry elements of $ \ce{CH_4} $ is as follows. (each $ S_4 $ axis is coincident with $ C_2 $ axis)\footnote{The pictures are taken from \href{https://www.chemtube3d.com/methane-tetrahedral-symmetry-td/}{chemtube3d}.}
 \begin{figure}[H]
 	\includegraphics[width=0.3\linewidth]{methane_c2.png}
 	\includegraphics[width=0.3\linewidth]{methane_c3.png}
@@ -473,7 +480,9 @@ a_{A_2''} &= \dfrac{1}{12}(3 + 0 - 3 -3 + 0 + 3) = 0\\
 a_{E''} &= \dfrac{1}{12}(6 + 0 + 0 -6 + 0 + 0) = 0
 \end{align}
 thus
-$ \Gamma = A_1' + E' $
+\begin{equation}\label{key}
+\Gamma = A_1' + E' 
+\end{equation}
 From the character table of $ D_{3h} $, we can see that $ A_1' $ is corresponding to $ s $ orbital and $ E' $ is corresponding to $ p_x,p_y $ or $ d_{x^2-y^2},d_{xy} $ orbitals.
 
 
