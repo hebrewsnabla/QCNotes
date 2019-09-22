@@ -70,6 +70,7 @@
 	separate-uncertainty = true,
 	inter-unit-product = \ensuremath{{}\cdot{}}
 }
+\usepackage{mhchem}
 
 \DeclareMathOperator{\p}{\prime}
 \DeclareMathOperator{\ti}{\times}
@@ -143,14 +144,14 @@
 \newcommand{\G}[2]{g^{#1#2}}
 
 \newcommand{\subsbul}{\subsection*{$ \bullet $}}
-\newcommand{\ex}[1]{\paragraph{Ex #1}}
+\newcommand{\ex}[1]{\paragraph{12-#1}}
 \newcommand{\subex}[1]{\subparagraph{#1}}
 \newcommand{\dis}{\displaystyle}
 \newcommand{\iden}{{\large \bm{1}}}
 \newcommand{\qed}{$ \Square $}
 \newcommand{\tPhi}{\tilde{\Phi} }
 
-\numberwithin{equation}{subsection}
+\numberwithin{equation}{section}
 %\setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
 %\allowdisplaybreaks[4]
@@ -182,6 +183,24 @@
 \section{Group Theory: the Exploitation of Symmetry}
 4, 12, 18, 24, 26, 31, 33, 34, 37, 40\\
 \ex{4}
+The symmetry elements of $ \ce{CH_4} $ is as follows. (each $ S_4 $ axis is coincident with $ C_2 $ axis)
+\begin{figure}[H]
+	\includegraphics[width=0.3\linewidth]{methane_c2.png}
+	\includegraphics[width=0.3\linewidth]{methane_c3.png}
+	\includegraphics[width=0.37\linewidth]{methane_sigmad.png}
+\end{figure}
 
+\ex{12}
+\begin{align}
+C_3\sigma_v &= \sigma_v'\\
+C_3\sigma_v'' &= \sigma_v
+\end{align}
+
+\ex{18}
+For the irreducible representation of $ C_{3v} $,
+\begin{align}
+\hat{E}\mqty(u_x\\ u_y) &= \mqty(u_x\\ u_y)\\
+\hat{C}_3
+\end{align}
 
 \end{document}
