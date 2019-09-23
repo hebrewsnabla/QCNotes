@@ -383,8 +383,52 @@ $ \tilde{x}_e $: anharmonicity cons.
 	\caption{}
 \end{table}
 
+\subsection{The Vibrations of Polyatomic Mols Are Represented by Normal Coordinates}
 
+\subsection{Normal Coordinates Belong to Irreducible Representations of Mol Point Groups}
+Contribution to $ \chi(R) $ per unmoved atom
+\begin{table}[H]
+	\centering
+	\begin{tabular}{cc}
+		\hline
+		$ \hR $ & contribution per unmoved atom \\ \hline
+		& \\
+		\hline
+	\end{tabular}
+	\caption{}
+\end{table}
 
+Now we get $ \Gamma_{3N} $.\\
+Subtract the irreducible representations corresponding to translational ($ x,y,z $) and rotational ($ R_x, R_y, R_z $) degrees of freedom, we get $ \Gamma_{vib} $.
 
+\subsection{Selection Rules Are Derived from TD Perturbation Theory}
+Consider a mol interacting w/ EM radiation. The EM field
+\begin{equation}\label{key}
+\vb{E} = \vb{E}_0\cos 2\pi\nu t
+\end{equation}
+\begin{equation}\label{key}
+\hH^{(1)} = -\bm\mu\cdot\vb{E} = -\bm\mu\vb{E}_0\qty(\e^{\I 2\pi\nu t} + \e^{-\I 2\pi\nu t})/2
+\end{equation}
+\begin{equation}\label{key}
+\Psi(t) = a_1(t)\Psi_1(t) + a_2(t)\Psi_2(t)
+\end{equation}
+\begin{equation}\label{key}
+a_1(t)\hH^{(1)}\Psi_1 + a_2(t)\hH^{(1)}\Psi_2 = \I\hbar\qty(\Psi_1\dv{a_1}{t} + \Psi_2\dv{a_2}{t})
+\end{equation}
+\begin{equation}\label{key}
+a_1(t)\Braket{\psi_2 | \hH^{(1)} | \Psi_1} + a_2(t)\Braket{\psi_2 | \hH^{(1)} | \Psi_2} = \I\hbar\qty(0 + \dv{a_2}{t}\e^{-\I Et/\hbar})
+\end{equation}
+...
+\begin{equation}\label{key}
+\I\hbar\dv{a_2}{t} = \e^{-\I(E_1 - E_2)t/\hbar} \Braket{\psi_2 | \hH^{(1)} | \psi_1}
+\end{equation}
+\begin{equation}\label{key}
+\dv{a_2}{t} \approx ...
+\end{equation}
 
+\subsection{The Selection Rule in the Rigid-Rotator Approx Is $ \Delta J = \pm 1 $}
+\begin{align}
+\Braket{J',M' | \mu_z | J,M} &= \int_0^{2\pi} \dd\phi \int_0^\pi Y_{J'}^{M'*} \mu_z Y_J^M \sin\theta\dd\theta \notag\\
+&= ...
+\end{align}
 \end{document}
