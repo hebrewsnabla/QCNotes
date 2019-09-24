@@ -1,0 +1,29 @@
+# a-C@Ni
+
+units	real
+dimension 3
+newton on
+boundary p p p
+atom_style charge 
+
+read_data data.Ni-C-1100C-final
+
+pair_style reax/c lmp_control
+pair_coeff * * ffield.reax.FC C Ni
+
+neighbor 2.0 bin
+neigh_modify every 10 delay 0 check no
+fix 1 all qeq/reax 1 0.0 10.0 1.0e-6 reax/c
+
+minimize 1.0e-12 1.0e-12 1000 1000
+min_style cg
+min_modify dmax 0.2
+
+timestep 0.25    
+run_style verlet
+
+fix 2 all nvt temp 3000 3000 1.0
+thermo 40
+thermo_style custom time temp press pe ke etotal enthalpy
+dump 1 all xyz 40 a-C-on-Ni-3000K.xyz
+run 60000
