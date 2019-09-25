@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+  <Version>7.0</Version>
+  <Reference>{4D504690-A263-4447-96BF-FEC9830A4E9C}</Reference>
+  <DocumentManager>
+    <Document>
+      <ID>{27128071-698C-4DAE-9795-00FA24B8240B}</ID>
+      <Paths>1</Paths>
+      <URL>.\Fe_FCC.xsd</URL>
+      <Property>
+        <Name>Visible</Name>
+        <Type>11</Type>
+        <Value>-1</Value>
+      </Property>
+    </Document>
+  </DocumentManager>
+  <ViewRegistry>
+    <Frame>
+      <Active>true</Active>
+      <Left>0</Left>
+      <Top>0</Top>
+      <Width>838</Width>
+      <Height>464</Height>
+      <Maximized>false</Maximized>
+      <Minimized>false</Minimized>
+      <View>
+        <Active>true</Active>
+        <DocumentID>{27128071-698C-4DAE-9795-00FA24B8240B}</DocumentID>
+        <Type>SVViewer3D.Viewer3DControl</Type>
+      </View>
+    </Frame>
+  </ViewRegistry>
+  <DocumentEventManager>
+  </DocumentEventManager>
+</Project>
