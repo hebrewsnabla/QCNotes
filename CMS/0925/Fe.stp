@@ -13,22 +13,63 @@
         <Value>-1</Value>
       </Property>
     </Document>
+    <Document>
+      <ID>{7354101C-FFB2-448A-A3F0-5593FCF14034}</ID>
+      <Paths>1</Paths>
+      <URL>.\Fe_FCC (2).xsd</URL>
+      <Property>
+        <Name>Visible</Name>
+        <Type>11</Type>
+        <Value>-1</Value>
+      </Property>
+    </Document>
+    <Document>
+      <ID>{7924F23B-B954-4EE9-AE6F-A1C91CE70F72}</ID>
+      <Paths>1</Paths>
+      <URL>.\Ni.xsd</URL>
+      <Property>
+        <Name>Visible</Name>
+        <Type>11</Type>
+        <Value>-1</Value>
+      </Property>
+    </Document>
+    <Document>
+      <ID>{8BD0CC09-FE83-43B4-A5B7-04CD9798174C}</ID>
+      <Paths>1</Paths>
+      <URL>.\graphite.xsd</URL>
+      <Property>
+        <Name>Visible</Name>
+        <Type>11</Type>
+        <Value>-1</Value>
+      </Property>
+    </Document>
+    <Document>
+      <ID>{4F459860-17D1-4F75-A177-F056AEB8FC82}</ID>
+      <Paths>1</Paths>
+      <URL>.\Ni (1 1 1).xsd</URL>
+      <Property>
+        <Name>Visible</Name>
+        <Type>11</Type>
+        <Value>-1</Value>
+      </Property>
+    </Document>
+    <Document>
+      <ID>{000E2ED6-7684-49CB-A957-46217603F616}</ID>
+      <Paths>1</Paths>
+      <URL>.\Ni_mm.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{FA2E36EE-AD2D-4853-ADC5-D56A6D75ABFD}</ID>
+      <Paths>1</Paths>
+      <URL>.\3D Atomistic.xsd</URL>
+    </Document>
+    <Document>
+      <ID>{F3B46BB9-2B36-4E2B-8D3E-FFB2FF59F2D4}</ID>
+      <Paths>1</Paths>
+      <URL>.\Ni_mm_s.xsd</URL>
+    </Document>
   </DocumentManager>
   <ViewRegistry>
-    <Frame>
-      <Active>true</Active>
-      <Left>0</Left>
-      <Top>0</Top>
-      <Width>838</Width>
-      <Height>464</Height>
-      <Maximized>false</Maximized>
-      <Minimized>false</Minimized>
-      <View>
-        <Active>true</Active>
-        <DocumentID>{27128071-698C-4DAE-9795-00FA24B8240B}</DocumentID>
-        <Type>SVViewer3D.Viewer3DControl</Type>
-      </View>
-    </Frame>
   </ViewRegistry>
   <DocumentEventManager>
   </DocumentEventManager>

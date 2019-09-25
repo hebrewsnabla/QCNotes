@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="latin1"?>
+<EXTENSION VERSION="7.0">
+<LOGICS>
+<LOGICITEM NAME="FindSymmetryLogic">
+	<STATE NAME="SymmetryBuilderFindSymmetryState" VERSION="7.0">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="MillerPlaneLogic">
+	<STATE NAME="SymmetryBuilderMillerPlaneState" VERSION="7.0">
+	<PROPERTIES>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+<LOGICITEM NAME="SymmetryBuilderLogic">
+	<STATE NAME="SymmetryBuilderLogicState" VERSION="7.0">
+	<PROPERTIES>
+	<PROPERTY NAME="CrystalSystemFlag">
+	<VALUE>6</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ReorientAfterFindSymmetry">
+	<VALUE>1</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SymmetryFinderTolerance">
+	<VALUE>0.2</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="VacuumThickness">
+	<VALUE>30.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="SourceDocumentID">
+	<VALUE>{7924F23B-B954-4EE9-AE6F-A1C91CE70F72}</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CleaveDirection">
+	<VALUE>
+	<ITEM>1</ITEM>
+	<ITEM>1</ITEM>
+	<ITEM>1</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CleaveUVector">
+	<VALUE>
+	<ITEM>0.5</ITEM>
+	<ITEM>-0.5</ITEM>
+	<ITEM>0.</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CleaveVVector">
+	<VALUE>
+	<ITEM>0.</ITEM>
+	<ITEM>0.5</ITEM>
+	<ITEM>-0.5</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CleaveOrigin">
+	<VALUE>
+	<ITEM>0.</ITEM>
+	<ITEM>0.</ITEM>
+	<ITEM>0.</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="CleaveDepth">
+	<VALUE>3.</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ResetCleaveOrientation">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="NewAVector">
+	<VALUE>
+	<ITEM>1.</ITEM>
+	<ITEM>0.</ITEM>
+	<ITEM>0.</ITEM>
+	</VALUE>
+	</PROPERTY>
+	<PROPERTY NAME="ResetNewLatticeOrientation">
+	<VALUE>true</VALUE>
+	</PROPERTY>
+	</PROPERTIES>
+	</STATE>
+</LOGICITEM>
+</LOGICS>
+</EXTENSION>

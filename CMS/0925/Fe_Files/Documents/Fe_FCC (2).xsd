@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XSD []>
+<XSD Version="7.0" WrittenBy="Materials Studio 7.0">
+	<AtomisticTreeRoot ID="1" NumProperties="58" NumChildren="1">
+		<Property Name="AngleAxisType" DefinedOn="AngleBetweenPlanesBender" Type="Enumerated"/>
+		<Property Name="AngleEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BeadDocumentID" DefinedOn="MesoMoleculeSet" Type="String"/>
+		<Property Name="BendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BendTorsionBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="EFGAsymmetry" DefinedOn="Atom" Type="Double"/>
+		<Property Name="EFGQuadrupolarCoupling" DefinedOn="Atom" Type="Double"/>
+		<Property Name="ElectrostaticEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="FaceMillerIndex" DefinedOn="GrowthFace" Type="MillerIndex"/>
+		<Property Name="FacetTransparency" DefinedOn="GrowthFace" Type="Float"/>
+		<Property Name="FermiLevel" DefinedOn="ScalarFieldBase" Type="Double"/>
+		<Property Name="Force" DefinedOn="Matter" Type="CoDirection"/>
+		<Property Name="FrameFilter" DefinedOn="Trajectory" Type="String"/>
+		<Property Name="HarmonicForceConstant" DefinedOn="HarmonicRestraint" Type="Double"/>
+		<Property Name="HarmonicMinimum" DefinedOn="HarmonicRestraint" Type="Double"/>
+		<Property Name="HydrogenBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ImportOrder" DefinedOn="Bondable" Type="UnsignedInteger"/>
+		<Property Name="InversionEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="IsBackboneAtom" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsChiralCenter" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsOutOfPlane" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsRepeatArrowVisible" DefinedOn="ElectrodeWire" Type="Boolean"/>
+		<Property Name="KineticEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="LineExtentPadding" DefinedOn="BestFitLineMonitor" Type="Double"/>
+		<Property Name="LinkageGroupName" DefinedOn="Linkage" Type="String"/>
+		<Property Name="ListIdentifier" DefinedOn="PropertyList" Type="String"/>
+		<Property Name="NMRShielding" DefinedOn="Atom" Type="Double"/>
+		<Property Name="NonBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="NormalMode" DefinedOn="Bondable" Type="Direction"/>
+		<Property Name="NormalModeFrequency" DefinedOn="Bondable" Type="Double"/>
+		<Property Name="NumScanSteps" DefinedOn="LinearScan" Type="UnsignedInteger"/>
+		<Property Name="OrbitalCutoffRadius" DefinedOn="Bondable" Type="Double"/>
+		<Property Name="PlaneExtentPadding" DefinedOn="BestFitPlaneMonitor" Type="Double"/>
+		<Property Name="PotentialEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="QuantizationValue" DefinedOn="ScalarFieldBase" Type="Double"/>
+		<Property Name="RelativeVelocity" DefinedOn="Matter" Type="Direction"/>
+		<Property Name="RepeatArrowScale" DefinedOn="ElectrodeWire" Type="Float"/>
+		<Property Name="RestraintEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ScanEnd" DefinedOn="LinearScan" Type="Double"/>
+		<Property Name="ScanStart" DefinedOn="LinearScan" Type="Double"/>
+		<Property Name="SeparatedStretchStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="SimulationStep" DefinedOn="Trajectory" Type="Integer"/>
+		<Property Name="StretchBendStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="StretchStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="StretchTorsionStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="Temperature" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ThreeBodyNonBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionBendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TotalEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="Units" DefinedOn="ScalarFieldBase" Type="String"/>
+		<Property Name="ValenceCrossTermEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ValenceDiagonalEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="VanDerWaalsEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="_Stress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
+		<Property Name="_TrajectoryStress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
+		<SymmetrySystem ID="2" Mapping="3" Children="ci(15):15+4" Name="Fe_FCC" OverspecificationTolerance="0.05" HasSymmetryHistory="1">
+			<MappingSet ID="19" SymmetryDefinition="18" ActiveSystem="2" NumFamilies="1" OwnsTotalConstraintMapping="0" TotalConstraintMapping="3">
+				<MappingFamily ID="20" NumImageMappings="0">
+					<IdentityMapping ID="3" Element="1,0,0,0,0,1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" MappedObjects="ci(14):13+4,2" DefectObjects="17,21,18" NumImages="13" NumDefects="3">
+						<Atom3d ID="4" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="3.477,3.477,3.477" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="5" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="3.477,1.7385,1.7385" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="6" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="3.477,5.2155,1.7385" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="7" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="3.477,1.7385,5.2155" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="8" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="3.477,5.2155,5.2155" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="9" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="1.7385,3.477,1.7385" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="10" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="5.2155,3.477,1.7385" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="11" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="1.7385,3.477,5.2155" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="12" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="5.2155,3.477,5.2155" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="13" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="1.7385,1.7385,3.477" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="14" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="5.2155,1.7385,3.477" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="15" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="1.7385,5.2155,3.477" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<Atom3d ID="16" Mapping="3" Parent="2" Name="Fe" DisplayStyle="Ball and Stick" XYZ="5.2155,5.2155,3.477" TemperatureType="Isotropic" AnisotropicTemperature="0,0,0,0,0,0,0,0,0" Components="Fe"/>
+						<SpaceGroup ID="17" Parent="2" Children="21" Name="FM-3M" AVector="3.477,0,0" BVector="0,3.477,0" CVector="0,0,3.477" Visible="0" OrientationBase="C along Z, B in YZ plane" Centering="3D Face-Centered" Lattice="3D Cubic" GroupName="FM-3M" Operators="1,0,0,0,0,1,0,0,0,0,1,0:-1,0,0,0,0,-1,0,0,0,0,1,0:-1,0,0,0,0,1,0,0,0,0,-1,0:1,0,0,0,0,-1,0,0,0,0,-1,0:0,0,1,0,1,0,0,0,0,1,0,0:0,0,1,0,-1,0,0,0,0,-1,0,0:0,0,-1,0,-1,0,0,0,0,1,0,0:0,0,-1,0,1,0,0,0,0,-1,0,0:0,1,0,0,0,0,1,0,1,0,0,0:0,-1,0,0,0,0,1,0,-1,0,0,0:0,1,0,0,0,0,-1,0,-1,0,0,0:0,-1,0,0,0,0,-1,0,1,0,0,0:0,1,0,0,1,0,0,0,0,0,-1,0:0,-1,0,0,-1,0,0,0,0,0,-1,0:0,1,0,0,-1,0,0,0,0,0,1,0:0,-1,0,0,1,0,0,0,0,0,1,0:1,0,0,0,0,0,1,0,0,-1,0,0:-1,0,0,0,0,0,1,0,0,1,0,0:-1,0,0,0,0,0,-1,0,0,-1,0,0:1,0,0,0,0,0,-1,0,0,1,0,0:0,0,1,0,0,1,0,0,-1,0,0,0:0,0,1,0,0,-1,0,0,1,0,0,0:0,0,-1,0,0,1,0,0,1,0,0,0:0,0,-1,0,0,-1,0,0,-1,0,0,0:-1,0,0,0,0,-1,0,0,0,0,-1,0:1,0,0,0,0,1,0,0,0,0,-1,0:1,0,0,0,0,-1,0,0,0,0,1,0:-1,0,0,0,0,1,0,0,0,0,1,0:0,0,-1,0,-1,0,0,0,0,-1,0,0:0,0,-1,0,1,0,0,0,0,1,0,0:0,0,1,0,1,0,0,0,0,-1,0,0:0,0,1,0,-1,0,0,0,0,1,0,0:0,-1,0,0,0,0,-1,0,-1,0,0,0:0,1,0,0,0,0,-1,0,1,0,0,0:0,-1,0,0,0,0,1,0,1,0,0,0:0,1,0,0,0,0,1,0,-1,0,0,0:0,-1,0,0,-1,0,0,0,0,0,1,0:0,1,0,0,1,0,0,0,0,0,1,0:0,-1,0,0,1,0,0,0,0,0,-1,0:0,1,0,0,-1,0,0,0,0,0,-1,0:-1,0,0,0,0,0,-1,0,0,1,0,0:1,0,0,0,0,0,-1,0,0,-1,0,0:1,0,0,0,0,0,1,0,0,1,0,0:-1,0,0,0,0,0,1,0,0,-1,0,0:0,0,-1,0,0,-1,0,0,1,0,0,0:0,0,-1,0,0,1,0,0,-1,0,0,0:0,0,1,0,0,-1,0,0,-1,0,0,0:0,0,1,0,0,1,0,0,1,0,0,0:1,0,0,0,0,1,0,0.5,0,0,1,0.5:-1,0,0,0,0,-1,0,0.5,0,0,1,0.5:-1,0,0,0,0,1,0,0.5,0,0,-1,0.5:1,0,0,0,0,-1,0,0.5,0,0,-1,0.5:0,0,1,0,1,0,0,0.5,0,1,0,0.5:0,0,1,0,-1,0,0,0.5,0,-1,0,0.5:0,0,-1,0,-1,0,0,0.5,0,1,0,0.5:0,0,-1,0,1,0,0,0.5,0,-1,0,0.5:0,1,0,0,0,0,1,0.5,1,0,0,0.5:0,-1,0,0,0,0,1,0.5,-1,0,0,0.5:0,1,0,0,0,0,-1,0.5,-1,0,0,0.5:0,-1,0,0,0,0,-1,0.5,1,0,0,0.5:0,1,0,0,1,0,0,0.5,0,0,-1,0.5:0,-1,0,0,-1,0,0,0.5,0,0,-1,0.5:0,1,0,0,-1,0,0,0.5,0,0,1,0.5:0,-1,0,0,1,0,0,0.5,0,0,1,0.5:1,0,0,0,0,0,1,0.5,0,-1,0,0.5:-1,0,0,0,0,0,1,0.5,0,1,0,0.5:-1,0,0,0,0,0,-1,0.5,0,-1,0,0.5:1,0,0,0,0,0,-1,0.5,0,1,0,0.5:0,0,1,0,0,1,0,0.5,-1,0,0,0.5:0,0,1,0,0,-1,0,0.5,1,0,0,0.5:0,0,-1,0,0,1,0,0.5,1,0,0,0.5:0,0,-1,0,0,-1,0,0.5,-1,0,0,0.5:-1,0,0,0,0,-1,0,0.5,0,0,-1,0.5:1,0,0,0,0,1,0,0.5,0,0,-1,0.5:1,0,0,0,0,-1,0,0.5,0,0,1,0.5:-1,0,0,0,0,1,0,0.5,0,0,1,0.5:0,0,-1,0,-1,0,0,0.5,0,-1,0,0.5:0,0,-1,0,1,0,0,0.5,0,1,0,0.5:0,0,1,0,1,0,0,0.5,0,-1,0,0.5:0,0,1,0,-1,0,0,0.5,0,1,0,0.5:0,-1,0,0,0,0,-1,0.5,-1,0,0,0.5:0,1,0,0,0,0,-1,0.5,1,0,0,0.5:0,-1,0,0,0,0,1,0.5,1,0,0,0.5:0,1,0,0,0,0,1,0.5,-1,0,0,0.5:0,-1,0,0,-1,0,0,0.5,0,0,1,0.5:0,1,0,0,1,0,0,0.5,0,0,1,0.5:0,-1,0,0,1,0,0,0.5,0,0,-1,0.5:0,1,0,0,-1,0,0,0.5,0,0,-1,0.5:-1,0,0,0,0,0,-1,0.5,0,1,0,0.5:1,0,0,0,0,0,-1,0.5,0,-1,0,0.5:1,0,0,0,0,0,1,0.5,0,1,0,0.5:-1,0,0,0,0,0,1,0.5,0,-1,0,0.5:0,0,-1,0,0,-1,0,0.5,1,0,0,0.5:0,0,-1,0,0,1,0,0.5,-1,0,0,0.5:0,0,1,0,0,-1,0,0.5,-1,0,0,0.5:0,0,1,0,0,1,0,0.5,1,0,0,0.5:1,0,0,0.5,0,1,0,0,0,0,1,0.5:-1,0,0,0.5,0,-1,0,0,0,0,1,0.5:-1,0,0,0.5,0,1,0,0,0,0,-1,0.5:1,0,0,0.5,0,-1,0,0,0,0,-1,0.5:0,0,1,0.5,1,0,0,0,0,1,0,0.5:0,0,1,0.5,-1,0,0,0,0,-1,0,0.5:0,0,-1,0.5,-1,0,0,0,0,1,0,0.5:0,0,-1,0.5,1,0,0,0,0,-1,0,0.5:0,1,0,0.5,0,0,1,0,1,0,0,0.5:0,-1,0,0.5,0,0,1,0,-1,0,0,0.5:0,1,0,0.5,0,0,-1,0,-1,0,0,0.5:0,-1,0,0.5,0,0,-1,0,1,0,0,0.5:0,1,0,0.5,1,0,0,0,0,0,-1,0.5:0,-1,0,0.5,-1,0,0,0,0,0,-1,0.5:0,1,0,0.5,-1,0,0,0,0,0,1,0.5:0,-1,0,0.5,1,0,0,0,0,0,1,0.5:1,0,0,0.5,0,0,1,0,0,-1,0,0.5:-1,0,0,0.5,0,0,1,0,0,1,0,0.5:-1,0,0,0.5,0,0,-1,0,0,-1,0,0.5:1,0,0,0.5,0,0,-1,0,0,1,0,0.5:0,0,1,0.5,0,1,0,0,-1,0,0,0.5:0,0,1,0.5,0,-1,0,0,1,0,0,0.5:0,0,-1,0.5,0,1,0,0,1,0,0,0.5:0,0,-1,0.5,0,-1,0,0,-1,0,0,0.5:-1,0,0,0.5,0,-1,0,0,0,0,-1,0.5:1,0,0,0.5,0,1,0,0,0,0,-1,0.5:1,0,0,0.5,0,-1,0,0,0,0,1,0.5:-1,0,0,0.5,0,1,0,0,0,0,1,0.5:0,0,-1,0.5,-1,0,0,0,0,-1,0,0.5:0,0,-1,0.5,1,0,0,0,0,1,0,0.5:0,0,1,0.5,1,0,0,0,0,-1,0,0.5:0,0,1,0.5,-1,0,0,0,0,1,0,0.5:0,-1,0,0.5,0,0,-1,0,-1,0,0,0.5:0,1,0,0.5,0,0,-1,0,1,0,0,0.5:0,-1,0,0.5,0,0,1,0,1,0,0,0.5:0,1,0,0.5,0,0,1,0,-1,0,0,0.5:0,-1,0,0.5,-1,0,0,0,0,0,1,0.5:0,1,0,0.5,1,0,0,0,0,0,1,0.5:0,-1,0,0.5,1,0,0,0,0,0,-1,0.5:0,1,0,0.5,-1,0,0,0,0,0,-1,0.5:-1,0,0,0.5,0,0,-1,0,0,1,0,0.5:1,0,0,0.5,0,0,-1,0,0,-1,0,0.5:1,0,0,0.5,0,0,1,0,0,1,0,0.5:-1,0,0,0.5,0,0,1,0,0,-1,0,0.5:0,0,-1,0.5,0,-1,0,0,1,0,0,0.5:0,0,-1,0.5,0,1,0,0,-1,0,0,0.5:0,0,1,0.5,0,-1,0,0,-1,0,0,0.5:0,0,1,0.5,0,1,0,0,1,0,0,0.5:1,0,0,0.5,0,1,0,0.5,0,0,1,0:-1,0,0,0.5,0,-1,0,0.5,0,0,1,0:-1,0,0,0.5,0,1,0,0.5,0,0,-1,0:1,0,0,0.5,0,-1,0,0.5,0,0,-1,0:0,0,1,0.5,1,0,0,0.5,0,1,0,0:0,0,1,0.5,-1,0,0,0.5,0,-1,0,0:0,0,-1,0.5,-1,0,0,0.5,0,1,0,0:0,0,-1,0.5,1,0,0,0.5,0,-1,0,0:0,1,0,0.5,0,0,1,0.5,1,0,0,0:0,-1,0,0.5,0,0,1,0.5,-1,0,0,0:0,1,0,0.5,0,0,-1,0.5,-1,0,0,0:0,-1,0,0.5,0,0,-1,0.5,1,0,0,0:0,1,0,0.5,1,0,0,0.5,0,0,-1,0:0,-1,0,0.5,-1,0,0,0.5,0,0,-1,0:0,1,0,0.5,-1,0,0,0.5,0,0,1,0:0,-1,0,0.5,1,0,0,0.5,0,0,1,0:1,0,0,0.5,0,0,1,0.5,0,-1,0,0:-1,0,0,0.5,0,0,1,0.5,0,1,0,0:-1,0,0,0.5,0,0,-1,0.5,0,-1,0,0:1,0,0,0.5,0,0,-1,0.5,0,1,0,0:0,0,1,0.5,0,1,0,0.5,-1,0,0,0:0,0,1,0.5,0,-1,0,0.5,1,0,0,0:0,0,-1,0.5,0,1,0,0.5,1,0,0,0:0,0,-1,0.5,0,-1,0,0.5,-1,0,0,0:-1,0,0,0.5,0,-1,0,0.5,0,0,-1,0:1,0,0,0.5,0,1,0,0.5,0,0,-1,0:1,0,0,0.5,0,-1,0,0.5,0,0,1,0:-1,0,0,0.5,0,1,0,0.5,0,0,1,0:0,0,-1,0.5,-1,0,0,0.5,0,-1,0,0:0,0,-1,0.5,1,0,0,0.5,0,1,0,0:0,0,1,0.5,1,0,0,0.5,0,-1,0,0:0,0,1,0.5,-1,0,0,0.5,0,1,0,0:0,-1,0,0.5,0,0,-1,0.5,-1,0,0,0:0,1,0,0.5,0,0,-1,0.5,1,0,0,0:0,-1,0,0.5,0,0,1,0.5,1,0,0,0:0,1,0,0.5,0,0,1,0.5,-1,0,0,0:0,-1,0,0.5,-1,0,0,0.5,0,0,1,0:0,1,0,0.5,1,0,0,0.5,0,0,1,0:0,-1,0,0.5,1,0,0,0.5,0,0,-1,0:0,1,0,0.5,-1,0,0,0.5,0,0,-1,0:-1,0,0,0.5,0,0,-1,0.5,0,1,0,0:1,0,0,0.5,0,0,-1,0.5,0,-1,0,0:1,0,0,0.5,0,0,1,0.5,0,1,0,0:-1,0,0,0.5,0,0,1,0.5,0,-1,0,0:0,0,-1,0.5,0,-1,0,0.5,1,0,0,0:0,0,-1,0.5,0,1,0,0.5,-1,0,0,0:0,0,1,0.5,0,-1,0,0.5,-1,0,0,0:0,0,1,0.5,0,1,0,0.5,1,0,0,0" DisplayRange="0,2,0,2,0,2" LineThickness="2" CylinderRadius="0.2" LabelAxes="1" ActiveSystem="0" ITNumber="225" LongName="F 4/M -3 2/M" Qualifier="Origin-1" SchoenfliesName="OH-5" System="Cubic" Class="m -3 m"/>
+						<ReciprocalLattice3D ID="21" Parent="17" Visible="0"/>
+						<PointGroup ID="18" Parent="2" Name="Default Point Group" AVector="1,0,0" BVector="0,1,0" CVector="0,0,1" OrientationBase="A along X, B along Y and C along Z" Centering="13" Lattice="25" GroupName="Default Point Group" Operators="1,0,0,0,0,1,0,0,0,0,1,0" DisplayRange="0,0,0,0,0,0" LineThickness="2" CylinderRadius="0.2" LabelAxes="1" ActiveSystem="2" LongName=" " SchoenfliesName=" " System=" " IsContinuous="0"/>
+					</IdentityMapping>
+					<MappingRepairs NumRepairs="0"/>
+				</MappingFamily>
+			</MappingSet>
+			<OldDefinition ID="22" OldDefinition="17"/>
+		</SymmetrySystem>
+	</AtomisticTreeRoot>
+</XSD>
