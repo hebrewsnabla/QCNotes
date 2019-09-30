@@ -17,7 +17,7 @@
 	<STATE NAME="SymmetryBuilderLogicState" VERSION="7.0">
 	<PROPERTIES>
 	<PROPERTY NAME="CrystalSystemFlag">
-	<VALUE>6</VALUE>
+	<VALUE>0</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="ReorientAfterFindSymmetry">
 	<VALUE>1</VALUE>

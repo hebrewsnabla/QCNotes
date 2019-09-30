@@ -26,7 +26,7 @@
 	<VALUE>false</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="NudgeAngle">
-	<VALUE>1.</VALUE>
+	<VALUE>10.</VALUE>
 	</PROPERTY>
 	<PROPERTY NAME="NudgeDistance">
 	<VALUE>0.1</VALUE>

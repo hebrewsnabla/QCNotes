@@ -62,14 +62,52 @@
       <ID>{FA2E36EE-AD2D-4853-ADC5-D56A6D75ABFD}</ID>
       <Paths>1</Paths>
       <URL>.\3D Atomistic.xsd</URL>
+      <Property>
+        <Name>Visible</Name>
+        <Type>11</Type>
+        <Value>-1</Value>
+      </Property>
     </Document>
     <Document>
       <ID>{F3B46BB9-2B36-4E2B-8D3E-FFB2FF59F2D4}</ID>
       <Paths>1</Paths>
       <URL>.\Ni_mm_s.xsd</URL>
+      <Property>
+        <Name>Visible</Name>
+        <Type>11</Type>
+        <Value>-1</Value>
+      </Property>
     </Document>
   </DocumentManager>
   <ViewRegistry>
+    <Frame>
+      <Active>true</Active>
+      <Left>0</Left>
+      <Top>0</Top>
+      <Width>838</Width>
+      <Height>606</Height>
+      <Maximized>false</Maximized>
+      <Minimized>false</Minimized>
+      <View>
+        <Active>true</Active>
+        <DocumentID>{FA2E36EE-AD2D-4853-ADC5-D56A6D75ABFD}</DocumentID>
+        <Type>SVViewer3D.Viewer3DControl</Type>
+      </View>
+    </Frame>
+    <Frame>
+      <Active>false</Active>
+      <Left>343</Left>
+      <Top>316</Top>
+      <Width>838</Width>
+      <Height>293</Height>
+      <Maximized>false</Maximized>
+      <Minimized>false</Minimized>
+      <View>
+        <Active>true</Active>
+        <DocumentID>{F3B46BB9-2B36-4E2B-8D3E-FFB2FF59F2D4}</DocumentID>
+        <Type>SVViewer3D.Viewer3DControl</Type>
+      </View>
+    </Frame>
   </ViewRegistry>
   <DocumentEventManager>
   </DocumentEventManager>
