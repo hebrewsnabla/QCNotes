@@ -49,29 +49,28 @@
 
 \section{Non-polarized Water}
 \begin{frame}
-\frametitle{}
+\frametitle{Non-polarized Water}
 \begin{figure}[H]
-	\includegraphics[width=0.4\linewidth]{../CMS/w1.png}
+	\includegraphics[width=0.2\linewidth]{../CMS/w1w.png}
 \end{figure}
 \begin{table}[H]
 	\begin{tabular}{cccc}
 		\hline
 		Atom charges & Mulliken & NPA & ESP(MK) \\ \hline
-		O &-0.642 & -1.011 & -0.877  \\
-		H &0.295 & 0.486 & 0.449   \\
-		H &0.274 & 0.483 & 0.379   \\
-		\hline
-		dipole & & & \\
+		O &-0.603 & -0.936 & -0.724  \\
+		H &0.302 & 0.468 & 0.362   \\
+		H &0.302 & 0.468 & 0.362   \\
 		\hline
 	\end{tabular}
-	\caption{Atomic charges on each atom of non-polarized water}
+	\caption{Atomic charges (a.u.) on each atom of non-polarized water}
+	\label{key}
 \end{table}
-All results are calculated under M06-2X/def2-QZVP
+All results are calculated under M06-2X/def2-QZVP with Gaussian16.
 \end{frame}
 \section{Polarized Water}
 
 \begin{frame}
-\frametitle{Configuration I}
+\frametitle{Case I}
 \begin{figure}[H]
 	\includegraphics[width=0.4\linewidth]{../CMS/w3bwhite.png}
 \end{figure}
@@ -83,15 +82,14 @@ All results are calculated under M06-2X/def2-QZVP
 		H &0.295 & 0.486 & 0.449   \\
 		H &0.274 & 0.483 & 0.379   \\
 		\hline
-		dipole & & & \\
-		\hline
 	\end{tabular}
-	\caption{Atomic charges on each atom of polarized water}
+	\caption{Atomic charges (a.u.) on each atom of polarized water, Case I}
+	\label{key}
 \end{table}
 \end{frame}
 
 \begin{frame}
-\frametitle{Configuration II}
+\frametitle{Case II}
 \begin{figure}[H]
 	\includegraphics[width=0.4\linewidth]{../CMS/w3cw.png}
 \end{figure}
@@ -103,23 +101,83 @@ All results are calculated under M06-2X/def2-QZVP
 		H &0.353 & 0.496 & 0.358   \\
 		H &0.352 & 0.495 & 0.341   \\
 		\hline
-		dipole & & & \\
+	\end{tabular}
+	\caption{Atomic charges (a.u.) on each atom of polarized water, Case II}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Case III -- with Background Charges}
+\begin{figure}[H]
+	\includegraphics[width=0.6\linewidth]{../CMS/w1bqw.png}
+\end{figure}
+\begin{table}[H]
+	\begin{tabular}{cccc}
+		\hline
+		Atom charges & Mulliken & NPA & ESP(MK) \\ \hline
+		O & -0.365 & -0.787 & -0.523  \\
+		H & 0.720 & 0.647 & 0.725  \\
+		H & -0.354 & 0.139 & -0.202   \\
 		\hline
 	\end{tabular}
-	\caption{Atomic charges on each atom of polarized water}
+	\caption{Atomic charges (a.u.) on each atom of polarized water, Case III}
 \end{table}
 \end{frame}
 
 
-\section{第二章标题}
+
+\section{Solvated Water}
+\begin{frame}
+\frametitle{Case IV -- Solvated Water}
+%\vspace{-10pt}
+%\begin{figure}[H]
+%	%\includegraphics[width=0.1\linewidth]{../CMS/w1w.png}%
+%	%\includegraphics[width=0.4\linewidth]{../CMS/w3bw2.png}
+%	%\includegraphics[width=0.3\linewidth]{../CMS/w3cw2.png}
+%	\includegraphics[width=0.35\linewidth]{../CMS/w1bqw2.png}
+%\end{figure}
+\begin{table}[H]
+	\begin{tabular}{cccc}
+		\hline
+		Atom charges & Mulliken & NPA & ESP(MK) \\ \hline
+		O & -0.640 & -0.950 & -0.763  \\
+		H & 0.320 & 0.475 & 0.381  \\
+		H & 0.320 & 0.475 & 0.381   \\
+		\hline
+	\end{tabular}
+	\caption{Atomic charges (a.u.) on each atom of water in cyclohexane solvent (PCM model)}
+\end{table}
+The results show that water molecule is a little bit more polarized in cyclohexane.
+\end{frame}
+
+\section{Summary}
+\begin{frame}
+\frametitle{Summary}
+\vspace{-10pt}
+\begin{figure}[H]
+	%\includegraphics[width=0.1\linewidth]{../CMS/w1w.png}
+	\includegraphics[width=0.4\linewidth]{../CMS/w3bw2.png}
+	\includegraphics[width=0.3\linewidth]{../CMS/w3cw2.png}
+	\includegraphics[width=0.35\linewidth]{../CMS/w1bqw2.png}
+\end{figure}
+\begin{table}[H]
+	\begin{tabular}{cccccc}
+		\hline
+		Atom & non-polarized & I & II & III & IV\\ \hline
+		O &0	&-0.153	&0.174	&0.201  & -0.039\\
+		H &0	&0.087	&-0.004	&0.363  & 0.019\\
+		H &0	&0.017	&-0.021	&-0.564 & 0.019\\		
+		\hline
+	\end{tabular}
+	\caption{changes of ESP charges on each atom (set non-polarized results as zero)}
+\end{table}
+\end{frame}
 
 
-
-
-\begin{frame}[c, plain]
+\begin{frame}
   \begin{center}
-    \Huge{\texttt{\textbf{Thank you!}}}\\[0.5cm]
-    Q\&A
+    \Huge{\texttt{\textbf{Thank You}}}\\[0.5cm]
+    %Q\&A
   \end{center}
 \end{frame}
 
