@@ -440,7 +440,53 @@ a_1(t)\Braket{\psi_2 | \hH^{(1)} | \Psi_1} + a_2(t)\Braket{\psi_2 | \hH^{(1)} | 
 \subsection{}
 \subsection{The Magnetic Field Acting upon Nuclei in Mols Is Shielded}
 \subsection{Chemical Shifts Depend upon the Chemical Environment of the Nucleus}
+\subsection{Spin-Spin Coupling}
+\begin{equation}\label{key}
+\hH = -\gamma B_0(1-\sigma_1)\hat{\vb{I}}_{z1} -\gamma B_0(1-\sigma_2)\hat{\vb{I}}_{z2} + {2\pi J_{12}}\hat{\vb{I}}_1 \cdot \hat{\vb{I}}_2
+\end{equation}
+\begin{equation}\label{key}
+\hH^{(0)} = -\gamma B_0(1-\sigma_1)\hat{\vb{I}}_{z1} -\gamma B_0(1-\sigma_2)\hat{\vb{I}}_{z2} \quad \hH^{(1)} {2\pi J_{12}}\hat{\vb{I}}_1 \cdot \hat{\vb{I}}_2
+\end{equation}
+\begin{align}
+\psi_1^{(0)} &= \alpha(1)\alpha(2) & \psi_2^{(0)} &= \beta(1)\alpha(2)\\
+\psi_3^{(0)} &= \alpha(1)\beta(2) & \psi_4^{(0)} &= \beta(1)\beta(2)
+\end{align}
+\begin{align}
+E_1^{(0)} &= -\gamma B_0\qty(1 - \dfrac{\sigma_1 + \sigma_2}{2}) &
+E_2^{(0)} &= -\gamma B_0(\sigma_1 - \sigma_2)\\
+E_3^{(0)} &= \gamma B_0(\sigma_1 - \sigma_2) &
+E_4^{(0)} &= \gamma B_0\qty(1 - \dfrac{\sigma_1 + \sigma_2}{2})
+\end{align}
+perturbed to 1st order
+\begin{align}
+E_1 &= -\gamma B_0\qty(1 - \dfrac{\sigma_1 + \sigma_2}{2}) + \dfrac{2\pi J_{12}}{4} \\
+E_2 &= -\gamma B_0(\sigma_1 - \sigma_2) - \dfrac{2\pi J_{12}}{4}\\
+E_3 &= \gamma B_0(\sigma_1 - \sigma_2) - \dfrac{2\pi J_{12}}{4} \\
+E_4 &= \gamma B_0\qty(1 - \dfrac{\sigma_1 + \sigma_2}{2}) + \dfrac{2\pi J_{12}}{4}
+\end{align}
+Since
+\begin{equation}\label{key}
+\nu_0 = \dfrac{\gamma B_0}{2\pi}
+\end{equation}
+\begin{align}
+\nu_{1\ra 2} &= \nu_0(1 - \sigma_1) - \dfrac{J_{12}}{2}\\
+\nu_{1\ra 3} &= \nu_0(1 - \sigma_2) - \dfrac{J_{12}}{2}\\
+\nu_{2\ra 4} &= \nu_0(1 - \sigma_2) + \dfrac{J_{12}}{2}\\
+\nu_{3\ra 4} &= \nu_0(1 - \sigma_1) + \dfrac{J_{12}}{2}
+\end{align}
 
+\subsection{Spin-Spin Coupling Between Chemically Equivalent Protons}
 
+\subsection{The $ n+1 $ Rule}
+
+\subsection{2nd-Order Spectra}
+Only for the case in which 
+\begin{equation}\label{key}
+J << \nu_0\abs{\sigma_1 - \sigma_2}
+\end{equation}
+the $ n+1 $ spectra.
+
+\section{Lasers, Laser Spectroscopy and Photochemistry}
+\subsection{}
 
 \end{document}
