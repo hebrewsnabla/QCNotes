@@ -285,10 +285,45 @@ i.e.
 \end{align}
 
 \ex{37}
+\begin{align}
+I_{xx} &= \sum_j m_j y_j^2 = m + 2m\sin^2 30\textdegree = \dfrac{3}{2}m\\
+I_{yy} &= \sum_j m_j x_j^2 = 0 + 2m\cos^2 30\textdegree = \dfrac{3}{2}m\\
+I_{zz} &= \sum_j m_j( x_j^2 + y_j^2) = m + m + m = 3m
+\end{align}
 
 \ex{40}
+Eq 13.55 reads
+\begin{equation}\label{key}
+a_2(t) \approx (\mu_z)_{12}E_{0z}\qty[\dfrac{1 - \e^{\I(E_2-E_1+h\nu)t/\hbar}}{E_2 - E_1 + h\nu} + \dfrac{1 - \e^{\I(E_2-E_1-h\nu)t/\hbar}}{E_2 - E_1 - h\nu}]
+\end{equation}
+The second term dominates when $ E_2 - E_1 \approx h\nu $, thus
+\begin{align}
+a_2(t) &\approx \dfrac{1 - \e^{\I(E_2-E_1-h\nu)t/\hbar}}{E_2 - E_1 - h\nu}\\
+a_2(t)^* &\approx \dfrac{1 - \e^{-\I(E_2-E_1-h\nu)t/\hbar}}{E_2 - E_1 - h\nu}
+\end{align}
+$ \therefore $
+\begin{align}
+a_2^*(t)a_2(t) &\approx \dfrac{1 - \e^{\I(E_2-E_1-h\nu)t/\hbar} - \e^{-\I(E_2-E_1-h\nu)t/\hbar} + 1}{(E_2 - E_1 - h\nu)^2}\notag\\
+&\approx \dfrac{2 - 2\cos\dfrac{(E_2-E_1-h\nu)t}{\hbar}}{(E_2 - E_1 - h\nu)^2}\notag\\
+&\approx \dfrac{\sin^2\dfrac{(E_2-E_1-h\nu)t}{2\hbar}}{(E_2 - E_1 - h\nu)^2} \notag\\
+&\approx \dfrac{\sin^2\dfrac{(E_2-E_1-\hbar\omega)t}{2\hbar}}{(E_2 - E_1 - \hbar\omega)^2} 
+\end{align}
 
 \ex{43}
+\begin{align}
+I_{0\ra 1} &\approx \intdinf \psi_1(\xi)\xi\psi_0(\xi) = \sqrt{\dfrac{2a}{\pi}}\intdinf \xi^2 \e^{-\xi^2}\dd\xi \notag\\
+&= \sqrt{\dfrac{2\alpha}{\pi}} \dfrac{\sqrt{\pi}}{2} \notag\\
+&= \sqrt{\dfrac{\alpha}{2}} 
+\end{align}
+\begin{align}
+I_{1\ra 2} &\approx \intdinf \psi_2(\xi)\xi\psi_1(\xi) = \sqrt{\dfrac{a}{\pi}}\intdinf \xi^2(2\xi^2 - 1) \e^{-\xi^2}\dd\xi \notag\\
+&= \sqrt{\dfrac{\alpha}{\pi}} \sqrt{\pi} \notag\\
+&= \sqrt{\alpha}
+\end{align}
+thus
+\begin{equation}\label{key}
+\dfrac{I_{0\ra 1}}{I_{1\ra 2}} = \dfrac{1}{\sqrt{2}}
+\end{equation}
 
 \ex{45}
 
