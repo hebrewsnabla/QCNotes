@@ -159,6 +159,10 @@
 
 %%% APC
 \DeclareMathOperator{\hR}{\hat{\vb{R}}}
+\DeclareMathOperator{\trans}{\mathrm{trans}}
+\DeclareMathOperator{\rot}{\mathrm{rot}}
+\DeclareMathOperator{\vib}{\mathrm{vib}}
+\DeclareMathOperator{\elec}{\mathrm{elec}}
 
 \newcommand{\dis}{\displaystyle}
 \numberwithin{equation}{section}
@@ -556,7 +560,33 @@ Q(N,V,T) = \dfrac{q(V,T)^N}{N!}
 \section{Partition Functions and Ideal Gases}
 \subsection{The Translational PF of Monatomic Ideal Gas}
 \begin{equation}\label{key}
-q_{trans} = \qty(\dfrac{2\pi m \kB T}{h^2})^{3/2} T
+q_{\trans} = \qty(\dfrac{2\pi m \kB T}{h^2})^{3/2} T
+\end{equation}
+
+\subsection{The Electronic PF}
+
+\subsection{}
+
+\subsection{The Rotational PF}
+\begin{equation}\label{key}
+q_{\rot} = \sum_{J=0} (2J+1)\e^{-J(J+1)\Theta_{\rot}/T}
+\end{equation}
+where
+\begin{equation}\label{key}
+\Theta_{rot} = \dfrac{\hbar^2}{2I\kB}
+\end{equation}
+At low $ \Theta_{\rot} $
+\begin{equation}\label{key}
+q_{\rot} = ... = \dfrac{T}{\Theta_{\rot}}
+\end{equation}
+
+\paragraph{Symmetry Number}
+\begin{equation}\label{key}
+q_{\rot} = \dfrac{T}{\sigma \Theta_{\rot}}
+\end{equation}
+Spherical top
+\begin{equation}\label{key}
+q_{\rot} = \dfrac{\sqrt{\pi}}{\sigma}\qty(\dfrac{T}{\Theta_{\rot}})^{3/2}
 \end{equation}
 
 
