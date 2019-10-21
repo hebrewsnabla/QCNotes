@@ -151,18 +151,19 @@
 %\newcommand{\G}[2]{g^{#1#2}}
 
 \newcommand{\subsbul}{\subsection*{$ \bullet $}}
-\newcommand{\ex}[1]{\paragraph{13-#1}}
+\newcommand{\ex}[1]{\paragraph{14-#1}}
 \newcommand{\subex}[1]{\subparagraph{#1}}
 \newcommand{\dis}{\displaystyle}
 \newcommand{\iden}{{\large \bm{1}}}
 \newcommand{\qed}{$ \Square $}
 \newcommand{\tPhi}{\tilde{\Phi} }
 \DeclareMathOperator{\au}{\mathrm{a.u.}}
+\newcommand{\ntg}{\notag\\}
 
 \numberwithin{equation}{section}
 %\setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}
-%\allowdisplaybreaks[4]
+\allowdisplaybreaks[4]
 
 \usepackage{xcolor}
 \definecolor{codegray}{gray}{0.9}
@@ -187,237 +188,147 @@
 
 %\newpage
 
-\setcounter{section}{12}
-\section{Molecular Spectroscopy}
-3, 7, 14, 18, 24, 28, 32, 37, 40, 43, 45, 51\\
-\ex{3}
+\setcounter{section}{13}
+\section{Nuclear Magnetic Resonance Spectroscopy}
+6,14,19,23,30,34,36,39\\
+\ex{6}
+On a 60-MHz instrument,
 \begin{equation}\label{key}
-\mu = \dfrac{1.01 \cross 126.9}{1.01 + 126.9}\cross \num{1823}\au = \num{1.827e3}\au
+\nu - \nu_{\text{TMS}} = \delta\nu_{\text{spectrometer}}\cross 10^{-6} = \num{8.0e-6}\cross\SI{60}{MHz} =  \SI{480}{Hz} 
 \end{equation}
-\begin{align}\label{key}
-\tilde{B} &= \dfrac{\hbar}{4\pi c\mu R_e^2} = \dfrac{1}{4\pi\cross 137 \cross \num{1.827e3}}\au \cross\dfrac{1}{(\SI{160.4}{pm})^2}\notag\\
-&= \SI{1.682e-5}{pm}\cross\dfrac{1}{(\SI{160.4}{pm})^2}\notag\\
-&= \SI{6.54}{cm^{-1}}
-\end{align}
-\begin{align}
-c\tilde{B} = \SI{3e8}{m.Hz}\cross\SI{6.54e2}{m^{-1}} = \SI{1.96e5}{MHz}
-\end{align}
-\ex{7}
+On a 270-MHz instrument,
 \begin{equation}\label{key}
-\mu = \dfrac{38.96\cross 34.97}{38.96 + 34.97}\si{amu} = \SI{18.44}{amu} = \SI{3.06e-26}{kg}
+\nu - \nu_{\text{TMS}} = \delta\nu_{\text{spectrometer}}\cross 10^{-6} = \num{8.0e-6}\cross\SI{270}{MHz} =  \SI{2160}{Hz} 
 \end{equation}
-\begin{equation}\label{key}
-k = \mu(2\pi c \tilde{\nu})^2 = \num{3.06e-26} (2\pi \cross\num{3e8}\cross 27800)^2 = \SI{84.0}{N.m}
-\end{equation}
-\begin{equation}\label{key}
-T = \dfrac{1}{c\tilde{\nu}} = \dfrac{1}{\num{3e8}\cross 27800} = \SI{1.20e-13}{s}
-\end{equation}
+
 \ex{14}
-\begin{align}
-R(0) &= \tilde{\nu} + 2\tilde{B}_1 = \SI{2642.60}{cm^{-1}}\\
-R(1) &= \tilde{\nu} - 2\tilde{B}_0 + 6\tilde{B}_1 = \SI{2658.36}{cm^{-1}}\\
-P(0) &= \tilde{\nu} - 2\tilde{B}_0 = \SI{2609.67}{cm^{-1}}\\
-P(1) &= \tilde{\nu} - 6\tilde{B}_0 - 2\tilde{B}_1 = \SI{2592.51}{cm^{-1}}
-\end{align}
-thus
-\begin{align}
-\tilde{B}_1 &= \SI{8.12}{cm^{-1}}\\
-\tilde{B}_0 &= \SI{8.35}{cm^{-1}}
-\end{align}
-Then
-\begin{align}
-\tilde{B}_1 &= \tilde{B}_e - \dfrac{1}{2}\tilde{\alpha}_e = \SI{8.12}{cm^{-1}}\\
-\tilde{B}_0 &= \tilde{B}_e - \dfrac{3}{2}\tilde{\alpha}_e = \SI{8.35}{cm^{-1}}
-\end{align}
-$ \therefore $
-\begin{align}
-\tilde{B}_e &= \SI{8.47}{cm^{-1}}\\
-\tilde{\alpha}_e &= \SI{0.23}{cm^{-1}}
-\end{align}
-\ex{18}
-Since
-\begin{equation}\label{key}
-\tilde{\nu}(J\ra J+1) = 2\tilde{B}(J+1) - 4\tilde{D}(J+1)^3
-\end{equation}
-we can fit the $ \tilde{\nu}\sim J+1 $ curve as follows
+~\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{chap13-18.jpg}
+	\includegraphics[width=0.4\linewidth]{chap14-14.png}
 \end{figure}
-and thus
+
+\ex{19}
 \begin{align}
-2\tilde{B} &= \SI{3.845}{cm^{-1}}\\
--4\tilde{D} &= \SI{-2.555e-5}{cm^{-1}}
+\hI_+\hI_- &= (\hI_x + \I\hI_y)(\hI_x - \I\hI_y) \notag\\
+&= \hI_x^2 + \hI_y^2 - \I[\hI_x,\hI_y] \ntg
+&= \hI^2 - \hI_z^2 + \hbar\hI_z
 \end{align}
-i.e.
 \begin{align}
-\tilde{B} &= \SI{1.923}{cm^{-1}}\\
-\tilde{D} &= \SI{6.388e-6}{cm^{-1}}
+\hI_-\hI_+ &= (\hI_x - \I\hI_y)(\hI_x + \I\hI_y) \ntg
+&= \hI_x^2 + \hI_y^2 + \I[\hI_x,\hI_y] \ntg
+&= \hI^2 - \hI_z^2 - \hbar\hI_z
 \end{align}
 
-\ex{32}
+\ex{23}
+\begin{align}
+E_j = E_j^{(0)} + H_{jj}^{(1)} = E_i^{(0)} + H_{x,jj}^{(1)} + H_{y,jj}^{(1)} + H_{z,jj}^{(1)} 
+\end{align}
 Since
-\begin{equation}\label{key}
-\tilde{\nu}_{\text{obs}} = \tilde{T}_e + \qty(\dfrac{1}{2}\tilde{\nu}_e' - \dfrac{1}{4}\tilde{x}_e'\tilde{\nu}_e') - \qty(\dfrac{1}{2}\tilde{\nu}_e'' - \dfrac{1}{4}\tilde{x}_e''\tilde{\nu}_e'') + \qty(\tilde{\nu}_e' - \tilde{x}_e'\tilde{\nu}_e')v' - \tilde{x}_e'\tilde{\nu}_e'v'^2
-\end{equation}
-Rewrite that as
-\begin{equation}\label{key}
-\tilde{\nu}_{\text{obs}}(v') = A + Bv' + Cv'^2
-\end{equation}
-thus we can fit the data as
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.5\linewidth]{chap13-32.jpg}
-\end{figure}
+\begin{align}
+E_1^{(0)} &= -\gamma B_0\qty(1 - \dfrac{\sigma_1 + \sigma_2}{2}) \\
+E_2^{(0)} &= -\gamma B_0(\sigma_1 - \sigma_2) \\
+E_3^{(0)} &= \gamma B_0(\sigma_1 - \sigma_2) \\
+E_4^{(0)} &= \gamma B_0\qty(1 - \dfrac{\sigma_1 + \sigma_2}{2}) 
+\end{align}
 and
-\begin{equation}\label{key}
-\tilde{\nu}_{\text{obs}}(v') = 14020.1 + 257.114 v' + 1.57143 v'^2
-\end{equation}
-thus
 \begin{align}
-(\tilde{\nu}_e' - \tilde{x}_e'\tilde{\nu}_e') &= \SI{257.114}{cm^{-1}}\\
-\tilde{x}_e'\tilde{\nu}_e' &= \SI{-1.57143}{cm^{-1}}
-\end{align}
-i.e.
-\begin{align}
-\tilde{\nu}_e' &= \SI{255.542}{cm^{-1}}\\
-\tilde{x}_e'\tilde{\nu}_e' &= \SI{-1.571}{cm^{-1}}
-\end{align}
-
-\ex{37}
-\begin{align}
-I_{xx} &= \sum_j m_j y_j^2 = m + 2m\sin^2 30\textdegree = \dfrac{3}{2}m\\
-I_{yy} &= \sum_j m_j x_j^2 = 0 + 2m\cos^2 30\textdegree = \dfrac{3}{2}m\\
-I_{zz} &= \sum_j m_j( x_j^2 + y_j^2) = m + m + m = 3m
-\end{align}
-
-\ex{40}
-Eq 13.55 reads
-\begin{equation}\label{key}
-a_2(t) \approx (\mu_z)_{12}E_{0z}\qty[\dfrac{1 - \e^{\I(E_2-E_1+h\nu)t/\hbar}}{E_2 - E_1 + h\nu} + \dfrac{1 - \e^{\I(E_2-E_1-h\nu)t/\hbar}}{E_2 - E_1 - h\nu}]
-\end{equation}
-The second term dominates when $ E_2 - E_1 \approx h\nu $, thus
-\begin{align}
-a_2(t) &\approx \dfrac{1 - \e^{\I(E_2-E_1-h\nu)t/\hbar}}{E_2 - E_1 - h\nu}\\
-a_2(t)^* &\approx \dfrac{1 - \e^{-\I(E_2-E_1-h\nu)t/\hbar}}{E_2 - E_1 - h\nu}
-\end{align}
-$ \therefore $
-\begin{align}
-a_2^*(t)a_2(t) &\approx \dfrac{1 - \e^{\I(E_2-E_1-h\nu)t/\hbar} - \e^{-\I(E_2-E_1-h\nu)t/\hbar} + 1}{(E_2 - E_1 - h\nu)^2}\notag\\
-&\approx \dfrac{2 - 2\cos\dfrac{(E_2-E_1-h\nu)t}{\hbar}}{(E_2 - E_1 - h\nu)^2}\notag\\
-&\approx \dfrac{\sin^2\dfrac{(E_2-E_1-h\nu)t}{2\hbar}}{(E_2 - E_1 - h\nu)^2} \notag\\
-&\approx \dfrac{\sin^2\dfrac{(E_2-E_1-\hbar\omega)t}{2\hbar}}{(E_2 - E_1 - \hbar\omega)^2} 
-\end{align}
-
-\ex{43}
-\begin{align}
-I_{0\ra 1} &\approx \intdinf \psi_1(\xi)\xi\psi_0(\xi) = \sqrt{\dfrac{2a}{\pi}}\intdinf \xi^2 \e^{-\xi^2}\dd\xi \notag\\
-&= \sqrt{\dfrac{2\alpha}{\pi}} \dfrac{\sqrt{\pi}}{2} \notag\\
-&= \sqrt{\dfrac{\alpha}{2}} 
-\end{align}
-\begin{align}
-I_{1\ra 2} &\approx \intdinf \psi_2(\xi)\xi\psi_1(\xi) = \sqrt{\dfrac{a}{\pi}}\intdinf \xi^2(2\xi^2 - 1) \e^{-\xi^2}\dd\xi \notag\\
-&= \sqrt{\dfrac{\alpha}{\pi}} \sqrt{\pi} \notag\\
-&= \sqrt{\alpha}
-\end{align}
-thus
-\begin{equation}\label{key}
-\dfrac{I_{0\ra 1}}{I_{1\ra 2}} = \dfrac{1}{\sqrt{2}}
-\end{equation}
-
-\ex{45}
-$ \ce{CH_2Cl_2} $ belongs to $ C_{2v} $ group, thus
-\begin{table}[H]
-	\centering
-	\begin{tabular}{c|cccc}
-		   & $ \hat{E} $ & $ \hat{C}_2 $ & $ \hat\sigma_v $ & $ \hat\sigma_v' $\\ \hline
-		$ \Gamma $ & 15 & -1 & 3 & 3
-	\end{tabular}
-\end{table}
-\begin{align}
-a_{A_1} &= \dfrac{1}{4}(15 - 1 + 3 + 3) = 5\\
-a_{A_2} &= \dfrac{1}{4}(15 - 1 - 3 - 3) = 2\\
-a_{B_1} &= \dfrac{1}{4}(15 + 1 + 3 - 3) = 4\\
-a_{B_2} &= \dfrac{1}{4}(15 + 1 - 3 + 3) = 4
-\end{align}
-$ \therefore $
-\begin{equation}\label{key}
-\Gamma_{3N} = 5A_1 + 2A_2 + 4B_1 + 4B_2
-\end{equation}
-Since 
-\begin{align}
-\Gamma_{\text{trans}} &= A_1 + B_1 + B_2\\
-\Gamma_{\text{rot}} &= A_2 + B_1 + B_2 
+H_{x,jj}^{(1)} &= H_{y,jj}^{(1)} = 0\\
+H_{z,11}^{(1)} &= H_{z,44}^{(1)} = \dfrac{hJ_{12}}{4}\\
+H_{z,22}^{(1)} &= H_{z,33}^{(1)} = -\dfrac{hJ_{12}}{4}
 \end{align}
 we have
-\begin{equation}\label{key}
-\Gamma_{\text{vib}} = 4A_1 + A_2 + 2B_1 + 2B_2
-\end{equation}
-and the $ A_2 $ vibrational mode is infrared inactive and the others are infrared active.
-
-\ex{51}
-Construct Cartesian coordinates as below,
-\begin{multicols}{2}
-	\begin{figure}[H]
-		\includegraphics[width=\linewidth]{chap13-51.png}
-	\end{figure}
-    \columnbreak
-    \vspace{5pt}~\\
-    \begin{table}[H]
-    	\centering
-    	\begin{tabular}{cccc}
-    		\hline
-    		& x & y & z\\ \hline
-    		C & 0.0 & 0.0 & 0.0\\
-    		O & 43.1 & 112.2 & 0.0\\
-    		O & 75.5 & -111.1 & 0.0\\
-    		H & -109.7 & 0.0 & 0.0\\
-    		\hline
-    	\end{tabular}
-    	\caption{the coordinates (\si{pm}) of each atom}
-    \end{table}
-\end{multicols}
-thus the coordinates of center of mass is
-\begin{equation}\label{key}
-\vb{r}_{CoM} = (39.7, 0.4, 0.0)
-\end{equation}
-Recenter the frame to CoM frame, we get
-\begin{table}[H]
-	\centering
-	\begin{tabular}{cccc}
-		\hline
-		& x & y & z\\ \hline
-		C & -39.7 & -0.4 & 0.0\\
-		O & 3.4 & 111.8 & 0.0\\
-		O & 40.2 & -111.5 & 0.0\\
-		H & -149.4 & -0.4 & 0.0\\
-		\hline
-	\end{tabular}
-	%\caption{the coordinates (\si{pm}) of each atom in CoM frame}
-\end{table}
-thus
 \begin{align}
-I_{xx} &= \sum_i m_i(y_i^2 + z_i^2) = \SI{3.98e5}{amu.pm^2}\\
-I_{yy} &= \sum_i m_i(x_i^2 + z_i^2) = \SI{6.74e4}{amu.pm^2}\\
-I_{zz} &= \sum_i m_i(x_i^2 + y_i^2) = \SI{4.65e5}{amu.pm^2}\\
-I_{xy} &= -\sum_i m_i x_i y_i = \SI{-6.53e4}{amu.pm^2}\\
-I_{xz} &= I_{yz} = 0
+E_1 &= -h\nu_0\qty(1 - \dfrac{\sigma_1 + \sigma_2}{2}) + \dfrac{h J_{12}}{4} \\
+E_2 &= -h\nu_0(\sigma_1 - \sigma_2) - \dfrac{h J_{12}}{4}\\
+E_3 &= h\nu_0(\sigma_1 - \sigma_2) - \dfrac{h J_{12}}{4} \\
+E_4 &= h\nu_0\qty(1 - \dfrac{\sigma_1 + \sigma_2}{2}) + \dfrac{h J_{12}}{4}
+\end{align}
+
+\ex{30}
+\begin{align}
+H_{44} &= -\hbar\gamma B_0\Braket{\beta(1)\beta(2) | (1-\sigma_1)\hI_{z1} + (1-\sigma_2)\hI_{z2} | \beta(1)\beta(2)} 
++ \dfrac{hJ_{12}}{\hbar^2}\Braket{\beta(1)\beta(2) | \hI_1\cdot\hI_2 | \beta(1)\beta(2)} \ntg
+&= -\gamma B_0[(1-\sigma_1) + (1-\sigma_2)]\qty(-\dfrac{\hbar}{2}) + \dfrac{hJ_{12}}{\hbar^2}\dfrac{\hbar^2}{4} \ntg
+&= \dfrac{h\nu_0}{2}[(1-\sigma_1) + (1-\sigma_2)] + \dfrac{hJ_{12}}{4}
+\end{align}
+
+\ex{34}
+\begin{align}
+E_2 - E_1 &= -\dfrac{hJ}{4} 
+- \dfrac{h}{2}\sqrt{\nu_0^2(\sigma_1-\sigma_2)^2 + J^2} 
++ h\nu_0\qty(1 - \dfrac{\sigma_1+\sigma_2}{2}) - \dfrac{hJ}{4} \ntg
+&= -\dfrac{hJ}{2} - \dfrac{h}{2}\sqrt{\nu_0^2(\sigma_1-\sigma_2)^2 + J^2} 
++ \dfrac{h\nu_0}{2}(2 - \sigma_1 - \sigma_2)
 \end{align}
 thus
 \begin{equation}\label{key}
-\mqty| \num{3.98e5}-\lambda & \num{-6.53e5} & 0 \\
-       \num{-6.53e5} & \num{6.74e4}-\lambda & 0 \\
-       0 & 0 & \num{4.65e5}-\lambda | = 0
+\nu_{1\ra 2} = \dfrac{E_2 - E_1}{h} = -\dfrac{J}{2} - \dfrac{1}{2}\sqrt{\nu_0^2(\sigma_1-\sigma_2)^2 + J^2} 
++ \dfrac{\nu_0}{2}(2 - \sigma_1 - \sigma_2)
+\end{equation}
+
+\ex{36}
+~\\$ \bullet $ For $ \nu_0 = \SI{60}{MHz} $,
+\begin{align}
+\sqrt{\nu_0^2(\sigma_1-\sigma_2)^2 + J^2} = \sqrt{60^2\cross 0.12^2 + 8.0^2} = \SI{10.76}{Hz}
+\end{align}
+$ \therefore $
+\begin{align}
+\nu_{1\ra 2} &= \SI{60}{MHz} - \dfrac{1}{2}(8 + 10.76)\si{Hz} = \SI{60}{MHz} - \SI{9.38}{Hz} \\
+\nu_{1\ra 3} &= \SI{60}{MHz} - \dfrac{1}{2}(8 - 10.76)\si{Hz} = \SI{60}{MHz} + \SI{1.38}{Hz} \\
+\nu_{2\ra 4} &= \SI{60}{MHz} + \dfrac{1}{2}(8 + 10.76)\si{Hz} = \SI{60}{MHz} + \SI{9.38}{Hz} \\
+\nu_{3\ra 4} &= \SI{60}{MHz} + \dfrac{1}{2}(8 - 10.76)\si{Hz} = \SI{60}{MHz} - \SI{1.38}{Hz} \\
+\end{align}
+the relative intensity
+\begin{equation}\label{key}
+r = 2.25
 \end{equation}
 \begin{equation}\label{key}
-\lambda = \num{5.50e4}, \num{4.10e5}, \num{4.65e5}
+\dfrac{(r-1)^2}{(r+1)^2} = 0.15
 \end{equation}
-thus
-\begin{align}
-I_A &= \num{4.10e4}\\
-I_B &= \num{4.65e4}\\
-I_C &= \num{5.50e4}
-\end{align}
 
+$ \bullet $ For $ \nu_0 = \SI{500}{MHz} $,
+\begin{align}
+\sqrt{\nu_0^2(\sigma_1-\sigma_2)^2 + J^2} = \sqrt{500^2\cross 0.12^2 + 8.0^2} = \SI{60.5}{Hz}
+\end{align}
+$ \therefore $
+\begin{align}
+\nu_{1\ra 2} &= \SI{500}{MHz} - \dfrac{1}{2}(8 + 60.5)\si{Hz} = \SI{60}{MHz} - \SI{34.2}{Hz} \\
+\nu_{1\ra 3} &= \SI{500}{MHz} - \dfrac{1}{2}(8 - 60.5)\si{Hz} = \SI{60}{MHz} + \SI{26.2}{Hz} \\
+\nu_{2\ra 4} &= \SI{500}{MHz} + \dfrac{1}{2}(8 + 60.5)\si{Hz} = \SI{60}{MHz} + \SI{34.2}{Hz} \\
+\nu_{3\ra 4} &= \SI{500}{MHz} + \dfrac{1}{2}(8 - 60.5)\si{Hz} = \SI{60}{MHz} - \SI{26.2}{Hz} \\
+\end{align}
+the relative intensity
+\begin{equation}\label{key}
+r = 15.52
+\end{equation}
+\begin{equation}\label{key}
+\dfrac{(r-1)^2}{(r+1)^2} = 0.77
+\end{equation}
+
+\ex{39}
+The spin functions are
+\begin{align}
+\phi_1 &= \psi_1 = \alpha(1)\alpha(2) \\
+\phi_2 &= \dfrac{1}{\sqrt{2}}(\psi_2 - \psi_3) = \dfrac{1}{\sqrt{2}}(\alpha(1)\beta(2) - \beta(1)\alpha(2) \\
+\phi_3 &= \dfrac{1}{\sqrt{2}}(\psi_2 + \psi_3) = \dfrac{1}{\sqrt{2}}(\alpha(1)\beta(2) + \beta(1)\alpha(2) \\ 
+\phi_4 &= \psi_4 = \beta(1)\beta(2)
+\end{align}
+$ \therefore $(using atomic unit)
+\begin{align}
+P_{x,12} &= \Braket{\phi_2 | \hI_{x1} + \hI_{x2} | \phi_1} = \Braket{\dfrac{1}{\sqrt{2}}(\psi_2 - \psi_3) | \dfrac{1}{2}(\psi_2 + \psi_3)} = 0\\
+P_{y,12} &= \Braket{\phi_2 | \hI_{y1} + \hI_{y2} | \phi_1} = \Braket{\dfrac{1}{\sqrt{2}}(\psi_2 - \psi_3) | \dfrac{\I}{2}(\psi_2 + \psi_3)} = 0\\
+P_{x,13} &= \Braket{\phi_3 | \hI_{x1} + \hI_{x2} | \phi_1} = \Braket{\dfrac{1}{\sqrt{2}}(\psi_2 + \psi_3) | \dfrac{1}{2}(\psi_2 + \psi_3)} = \dfrac{1}{\sqrt{2}}\\
+P_{y,13} &= \Braket{\phi_3 | \hI_{y1} + \hI_{y2} | \phi_1} = \Braket{\dfrac{1}{\sqrt{2}}(\psi_2 + \psi_3) | \dfrac{\I}{2}(\psi_2 + \psi_3)} = \dfrac{\I}{\sqrt{2}}\\
+P_{x,14} &= \Braket{\phi_4 | \hI_{x1} + \hI_{x2} | \phi_1} = \Braket{\psi_4 | \dfrac{1}{2}(\psi_2 + \psi_3)} = 0\\
+P_{y,14} &= \Braket{\phi_4 | \hI_{y1} + \hI_{y2} | \phi_1} = \Braket{\psi_4 | \dfrac{\I}{2}(\psi_2 + \psi_3)} = 0\\
+P_{x,23} &= \Braket{\phi_3 | \hI_{x1} + \hI_{x2} | \phi_2} = \Braket{\psi_3 | 0} = 0\\
+P_{y,23} &= \Braket{\phi_3 | \hI_{y1} + \hI_{y2} | \phi_2} = \Braket{\psi_3 | 0} = 0\\
+P_{x,24} &= \Braket{\phi_4 | \hI_{x1} + \hI_{x2} | \phi_2} = \Braket{\psi_4 | 0} = 0\\
+P_{y,24} &= \Braket{\phi_4 | \hI_{y1} + \hI_{y2} | \phi_2} = \Braket{\psi_4 | 0} = 0\\
+P_{x,34} &= \Braket{\phi_4 | \hI_{x1} + \hI_{x2} | \phi_3} = \Braket{\psi_4 | \dfrac{1}{\sqrt{2}}(\psi_1 + \psi_4)} = \dfrac{1}{\sqrt{2}}\\
+P_{y,34} &= \Braket{\phi_4 | \hI_{y1} + \hI_{y2} | \phi_3} = \Braket{\psi_4 | \dfrac{\I}{\sqrt{2}}(\psi_1 + \psi_4)} = \dfrac{\I}{\sqrt{2}}
+\end{align}
+thus, only $ 1\ra 3 $ and $ 3\ra 4 $ are allowed.
 
 \end{document}

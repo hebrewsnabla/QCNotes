@@ -1,0 +1,38 @@
+/share/home/wli/.lsbatch/1571432791.213966: line 8: ./smd/ts_smd_benzene-nbo.sh: No such file or directory
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c48n10>
+Subject: Job 213966: <./smd/ts_smd_benzene-nbo.sh> in cluster <njucluster> Exited
+
+Job <./smd/ts_smd_benzene-nbo.sh> was submitted from host <c01n01> by user <wli> in cluster <njucluster> at Sat Oct 19 05:06:31 2019.
+Job was executed on host(s) <24*c48n10>, in queue <mpi>, as user <wli> in cluster <njucluster> at Sat Oct 19 05:06:31 2019.
+</share/home/wli> was used as the home directory.
+</share/home/wli/srwang/ICC/sn2/def2> was used as the working directory.
+Started at Sat Oct 19 05:06:31 2019.
+Terminated at Sat Oct 19 05:06:31 2019.
+Results reported at Sat Oct 19 05:06:31 2019.
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./smd/ts_smd_benzene-nbo.sh
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time :                                   0.03 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   0 sec.
+    Turnaround time :                            0 sec.
+
+The output (if any) is above this job summary.
+
