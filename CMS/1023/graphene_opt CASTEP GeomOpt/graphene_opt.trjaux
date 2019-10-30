@@ -1,0 +1,6 @@
+# Atom IDs to appear in any .trj file to be generated.
+# Correspond to atom IDs which will be used in exported .msi file
+# required for animation/analysis of trajectory within Cerius2.
+1
+2
+#Origin       0.702940566976349      -0.043615567737702  2.340493393469823e-015

@@ -15,7 +15,8 @@
 %	PACKAGES AND THEMES
 %----------------------------------------------------------------------------------------
 
-\documentclass[xcolor=table]{beamer}
+\documentclass[10pt,aspectratio=43,mathserif]{beamer}
+\usepackage{nju}			 %导入 nju 模板宏包
 %\usepackage[utf8]{inputenc}
 %\usepackage[UTF8]{ctex}
 %\usepackage{xeCJK}
@@ -26,7 +27,7 @@
 % which change the colors and layouts of slides. Below this is a list
 % of all the themes, uncomment each in turn to see what they look like.
 
-\usetheme{default}
+%\usetheme{default}
 %\usetheme{AnnArbor}
 %\usetheme{Antibes}
 %\usetheme{Bergen}
@@ -62,7 +63,7 @@
 %\usecolortheme{beaver}
 %\usecolortheme{beetle}
 %\usecolortheme{crane}
-\usecolortheme{dolphin}
+%\usecolortheme{dolphin}
 %\usecolortheme{dove}
 %\usecolortheme{fly}
 %\usecolortheme{lily}
@@ -83,17 +84,12 @@
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage[version=3]{mhchem}
 \usepackage{physics}
-%\usepackage{amsmath}
-%\usepackage{symbols}
-%\usepackage{AMSFonts}
-\usepackage{bm}
 \setlength{\parindent}{0pt}
-\usepackage{amsmath}
+
 %\usepackage{symbols}
-\usepackage{AMSFonts}
 %\usepackage{eucal}
 \usepackage{mathrsfs}
-\usepackage{amssymb}
+\usepackage{amsmath,amsfonts,amssymb,bm}   %导入数学公式所需宏包
 \usepackage{float}
 \usepackage{multicol}
 %\usepackage{abstract}
@@ -108,17 +104,19 @@
 %\usepackage{mathspec}
 %\usepackage{unicode-math}
 %\usepackage[table,xcdraw]{xcolor}
+\usepackage{color}
 
 %\setmonofont{}
 \newfontfamily\Consolas{Consolas}
 %\setsansfont{Arial} %设置英文字体 Monaco, Consolas,  Fantasque Sans Mono
 
-\setmainfont{Times New Roman}
-\setsansfont{Arial}
-\setmonofont{Courier New}
+
+%\setmainfont{Times New Roman}
+%\setsansfont{Arial}
+%\setmonofont{Courier New}
 \usepackage[indentfirst]{xeCJK}
-\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun}
-\setCJKsansfont{KaiTi}
+%\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun}
+%\setCJKsansfont{KaiTi}
 
 %\usepackage{palatino}
 \usepackage{tikz}
@@ -181,10 +179,10 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 
-\title[]{Theoretical Discussion on\\
+\title[]{An \textsl{Ab Initio} Discussion on\\
 	 Anomalous Nuclear Magnetic Moment} % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\author{Shirong Wang} % Your name
+\author{王石嵘\\161240065} % Your name
 \institute[] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {Kuang Yaming Honors School\\
 %Nanjing University \\ % Your institution for the title page
@@ -209,15 +207,68 @@
 %----------------------------------------------------------------------------------------
 
 \section{Introduction}
+\begin{frame}
+In Chapter 14 of our textbook, a brief introduction of NMR theory is given.\\
+Equation 14.8 gives a na\"ive magnetic moment
+\begin{equation}\label{key}
+\bm\mu = \mu_N\vb{I} = \dfrac{q}{2m_N}\vb{I}
+\end{equation}
+and Equation 14.9 modifies that by introducing $ g $-factor
+\begin{equation}\label{key}
+\bm\mu = g\mu_N\vb{I}
+\end{equation}
+or 
+\begin{equation}\label{key}
+\gamma = g\mu_N
+\end{equation}
+However, why should we introduce $ g $-factor, and can it be explained physically or calculated \textsl{ab initio}?
 
-\section{Correction via Dirac Equation}
-\begin{lstlisting}[language=Python]
-"""xxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"""
-\end{lstlisting}
-\section{Correction via QCD}
+\end{frame}
+
+\begin{frame}
+Nuclear Magnetic Moment, or $ g $-factor, can be measured by experiment, and won't vary in different chemical environments.\\
+~\\
+However, \textbf{why} the $ g $-factors look \textbf{"anomalous"}?
+\begin{table}
+	\centering
+	\begin{tabular}{ccccc}
+		\hline
+		& $ \ce{^1H} $ & $ \ce{^2H} $ & $ \ce{^7Li} $ & $ \ce{^19F} $ \\ \hline
+		$ g $ & 5.58 & 0.86 & 2.17 & 5.25 \\
+		$ \mu $(a.u.) & 2.79 & 0.86 & 3.25 & 2.63\\
+		\hline
+	\end{tabular}
+\end{table}
+\end{frame}
+
+%\section{Correction via Dirac Equation}
+%\begin{frame}
+%
+%\end{frame}
 
 
-\section{References}
+\section{\textsl{Ab Initio} Calculation via QCD}
+\begin{frame}
+\frametitle{\textsl{Ab Initio} Calculation of Proton Magnetic Moment}
+
+\iffalse
+{
+the magnetic moment of the proton differs from
+that expected for a point-like Dirac fermion.\\
+Since quarks are fundamental Dirac fermions, the operators for the total magnetic moment and z-component of the magnetic moment are
+\begin{align}
+\bm\mu = \dfrac{Q}{m}\vb{S} & \bm\mu_z = \dfrac{Q}{m}\vb{S}_z
+\end{align}
+thus
+\begin{align}
+\bm\mu_{u,z} &= \dfrac{2}{3}\dfrac{m_p}{m_u}\dfrac{1}{2} = 
+\end{align}
+}
+\fi
+\end{frame}
+
+
+%\section{References}
 
 %\bibliography{pre1}
 %\bibliographystyle{plain}

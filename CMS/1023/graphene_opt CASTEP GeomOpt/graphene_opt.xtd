@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XSD []>
+<XSD Version="7.0" WrittenBy="Materials Studio 7.0">
+	<AtomisticTreeRoot ID="1" NumProperties="58" NumChildren="1">
+		<Property Name="AngleAxisType" DefinedOn="AngleBetweenPlanesBender" Type="Enumerated"/>
+		<Property Name="AngleEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BeadDocumentID" DefinedOn="MesoMoleculeSet" Type="String"/>
+		<Property Name="BendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BendTorsionBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="BondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="EFGAsymmetry" DefinedOn="Atom" Type="Double"/>
+		<Property Name="EFGQuadrupolarCoupling" DefinedOn="Atom" Type="Double"/>
+		<Property Name="ElectrostaticEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="FaceMillerIndex" DefinedOn="GrowthFace" Type="MillerIndex"/>
+		<Property Name="FacetTransparency" DefinedOn="GrowthFace" Type="Float"/>
+		<Property Name="FermiLevel" DefinedOn="ScalarFieldBase" Type="Double"/>
+		<Property Name="Force" DefinedOn="Matter" Type="CoDirection"/>
+		<Property Name="FrameFilter" DefinedOn="Trajectory" Type="String"/>
+		<Property Name="HarmonicForceConstant" DefinedOn="HarmonicRestraint" Type="Double"/>
+		<Property Name="HarmonicMinimum" DefinedOn="HarmonicRestraint" Type="Double"/>
+		<Property Name="HydrogenBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ImportOrder" DefinedOn="Bondable" Type="UnsignedInteger"/>
+		<Property Name="InversionEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="IsBackboneAtom" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsChiralCenter" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsOutOfPlane" DefinedOn="Atom" Type="Boolean"/>
+		<Property Name="IsRepeatArrowVisible" DefinedOn="ElectrodeWire" Type="Boolean"/>
+		<Property Name="KineticEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="LineExtentPadding" DefinedOn="BestFitLineMonitor" Type="Double"/>
+		<Property Name="LinkageGroupName" DefinedOn="Linkage" Type="String"/>
+		<Property Name="ListIdentifier" DefinedOn="PropertyList" Type="String"/>
+		<Property Name="NMRShielding" DefinedOn="Atom" Type="Double"/>
+		<Property Name="NonBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="NormalMode" DefinedOn="Bondable" Type="Direction"/>
+		<Property Name="NormalModeFrequency" DefinedOn="Bondable" Type="Double"/>
+		<Property Name="NumScanSteps" DefinedOn="LinearScan" Type="UnsignedInteger"/>
+		<Property Name="OrbitalCutoffRadius" DefinedOn="Bondable" Type="Double"/>
+		<Property Name="PlaneExtentPadding" DefinedOn="BestFitPlaneMonitor" Type="Double"/>
+		<Property Name="PotentialEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="QuantizationValue" DefinedOn="ScalarFieldBase" Type="Double"/>
+		<Property Name="RelativeVelocity" DefinedOn="Matter" Type="Direction"/>
+		<Property Name="RepeatArrowScale" DefinedOn="ElectrodeWire" Type="Float"/>
+		<Property Name="RestraintEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ScanEnd" DefinedOn="LinearScan" Type="Double"/>
+		<Property Name="ScanStart" DefinedOn="LinearScan" Type="Double"/>
+		<Property Name="SeparatedStretchStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="SimulationStep" DefinedOn="Trajectory" Type="Integer"/>
+		<Property Name="StretchBendStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="StretchStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="StretchTorsionStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="Temperature" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ThreeBodyNonBondEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionBendBendEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TorsionStretchEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="TotalEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="Units" DefinedOn="ScalarFieldBase" Type="String"/>
+		<Property Name="ValenceCrossTermEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="ValenceDiagonalEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="VanDerWaalsEnergy" DefinedOn="ClassicalEnergyHolder" Type="Double"/>
+		<Property Name="_Stress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
+		<Property Name="_TrajectoryStress" DefinedOn="MatterSymmetrySystem" Type="Matrix"/>
+		<SymmetrySystem ID="2" Mapping="3" Children="4,5,6,7,8,9" Normalized="1" XYZ="0.168521956947829,0.30432311707145,-8.63145014500603e-017" OverspecificationTolerance="0.200000002980232" PeriodicDisplayType="In-Cell">
+			<MappingSet ID="10" SymmetryDefinition="9" ActiveSystem="2" NumFamilies="3" OwnsTotalConstraintMapping="1" TotalConstraintMapping="3">
+				<MappingFamily ID="11" NumImageMappings="144">
+					<IdentityMapping ID="12" Element="1,0,0,0,0,1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="6,7,8,9,13" NumDefects="5">
+						<DistanceStretcher ID="6" Parent="2" NumTriggerSets="2" Visible="0">
+							<RestrictableMonitorTriggerSet ID="14" Objects="15,16" ShouldAllowDeletions="0" EventMask="13" Properties="XYZ,XYZ"/>
+							<MonitorTriggerSet ID="17" ShouldDefineCommonRoot="0"/>
+						</DistanceStretcher>
+						<DistanceStretcher ID="7" Parent="2" NumTriggerSets="2" Visible="0">
+							<RestrictableMonitorTriggerSet ID="18" Objects="19,20" ShouldAllowDeletions="0" EventMask="13" Properties="XYZ,XYZ"/>
+							<MonitorTriggerSet ID="21" ShouldDefineCommonRoot="0"/>
+						</DistanceStretcher>
+						<DistanceStretcher ID="8" Parent="2" NumTriggerSets="2" Visible="0">
+							<RestrictableMonitorTriggerSet ID="22" Objects="15,19" ShouldAllowDeletions="0" EventMask="13" Properties="XYZ,XYZ"/>
+							<MonitorTriggerSet ID="23" ShouldDefineCommonRoot="0"/>
+						</DistanceStretcher>
+						<SpaceGroup ID="9" Parent="2" Children="13" Name="P6/MMM" XYZ="0.702940566976349,-0.043615567737702,2.34049339346982e-015" AVector="2.12999528346819,-1.22975335028299,2.22799245840438e-016" BVector="2.32418658528571e-039,2.45950670056599,1.50601347818815e-016" CVector="-2.35098870164458e-038,7.88860905221012e-031,30" OrientationBase="C along Z, B in YZ plane" Centering="3D Primitive-Centered" Lattice="3D Hexagonal" GroupName="P6/MMM" Operators="1,0,0,0,0,1,0,0,0,0,1,0:0,-1,0,0,1,-1,0,0,0,0,1,0:-1,1,0,0,-1,0,0,0,0,0,1,0:-1,0,0,0,0,-1,0,0,0,0,1,0:0,1,0,0,-1,1,0,0,0,0,1,0:1,-1,0,0,1,0,0,0,0,0,1,0:0,1,0,0,1,0,0,0,0,0,-1,0:1,-1,0,0,0,-1,0,0,0,0,-1,0:-1,0,0,0,-1,1,0,0,0,0,-1,0:0,-1,0,0,-1,0,0,0,0,0,-1,0:-1,1,0,0,0,1,0,0,0,0,-1,0:1,0,0,0,1,-1,0,0,0,0,-1,0:-1,0,0,0,0,-1,0,0,0,0,-1,0:0,1,0,0,-1,1,0,0,0,0,-1,0:1,-1,0,0,1,0,0,0,0,0,-1,0:1,0,0,0,0,1,0,0,0,0,-1,0:0,-1,0,0,1,-1,0,0,0,0,-1,0:-1,1,0,0,-1,0,0,0,0,0,-1,0:0,-1,0,0,-1,0,0,0,0,0,1,0:-1,1,0,0,0,1,0,0,0,0,1,0:1,0,0,0,1,-1,0,0,0,0,1,0:0,1,0,0,1,0,0,0,0,0,1,0:1,-1,0,0,0,-1,0,0,0,0,1,0:-1,0,0,0,-1,1,0,0,0,0,1,0" DisplayRange="0,1,0,1,0,1" LineThickness="2" CylinderRadius="0.2" LabelAxes="1" ActiveSystem="2" ITNumber="191" LongName="P 6/M 2/M 2/M" Qualifier="Origin-1" SchoenfliesName="D6H-1" System="Hexagonal" Class="6/m m m"/>
+						<ReciprocalLattice3D ID="13" Parent="9" XYZ="0.702940566976349,-0.043615567737702,2.34049339346982e-015" Visible="0"/>
+					</IdentityMapping>
+					<ImageMapping ID="24" Element="1,0,0,-1,0,1,0,1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="25,26,27" NumDefects="3">
+						<Vacancy ID="25"/>
+						<Vacancy ID="26"/>
+						<Vacancy ID="27"/>
+					</ImageMapping>
+					<ImageMapping ID="28" Element="1,0,0,0,0,1,0,1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="29" NumDefects="1">
+						<Vacancy ID="29"/>
+					</ImageMapping>
+					<ImageMapping ID="30" Element="1,0,0,-1,0,1,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,31" NumDefects="1">
+						<Vacancy ID="31"/>
+					</ImageMapping>
+					<ImageMapping ID="32" Element="1,0,0,-1,0,1,0,1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="33,34,35" NumDefects="3">
+						<Vacancy ID="33"/>
+						<Vacancy ID="34"/>
+						<Vacancy ID="35"/>
+					</ImageMapping>
+					<ImageMapping ID="36" Element="1,0,0,0,0,1,0,1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="37" NumDefects="1">
+						<Vacancy ID="37"/>
+					</ImageMapping>
+					<ImageMapping ID="38" Element="1,0,0,-1,0,1,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,39" NumDefects="1">
+						<Vacancy ID="39"/>
+					</ImageMapping>
+					<ImageMapping ID="40" Element="0,-1,0,-1,1,-1,0,-2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,41" NumDefects="1">
+						<Vacancy ID="41"/>
+					</ImageMapping>
+					<ImageMapping ID="42" Element="0,-1,0,0,1,-1,0,-2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,43,44" NumDefects="2">
+						<Vacancy ID="43"/>
+						<Vacancy ID="44"/>
+					</ImageMapping>
+					<ImageMapping ID="45" Element="0,-1,0,0,1,-1,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="46,0,47" NumDefects="2">
+						<Vacancy ID="46"/>
+						<Vacancy ID="47"/>
+					</ImageMapping>
+					<ImageMapping ID="48" Element="0,-1,0,-1,1,-1,0,-2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,49" NumDefects="1">
+						<Vacancy ID="49"/>
+					</ImageMapping>
+					<ImageMapping ID="50" Element="0,-1,0,0,1,-1,0,-2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,51,52" NumDefects="2">
+						<Vacancy ID="51"/>
+						<Vacancy ID="52"/>
+					</ImageMapping>
+					<ImageMapping ID="53" Element="0,-1,0,0,1,-1,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="54,0,55" NumDefects="2">
+						<Vacancy ID="54"/>
+						<Vacancy ID="55"/>
+					</ImageMapping>
+					<ImageMapping ID="56" Element="-1,1,0,2,-1,0,0,1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="57" NumDefects="1">
+						<Vacancy ID="57"/>
+					</ImageMapping>
+					<ImageMapping ID="58" Element="-1,1,0,2,-1,0,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="59,0,60" NumDefects="2">
+						<Vacancy ID="59"/>
+						<Vacancy ID="60"/>
+					</ImageMapping>
+					<ImageMapping ID="61" Element="-1,1,0,3,-1,0,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,62,63" NumDefects="2">
+						<Vacancy ID="62"/>
+						<Vacancy ID="63"/>
+					</ImageMapping>
+					<ImageMapping ID="64" Element="-1,1,0,2,-1,0,0,1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="65" NumDefects="1">
+						<Vacancy ID="65"/>
+					</ImageMapping>
+					<ImageMapping ID="66" Element="-1,1,0,2,-1,0,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="67,0,68" NumDefects="2">
+						<Vacancy ID="67"/>
+						<Vacancy ID="68"/>
+					</ImageMapping>
+					<ImageMapping ID="69" Element="-1,1,0,3,-1,0,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,70,71" NumDefects="2">
+						<Vacancy ID="70"/>
+						<Vacancy ID="71"/>
+					</ImageMapping>
+					<ImageMapping ID="72" Element="-1,0,0,2,0,-1,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,73" NumDefects="1">
+						<Vacancy ID="73"/>
+					</ImageMapping>
+					<ImageMapping ID="74" Element="-1,0,0,1,0,-1,0,0,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="75" NumDefects="1">
+						<Vacancy ID="75"/>
+					</ImageMapping>
+					<ImageMapping ID="76" Element="-1,0,0,2,0,-1,0,0,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="77,78,79" NumDefects="3">
+						<Vacancy ID="77"/>
+						<Vacancy ID="78"/>
+						<Vacancy ID="79"/>
+					</ImageMapping>
+					<ImageMapping ID="80" Element="-1,0,0,2,0,-1,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,81" NumDefects="1">
+						<Vacancy ID="81"/>
+					</ImageMapping>
+					<ImageMapping ID="82" Element="-1,0,0,1,0,-1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="83" NumDefects="1">
+						<Vacancy ID="83"/>
+					</ImageMapping>
+					<ImageMapping ID="84" Element="-1,0,0,2,0,-1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="85,86,87" NumDefects="3">
+						<Vacancy ID="85"/>
+						<Vacancy ID="86"/>
+						<Vacancy ID="87"/>
+					</ImageMapping>
+					<ImageMapping ID="88" Element="0,1,0,1,-1,1,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="89,0,90" NumDefects="2">
+						<Vacancy ID="89"/>
+						<Vacancy ID="90"/>
+					</ImageMapping>
+					<ImageMapping ID="91" Element="0,1,0,1,-1,1,0,3,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,92,93" NumDefects="2">
+						<Vacancy ID="92"/>
+						<Vacancy ID="93"/>
+					</ImageMapping>
+					<ImageMapping ID="94" Element="0,1,0,2,-1,1,0,3,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,95" NumDefects="1">
+						<Vacancy ID="95"/>
+					</ImageMapping>
+					<ImageMapping ID="96" Element="0,1,0,1,-1,1,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="97,0,98" NumDefects="2">
+						<Vacancy ID="97"/>
+						<Vacancy ID="98"/>
+					</ImageMapping>
+					<ImageMapping ID="99" Element="0,1,0,1,-1,1,0,3,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,100,101" NumDefects="2">
+						<Vacancy ID="100"/>
+						<Vacancy ID="101"/>
+					</ImageMapping>
+					<ImageMapping ID="102" Element="0,1,0,2,-1,1,0,3,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,103" NumDefects="1">
+						<Vacancy ID="103"/>
+					</ImageMapping>
+					<ImageMapping ID="104" Element="1,-1,0,-2,1,0,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,105,106" NumDefects="2">
+						<Vacancy ID="105"/>
+						<Vacancy ID="106"/>
+					</ImageMapping>
+					<ImageMapping ID="107" Element="1,-1,0,-1,1,0,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="108,0,109" NumDefects="2">
+						<Vacancy ID="108"/>
+						<Vacancy ID="109"/>
+					</ImageMapping>
+					<ImageMapping ID="110" Element="1,-1,0,-1,1,0,0,0,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="111" NumDefects="1">
+						<Vacancy ID="111"/>
+					</ImageMapping>
+					<ImageMapping ID="112" Element="1,-1,0,-2,1,0,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,113,114" NumDefects="2">
+						<Vacancy ID="113"/>
+						<Vacancy ID="114"/>
+					</ImageMapping>
+					<ImageMapping ID="115" Element="1,-1,0,-1,1,0,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="116,0,117" NumDefects="2">
+						<Vacancy ID="116"/>
+						<Vacancy ID="117"/>
+					</ImageMapping>
+					<ImageMapping ID="118" Element="1,-1,0,-1,1,0,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="119" NumDefects="1">
+						<Vacancy ID="119"/>
+					</ImageMapping>
+					<ImageMapping ID="120" Element="0,1,0,1,1,0,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="121,122,123" NumDefects="3">
+						<Vacancy ID="121"/>
+						<Vacancy ID="122"/>
+						<Vacancy ID="123"/>
+					</ImageMapping>
+					<ImageMapping ID="124" Element="0,1,0,2,1,0,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,125" NumDefects="1">
+						<Vacancy ID="125"/>
+					</ImageMapping>
+					<ImageMapping ID="126" Element="0,1,0,1,1,0,0,0,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="127" NumDefects="1">
+						<Vacancy ID="127"/>
+					</ImageMapping>
+					<ImageMapping ID="128" Element="0,1,0,1,1,0,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="129,130,131" NumDefects="3">
+						<Vacancy ID="129"/>
+						<Vacancy ID="130"/>
+						<Vacancy ID="131"/>
+					</ImageMapping>
+					<ImageMapping ID="132" Element="0,1,0,2,1,0,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,133" NumDefects="1">
+						<Vacancy ID="133"/>
+					</ImageMapping>
+					<ImageMapping ID="134" Element="0,1,0,1,1,0,0,0,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="135" NumDefects="1">
+						<Vacancy ID="135"/>
+					</ImageMapping>
+					<ImageMapping ID="136" Element="1,-1,0,-2,0,-1,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,137" NumDefects="1">
+						<Vacancy ID="137"/>
+					</ImageMapping>
+					<ImageMapping ID="138" Element="1,-1,0,-2,0,-1,0,0,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,139,140" NumDefects="2">
+						<Vacancy ID="139"/>
+						<Vacancy ID="140"/>
+					</ImageMapping>
+					<ImageMapping ID="141" Element="1,-1,0,-1,0,-1,0,0,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="142,0,143" NumDefects="2">
+						<Vacancy ID="142"/>
+						<Vacancy ID="143"/>
+					</ImageMapping>
+					<ImageMapping ID="144" Element="1,-1,0,-2,0,-1,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,145" NumDefects="1">
+						<Vacancy ID="145"/>
+					</ImageMapping>
+					<ImageMapping ID="146" Element="1,-1,0,-2,0,-1,0,0,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,147,148" NumDefects="2">
+						<Vacancy ID="147"/>
+						<Vacancy ID="148"/>
+					</ImageMapping>
+					<ImageMapping ID="149" Element="1,-1,0,-1,0,-1,0,0,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="150,0,151" NumDefects="2">
+						<Vacancy ID="150"/>
+						<Vacancy ID="151"/>
+					</ImageMapping>
+					<ImageMapping ID="152" Element="-1,0,0,1,-1,1,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="153" NumDefects="1">
+						<Vacancy ID="153"/>
+					</ImageMapping>
+					<ImageMapping ID="154" Element="-1,0,0,2,-1,1,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="155,0,156" NumDefects="2">
+						<Vacancy ID="155"/>
+						<Vacancy ID="156"/>
+					</ImageMapping>
+					<ImageMapping ID="157" Element="-1,0,0,2,-1,1,0,3,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,158,159" NumDefects="2">
+						<Vacancy ID="158"/>
+						<Vacancy ID="159"/>
+					</ImageMapping>
+					<ImageMapping ID="160" Element="-1,0,0,1,-1,1,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="161" NumDefects="1">
+						<Vacancy ID="161"/>
+					</ImageMapping>
+					<ImageMapping ID="162" Element="-1,0,0,2,-1,1,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="163,0,164" NumDefects="2">
+						<Vacancy ID="163"/>
+						<Vacancy ID="164"/>
+					</ImageMapping>
+					<ImageMapping ID="165" Element="-1,0,0,2,-1,1,0,3,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,166,167" NumDefects="2">
+						<Vacancy ID="166"/>
+						<Vacancy ID="167"/>
+					</ImageMapping>
+					<ImageMapping ID="168" Element="0,-1,0,0,-1,0,0,1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="169" NumDefects="1">
+						<Vacancy ID="169"/>
+					</ImageMapping>
+					<ImageMapping ID="170" Element="0,-1,0,-1,-1,0,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,171" NumDefects="1">
+						<Vacancy ID="171"/>
+					</ImageMapping>
+					<ImageMapping ID="172" Element="0,-1,0,0,-1,0,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="173,174,175" NumDefects="3">
+						<Vacancy ID="173"/>
+						<Vacancy ID="174"/>
+						<Vacancy ID="175"/>
+					</ImageMapping>
+					<ImageMapping ID="176" Element="0,-1,0,0,-1,0,0,1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="177" NumDefects="1">
+						<Vacancy ID="177"/>
+					</ImageMapping>
+					<ImageMapping ID="178" Element="0,-1,0,-1,-1,0,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,179" NumDefects="1">
+						<Vacancy ID="179"/>
+					</ImageMapping>
+					<ImageMapping ID="180" Element="0,-1,0,0,-1,0,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="181,182,183" NumDefects="3">
+						<Vacancy ID="181"/>
+						<Vacancy ID="182"/>
+						<Vacancy ID="183"/>
+					</ImageMapping>
+					<ImageMapping ID="184" Element="-1,1,0,2,0,1,0,1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="185,0,186" NumDefects="2">
+						<Vacancy ID="185"/>
+						<Vacancy ID="186"/>
+					</ImageMapping>
+					<ImageMapping ID="187" Element="-1,1,0,3,0,1,0,1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,188,189" NumDefects="2">
+						<Vacancy ID="188"/>
+						<Vacancy ID="189"/>
+					</ImageMapping>
+					<ImageMapping ID="190" Element="-1,1,0,3,0,1,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,191" NumDefects="1">
+						<Vacancy ID="191"/>
+					</ImageMapping>
+					<ImageMapping ID="192" Element="-1,1,0,2,0,1,0,1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="193,0,194" NumDefects="2">
+						<Vacancy ID="193"/>
+						<Vacancy ID="194"/>
+					</ImageMapping>
+					<ImageMapping ID="195" Element="-1,1,0,3,0,1,0,1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,196,197" NumDefects="2">
+						<Vacancy ID="196"/>
+						<Vacancy ID="197"/>
+					</ImageMapping>
+					<ImageMapping ID="198" Element="-1,1,0,3,0,1,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,199" NumDefects="1">
+						<Vacancy ID="199"/>
+					</ImageMapping>
+					<ImageMapping ID="200" Element="1,0,0,-1,1,-1,0,-2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,201,202" NumDefects="2">
+						<Vacancy ID="201"/>
+						<Vacancy ID="202"/>
+					</ImageMapping>
+					<ImageMapping ID="203" Element="1,0,0,-1,1,-1,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="204,0,205" NumDefects="2">
+						<Vacancy ID="204"/>
+						<Vacancy ID="205"/>
+					</ImageMapping>
+					<ImageMapping ID="206" Element="1,0,0,0,1,-1,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="207" NumDefects="1">
+						<Vacancy ID="207"/>
+					</ImageMapping>
+					<ImageMapping ID="208" Element="1,0,0,-1,1,-1,0,-2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,209,210" NumDefects="2">
+						<Vacancy ID="209"/>
+						<Vacancy ID="210"/>
+					</ImageMapping>
+					<ImageMapping ID="211" Element="1,0,0,-1,1,-1,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="212,0,213" NumDefects="2">
+						<Vacancy ID="212"/>
+						<Vacancy ID="213"/>
+					</ImageMapping>
+					<ImageMapping ID="214" Element="1,0,0,0,1,-1,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="215" NumDefects="1">
+						<Vacancy ID="215"/>
+					</ImageMapping>
+					<ImageMapping ID="216" Element="-1,0,0,2,0,-1,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,217" NumDefects="1">
+						<Vacancy ID="217"/>
+					</ImageMapping>
+					<ImageMapping ID="218" Element="-1,0,0,1,0,-1,0,0,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="219" NumDefects="1">
+						<Vacancy ID="219"/>
+					</ImageMapping>
+					<ImageMapping ID="220" Element="-1,0,0,2,0,-1,0,0,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="221,222,223" NumDefects="3">
+						<Vacancy ID="221"/>
+						<Vacancy ID="222"/>
+						<Vacancy ID="223"/>
+					</ImageMapping>
+					<ImageMapping ID="224" Element="-1,0,0,2,0,-1,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,225" NumDefects="1">
+						<Vacancy ID="225"/>
+					</ImageMapping>
+					<ImageMapping ID="226" Element="-1,0,0,1,0,-1,0,0,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="227" NumDefects="1">
+						<Vacancy ID="227"/>
+					</ImageMapping>
+					<ImageMapping ID="228" Element="-1,0,0,2,0,-1,0,0,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="229,230,231" NumDefects="3">
+						<Vacancy ID="229"/>
+						<Vacancy ID="230"/>
+						<Vacancy ID="231"/>
+					</ImageMapping>
+					<ImageMapping ID="232" Element="0,1,0,1,-1,1,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="233,0,234" NumDefects="2">
+						<Vacancy ID="233"/>
+						<Vacancy ID="234"/>
+					</ImageMapping>
+					<ImageMapping ID="235" Element="0,1,0,1,-1,1,0,3,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,236,237" NumDefects="2">
+						<Vacancy ID="236"/>
+						<Vacancy ID="237"/>
+					</ImageMapping>
+					<ImageMapping ID="238" Element="0,1,0,2,-1,1,0,3,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,239" NumDefects="1">
+						<Vacancy ID="239"/>
+					</ImageMapping>
+					<ImageMapping ID="240" Element="0,1,0,1,-1,1,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="241,0,242" NumDefects="2">
+						<Vacancy ID="241"/>
+						<Vacancy ID="242"/>
+					</ImageMapping>
+					<ImageMapping ID="243" Element="0,1,0,1,-1,1,0,3,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,244,245" NumDefects="2">
+						<Vacancy ID="244"/>
+						<Vacancy ID="245"/>
+					</ImageMapping>
+					<ImageMapping ID="246" Element="0,1,0,2,-1,1,0,3,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,247" NumDefects="1">
+						<Vacancy ID="247"/>
+					</ImageMapping>
+					<ImageMapping ID="248" Element="1,-1,0,-2,1,0,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,249,250" NumDefects="2">
+						<Vacancy ID="249"/>
+						<Vacancy ID="250"/>
+					</ImageMapping>
+					<ImageMapping ID="251" Element="1,-1,0,-1,1,0,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="252,0,253" NumDefects="2">
+						<Vacancy ID="252"/>
+						<Vacancy ID="253"/>
+					</ImageMapping>
+					<ImageMapping ID="254" Element="1,-1,0,-1,1,0,0,0,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="255" NumDefects="1">
+						<Vacancy ID="255"/>
+					</ImageMapping>
+					<ImageMapping ID="256" Element="1,-1,0,-2,1,0,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,257,258" NumDefects="2">
+						<Vacancy ID="257"/>
+						<Vacancy ID="258"/>
+					</ImageMapping>
+					<ImageMapping ID="259" Element="1,-1,0,-1,1,0,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="260,0,261" NumDefects="2">
+						<Vacancy ID="260"/>
+						<Vacancy ID="261"/>
+					</ImageMapping>
+					<ImageMapping ID="262" Element="1,-1,0,-1,1,0,0,0,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="263" NumDefects="1">
+						<Vacancy ID="263"/>
+					</ImageMapping>
+					<ImageMapping ID="264" Element="1,0,0,-1,0,1,0,1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="265,266,267" NumDefects="3">
+						<Vacancy ID="265"/>
+						<Vacancy ID="266"/>
+						<Vacancy ID="267"/>
+					</ImageMapping>
+					<ImageMapping ID="268" Element="1,0,0,0,0,1,0,1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="269" NumDefects="1">
+						<Vacancy ID="269"/>
+					</ImageMapping>
+					<ImageMapping ID="270" Element="1,0,0,-1,0,1,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,271" NumDefects="1">
+						<Vacancy ID="271"/>
+					</ImageMapping>
+					<ImageMapping ID="272" Element="1,0,0,-1,0,1,0,1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="273,274,275" NumDefects="3">
+						<Vacancy ID="273"/>
+						<Vacancy ID="274"/>
+						<Vacancy ID="275"/>
+					</ImageMapping>
+					<ImageMapping ID="276" Element="1,0,0,0,0,1,0,1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="277" NumDefects="1">
+						<Vacancy ID="277"/>
+					</ImageMapping>
+					<ImageMapping ID="278" Element="1,0,0,-1,0,1,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,279" NumDefects="1">
+						<Vacancy ID="279"/>
+					</ImageMapping>
+					<ImageMapping ID="280" Element="0,-1,0,-1,1,-1,0,-2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,281" NumDefects="1">
+						<Vacancy ID="281"/>
+					</ImageMapping>
+					<ImageMapping ID="282" Element="0,-1,0,0,1,-1,0,-2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,283,284" NumDefects="2">
+						<Vacancy ID="283"/>
+						<Vacancy ID="284"/>
+					</ImageMapping>
+					<ImageMapping ID="285" Element="0,-1,0,0,1,-1,0,-1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="286,0,287" NumDefects="2">
+						<Vacancy ID="286"/>
+						<Vacancy ID="287"/>
+					</ImageMapping>
+					<ImageMapping ID="288" Element="0,-1,0,-1,1,-1,0,-2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,289" NumDefects="1">
+						<Vacancy ID="289"/>
+					</ImageMapping>
+					<ImageMapping ID="290" Element="0,-1,0,0,1,-1,0,-2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,291,292" NumDefects="2">
+						<Vacancy ID="291"/>
+						<Vacancy ID="292"/>
+					</ImageMapping>
+					<ImageMapping ID="293" Element="0,-1,0,0,1,-1,0,-1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="294,0,295" NumDefects="2">
+						<Vacancy ID="294"/>
+						<Vacancy ID="295"/>
+					</ImageMapping>
+					<ImageMapping ID="296" Element="-1,1,0,2,-1,0,0,1,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="297" NumDefects="1">
+						<Vacancy ID="297"/>
+					</ImageMapping>
+					<ImageMapping ID="298" Element="-1,1,0,2,-1,0,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="299,0,300" NumDefects="2">
+						<Vacancy ID="299"/>
+						<Vacancy ID="300"/>
+					</ImageMapping>
+					<ImageMapping ID="301" Element="-1,1,0,3,-1,0,0,2,0,0,-1,1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,302,303" NumDefects="2">
+						<Vacancy ID="302"/>
+						<Vacancy ID="303"/>
+					</ImageMapping>
+					<ImageMapping ID="304" Element="-1,1,0,2,-1,0,0,1,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="305" NumDefects="1">
+						<Vacancy ID="305"/>
+					</ImageMapping>
+					<ImageMapping ID="306" Element="-1,1,0,2,-1,0,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="307,0,308" NumDefects="2">
+						<Vacancy ID="307"/>
+						<Vacancy ID="308"/>
+					</ImageMapping>
+					<ImageMapping ID="309" Element="-1,1,0,3,-1,0,0,2,0,0,-1,2" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,310,311" NumDefects="2">
+						<Vacancy ID="310"/>
+						<Vacancy ID="311"/>
+					</ImageMapping>
+					<ImageMapping ID="312" Element="0,-1,0,0,-1,0,0,1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="313" NumDefects="1">
+						<Vacancy ID="313"/>
+					</ImageMapping>
+					<ImageMapping ID="314" Element="0,-1,0,-1,-1,0,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,315" NumDefects="1">
+						<Vacancy ID="315"/>
+					</ImageMapping>
+					<ImageMapping ID="316" Element="0,-1,0,0,-1,0,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="317,318,319" NumDefects="3">
+						<Vacancy ID="317"/>
+						<Vacancy ID="318"/>
+						<Vacancy ID="319"/>
+					</ImageMapping>
+					<ImageMapping ID="320" Element="0,-1,0,0,-1,0,0,1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="321" NumDefects="1">
+						<Vacancy ID="321"/>
+					</ImageMapping>
+					<ImageMapping ID="322" Element="0,-1,0,-1,-1,0,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,323" NumDefects="1">
+						<Vacancy ID="323"/>
+					</ImageMapping>
+					<ImageMapping ID="324" Element="0,-1,0,0,-1,0,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="325,326,327" NumDefects="3">
+						<Vacancy ID="325"/>
+						<Vacancy ID="326"/>
+						<Vacancy ID="327"/>
+					</ImageMapping>
+					<ImageMapping ID="328" Element="-1,1,0,2,0,1,0,1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="329,0,330" NumDefects="2">
+						<Vacancy ID="329"/>
+						<Vacancy ID="330"/>
+					</ImageMapping>
+					<ImageMapping ID="331" Element="-1,1,0,3,0,1,0,1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,332,333" NumDefects="2">
+						<Vacancy ID="332"/>
+						<Vacancy ID="333"/>
+					</ImageMapping>
+					<ImageMapping ID="334" Element="-1,1,0,3,0,1,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,335" NumDefects="1">
+						<Vacancy ID="335"/>
+					</ImageMapping>
+					<ImageMapping ID="336" Element="-1,1,0,2,0,1,0,1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="337,0,338" NumDefects="2">
+						<Vacancy ID="337"/>
+						<Vacancy ID="338"/>
+					</ImageMapping>
+					<ImageMapping ID="339" Element="-1,1,0,3,0,1,0,1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,340,341" NumDefects="2">
+						<Vacancy ID="340"/>
+						<Vacancy ID="341"/>
+					</ImageMapping>
+					<ImageMapping ID="342" Element="-1,1,0,3,0,1,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,343" NumDefects="1">
+						<Vacancy ID="343"/>
+					</ImageMapping>
+					<ImageMapping ID="344" Element="1,0,0,-1,1,-1,0,-2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,345,346" NumDefects="2">
+						<Vacancy ID="345"/>
+						<Vacancy ID="346"/>
+					</ImageMapping>
+					<ImageMapping ID="347" Element="1,0,0,-1,1,-1,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="348,0,349" NumDefects="2">
+						<Vacancy ID="348"/>
+						<Vacancy ID="349"/>
+					</ImageMapping>
+					<ImageMapping ID="350" Element="1,0,0,0,1,-1,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="351" NumDefects="1">
+						<Vacancy ID="351"/>
+					</ImageMapping>
+					<ImageMapping ID="352" Element="1,0,0,-1,1,-1,0,-2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,353,354" NumDefects="2">
+						<Vacancy ID="353"/>
+						<Vacancy ID="354"/>
+					</ImageMapping>
+					<ImageMapping ID="355" Element="1,0,0,-1,1,-1,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="356,0,357" NumDefects="2">
+						<Vacancy ID="356"/>
+						<Vacancy ID="357"/>
+					</ImageMapping>
+					<ImageMapping ID="358" Element="1,0,0,0,1,-1,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="359" NumDefects="1">
+						<Vacancy ID="359"/>
+					</ImageMapping>
+					<ImageMapping ID="360" Element="0,1,0,1,1,0,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="361,362,363" NumDefects="3">
+						<Vacancy ID="361"/>
+						<Vacancy ID="362"/>
+						<Vacancy ID="363"/>
+					</ImageMapping>
+					<ImageMapping ID="364" Element="0,1,0,2,1,0,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,365" NumDefects="1">
+						<Vacancy ID="365"/>
+					</ImageMapping>
+					<ImageMapping ID="366" Element="0,1,0,1,1,0,0,0,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="367" NumDefects="1">
+						<Vacancy ID="367"/>
+					</ImageMapping>
+					<ImageMapping ID="368" Element="0,1,0,1,1,0,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="369,370,371" NumDefects="3">
+						<Vacancy ID="369"/>
+						<Vacancy ID="370"/>
+						<Vacancy ID="371"/>
+					</ImageMapping>
+					<ImageMapping ID="372" Element="0,1,0,2,1,0,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,373" NumDefects="1">
+						<Vacancy ID="373"/>
+					</ImageMapping>
+					<ImageMapping ID="374" Element="0,1,0,1,1,0,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="375" NumDefects="1">
+						<Vacancy ID="375"/>
+					</ImageMapping>
+					<ImageMapping ID="376" Element="1,-1,0,-2,0,-1,0,-1,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,377" NumDefects="1">
+						<Vacancy ID="377"/>
+					</ImageMapping>
+					<ImageMapping ID="378" Element="1,-1,0,-2,0,-1,0,0,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,379,380" NumDefects="2">
+						<Vacancy ID="379"/>
+						<Vacancy ID="380"/>
+					</ImageMapping>
+					<ImageMapping ID="381" Element="1,-1,0,-1,0,-1,0,0,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="382,0,383" NumDefects="2">
+						<Vacancy ID="382"/>
+						<Vacancy ID="383"/>
+					</ImageMapping>
+					<ImageMapping ID="384" Element="1,-1,0,-2,0,-1,0,-1,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,385" NumDefects="1">
+						<Vacancy ID="385"/>
+					</ImageMapping>
+					<ImageMapping ID="386" Element="1,-1,0,-2,0,-1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,387,388" NumDefects="2">
+						<Vacancy ID="387"/>
+						<Vacancy ID="388"/>
+					</ImageMapping>
+					<ImageMapping ID="389" Element="1,-1,0,-1,0,-1,0,0,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="390,0,391" NumDefects="2">
+						<Vacancy ID="390"/>
+						<Vacancy ID="391"/>
+					</ImageMapping>
+					<ImageMapping ID="392" Element="-1,0,0,1,-1,1,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="393" NumDefects="1">
+						<Vacancy ID="393"/>
+					</ImageMapping>
+					<ImageMapping ID="394" Element="-1,0,0,2,-1,1,0,2,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="395,0,396" NumDefects="2">
+						<Vacancy ID="395"/>
+						<Vacancy ID="396"/>
+					</ImageMapping>
+					<ImageMapping ID="397" Element="-1,0,0,2,-1,1,0,3,0,0,1,-1" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,398,399" NumDefects="2">
+						<Vacancy ID="398"/>
+						<Vacancy ID="399"/>
+					</ImageMapping>
+					<ImageMapping ID="400" Element="-1,0,0,1,-1,1,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="401" NumDefects="1">
+						<Vacancy ID="401"/>
+					</ImageMapping>
+					<ImageMapping ID="402" Element="-1,0,0,2,-1,1,0,2,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="403,0,404" NumDefects="2">
+						<Vacancy ID="403"/>
+						<Vacancy ID="404"/>
+					</ImageMapping>
+					<ImageMapping ID="405" Element="-1,0,0,2,-1,1,0,3,0,0,1,0" Constraint="1,0,0,0,0,1,0,0,0,0,1,0" DefectObjects="0,406,407" NumDefects="2">
+						<Vacancy ID="406"/>
+						<Vacancy ID="407"/>
+					</ImageMapping>
+					<MappingRepairs NumRepairs="0"/>
+				</MappingFamily>
+				<MappingFamily ID="408" NumImageMappings="9">
+					<IdentityMapping ID="409" Element="1,0,0,0,0,1,0,0,0,0,1,0" Constraint="0,0,0,-0.666666666666667,0,0,0,-0.333333333333333,0,0,0,0" MappedObjects="4" NumImages="1">
+						<Atom3d ID="4" Mapping="409" Parent="2" UserID="1" DisplayStyle="Line" XYZ="-0.666666666666667,-0.333333333333333,0" Connections="5,410,411" Components="C" Hybridization="Trigonal" Visible="0"/>
+					</IdentityMapping>
+					<ImageMapping ID="412" Element="1,0,0,1,0,1,0,1,0,0,1,0" Constraint="0,0,0,0.333333333333333,0,0,0,0.666666666666667,0,0,0,0" MappedObjects="413" NumImages="1">
+						<Atom3d ID="413" Mapping="412" ImageOf="4"/>
+					</ImageMapping>
+					<ImageMapping ID="414" Element="1,0,0,2,0,1,0,-1,0,0,1,1" Constraint="0,0,0,1.333333333333333,0,0,0,-1.333333333333333,0,0,0,1" MappedObjects="20" NumImages="1">
+						<Atom3d ID="20" Mapping="414" ImageOf="4" Visible="0"/>
+					</ImageMapping>
+					<ImageMapping ID="415" Element="1,0,0,2,0,1,0,0,0,0,1,1" Constraint="0,0,0,1.333333333333333,0,0,0,-0.333333333333333,0,0,0,1" MappedObjects="15" NumImages="1">
+						<Atom3d ID="15" Mapping="415" ImageOf="4" Visible="0"/>
+					</ImageMapping>
+					<ImageMapping ID="416" Element="1,0,0,1,0,1,0,1,0,0,1,1" Constraint="0,0,0,0.333333333333333,0,0,0,0.666666666666667,0,0,0,1" MappedObjects="417" NumImages="1">
+						<Atom3d ID="417" Mapping="416" ImageOf="4"/>
+					</ImageMapping>
+					<ImageMapping ID="418" Element="-1,0,0,-2,0,-1,0,-1,0,0,1,0" Constraint="0,0,0,-1.333333333333333,0,0,0,-0.666666666666667,0,0,0,0" MappedObjects="419" NumImages="1">
+						<Atom3d ID="419" Mapping="418" ImageOf="4" Visible="0"/>
+					</ImageMapping>
+					<ImageMapping ID="420" Element="-1,0,0,0,0,-1,0,0,0,0,1,0" Constraint="0,0,0,0.666666666666667,0,0,0,0.333333333333333,0,0,0,0" MappedObjects="421" NumImages="1">
+						<Atom3d ID="421" Mapping="420" ImageOf="4"/>
+					</ImageMapping>
+					<ImageMapping ID="422" Element="-1,0,0,0,0,-1,0,-1,0,0,1,1" Constraint="0,0,0,0.666666666666667,0,0,0,-0.666666666666667,0,0,0,1" MappedObjects="16" NumImages="1">
+						<Atom3d ID="16" Mapping="422" ImageOf="4" Visible="0"/>
+					</ImageMapping>
+					<ImageMapping ID="423" Element="-1,0,0,1,0,-1,0,-1,0,0,1,1" Constraint="0,0,0,1.666666666666667,0,0,0,-0.666666666666667,0,0,0,1" MappedObjects="19" NumImages="1">
+						<Atom3d ID="19" Mapping="423" ImageOf="4" Visible="0"/>
+					</ImageMapping>
+					<ImageMapping ID="424" Element="-1,0,0,0,0,-1,0,0,0,0,1,1" Constraint="0,0,0,0.666666666666667,0,0,0,0.333333333333333,0,0,0,1" MappedObjects="425" NumImages="1">
+						<Atom3d ID="425" Mapping="424" ImageOf="4"/>
+					</ImageMapping>
+					<MappingRepairs NumRepairs="0"/>
+				</MappingFamily>
+				<MappingFamily ID="426" NumImageMappings="12">
+					<IdentityMapping ID="427" Element="1,0,0,0,0,1,0,0,0,0,1,0" Constraint="0,0,0,-1,0,0,0,-0.5,0,0,0,0" MappedObjects="5" NumImages="1">
+						<Bond ID="5" Mapping="427" Parent="2" Connects="4,419" Type="Aromatic" Visible="0"/>
+					</IdentityMapping>
+					<ImageMapping ID="428" Element="1,0,0,1,0,1,0,1,0,0,1,0" Constraint="0,0,0,0,0,0,0,0.5,0,0,0,0" MappedObjects="429" NumImages="1">
+						<Bond ID="429" Mapping="428" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="430" Element="1,0,0,2,0,1,0,1,0,0,1,0" Constraint="0,0,0,1,0,0,0,0.5,0,0,0,0" MappedObjects="431" NumImages="1">
+						<Bond ID="431" Mapping="430" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="432" Element="1,0,0,1,0,1,0,1,0,0,1,1" Constraint="0,0,0,0,0,0,0,0.5,0,0,0,1" MappedObjects="433" NumImages="1">
+						<Bond ID="433" Mapping="432" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="434" Element="1,0,0,2,0,1,0,1,0,0,1,1" Constraint="0,0,0,1,0,0,0,0.5,0,0,0,1" MappedObjects="435" NumImages="1">
+						<Bond ID="435" Mapping="434" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="436" Element="0,-1,0,-1,1,-1,0,0,0,0,1,0" Constraint="0,0,0,-0.5,0,0,0,-0.5,0,0,0,0" MappedObjects="410" NumImages="1">
+						<Bond ID="410" Mapping="436" ImageOf="5" Visible="0"/>
+					</ImageMapping>
+					<ImageMapping ID="437" Element="0,-1,0,0,1,-1,0,1,0,0,1,0" Constraint="0,0,0,0.5,0,0,0,0.5,0,0,0,0" MappedObjects="438" NumImages="1">
+						<Bond ID="438" Mapping="437" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="439" Element="0,-1,0,0,1,-1,0,1,0,0,1,1" Constraint="0,0,0,0.5,0,0,0,0.5,0,0,0,1" MappedObjects="440" NumImages="1">
+						<Bond ID="440" Mapping="439" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="441" Element="-1,1,0,-1,-1,0,0,-1,0,0,1,0" Constraint="0,0,0,-0.5,0,0,0,0,0,0,0,0" MappedObjects="411" NumImages="1">
+						<Bond ID="411" Mapping="441" ImageOf="5" Visible="0"/>
+					</ImageMapping>
+					<ImageMapping ID="442" Element="-1,1,0,0,-1,0,0,-1,0,0,1,0" Constraint="0,0,0,0.5,0,0,0,0,0,0,0,0" MappedObjects="443" NumImages="1">
+						<Bond ID="443" Mapping="442" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="444" Element="-1,1,0,0,-1,0,0,0,0,0,1,0" Constraint="0,0,0,0.5,0,0,0,1,0,0,0,0" MappedObjects="445" NumImages="1">
+						<Bond ID="445" Mapping="444" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="446" Element="-1,1,0,0,-1,0,0,-1,0,0,1,1" Constraint="0,0,0,0.5,0,0,0,0,0,0,0,1" MappedObjects="447" NumImages="1">
+						<Bond ID="447" Mapping="446" ImageOf="5"/>
+					</ImageMapping>
+					<ImageMapping ID="448" Element="-1,1,0,0,-1,0,0,0,0,0,1,1" Constraint="0,0,0,0.5,0,0,0,1,0,0,0,1" MappedObjects="449" NumImages="1">
+						<Bond ID="449" Mapping="448" ImageOf="5"/>
+					</ImageMapping>
+					<MappingRepairs NumRepairs="0"/>
+				</MappingFamily>
+				<InfiniteMapping ID="3" Element="1,0,0,0,0,1,0,0,0,0,1,0" MappedObjects="2"/>
+			</MappingSet>
+		</SymmetrySystem>
+	</AtomisticTreeRoot>
+</XSD>
