@@ -1,0 +1,10 @@
+ type of calculation              :  geometry optimization
+ plane wave basis set cut-off     :  400.0000   eV
+ using functional                 :  Perdew Burke Ernzerhof
+
+ Number of iterations             :  3
+ Energy                           :  -3.45287975E+003  eV
+ Convergence                      :  3.515256E-003  eV/atom
+ Max. Displacement                :  3.880698E-008  A
+ Max. Force                       :  1.764300E-006  eV/A
+ Max. Stress                      :  1.250003E-001  GPa

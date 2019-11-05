@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XCD []>
+<XCD Version="7.0" NumCharts="1">
+	<CHART_2D>
+		<DATA_2D NumSeries="1">
+			<SERIES_2D UniqueID="0" Name="Total Energy" NumPoints="19">
+				<POINT_2D XY="1,-3268.13171"/>
+				<POINT_2D XY="2,-3430.75607"/>
+				<POINT_2D XY="3,-3442.22205"/>
+				<POINT_2D XY="4,-3442.33779"/>
+				<POINT_2D XY="5,-3440.47932"/>
+				<POINT_2D XY="6,-3445.4625"/>
+				<POINT_2D XY="7,-3442.56809"/>
+				<POINT_2D XY="8,-3444.20008"/>
+				<POINT_2D XY="9,-3441.85477"/>
+				<POINT_2D XY="10,-3437.02698"/>
+				<POINT_2D XY="11,-3437.51935"/>
+				<POINT_2D XY="12,-3441.24054"/>
+				<POINT_2D XY="13,-3442.76406"/>
+				<POINT_2D XY="14,-3442.80931"/>
+				<POINT_2D XY="15,-3443.09665"/>
+				<POINT_2D XY="16,-3443.44387"/>
+				<POINT_2D XY="17,-3444.39161"/>
+				<POINT_2D XY="18,-3445.54064"/>
+				<POINT_2D XY="19,-3445.78129"/>
+			</SERIES_2D>
+		</DATA_2D>
+		<MARKERS_2D NumMarkers="0"/>
+		<CARTESIAN_2D_PLOT PlotType="Line" Visible="1" BackgroundColor="255,255,255" ForegroundColor="0,0,0" Box="1">
+			<TITLE Visible="1" Text="CASTEP SCF Energy"/>
+			<LEGEND Visible="0" Heading=""/>
+			<CARTESIAN_AXES_2D XVisible="1" YVisible="1" XReversed="0" YReversed="0" XLabel="Iteration" YLabel="Energy (eV)" XOriginPos="Min" YOriginPos="Min" XTickPos="Auto" YTickPos="Auto"/>
+			<CARTESIAN_GRID_2D XGrid="Off" YGrid="Off"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineWidth="1" LineStyle="Solid" LineColor="0,0,255" SymbolSize="6" SymbolShape="Dot" SymbolColor="0,0,255" BarOrientation="Horizontal" BarWidth="0.5" BarColor="0,0,255" DendrogramCursorColor="0,0,255" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+		</CARTESIAN_2D_PLOT>
+	</CHART_2D>
+</XCD>

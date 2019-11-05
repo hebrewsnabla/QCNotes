@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XCD []>
+<XCD Version="7.0" NumCharts="1">
+	<CHART_2D>
+		<DATA_2D NumSeries="1">
+			<SERIES_2D UniqueID="0" Name="Total Energy" NumPoints="37">
+				<POINT_2D XY="1,-3268.42368"/>
+				<POINT_2D XY="2,-3428.35217"/>
+				<POINT_2D XY="3,-3441.47301"/>
+				<POINT_2D XY="4,-3441.60148"/>
+				<POINT_2D XY="5,-3416.26408"/>
+				<POINT_2D XY="6,-3416.45656"/>
+				<POINT_2D XY="7,-3418.68546"/>
+				<POINT_2D XY="8,-3439.57887"/>
+				<POINT_2D XY="9,-3439.66428"/>
+				<POINT_2D XY="10,-3439.11402"/>
+				<POINT_2D XY="11,-3438.95982"/>
+				<POINT_2D XY="12,-3437.82835"/>
+				<POINT_2D XY="13,-3436.97684"/>
+				<POINT_2D XY="14,-3435.50023"/>
+				<POINT_2D XY="15,-3432.90409"/>
+				<POINT_2D XY="16,-3423.78649"/>
+				<POINT_2D XY="17,-3411.92842"/>
+				<POINT_2D XY="18,-3411.969"/>
+				<POINT_2D XY="19,-3412.25884"/>
+				<POINT_2D XY="20,-3411.61797"/>
+				<POINT_2D XY="21,-3414.62652"/>
+				<POINT_2D XY="22,-3414.86439"/>
+				<POINT_2D XY="23,-3414.89691"/>
+				<POINT_2D XY="24,-3414.5533"/>
+				<POINT_2D XY="25,-3413.33418"/>
+				<POINT_2D XY="26,-3413.44149"/>
+				<POINT_2D XY="27,-3415.51799"/>
+				<POINT_2D XY="28,-3415.84145"/>
+				<POINT_2D XY="29,-3415.85594"/>
+				<POINT_2D XY="30,-3412.78808"/>
+				<POINT_2D XY="31,-3411.7092"/>
+				<POINT_2D XY="32,-3411.47864"/>
+				<POINT_2D XY="33,-3402.19896"/>
+				<POINT_2D XY="34,-3403.57933"/>
+				<POINT_2D XY="35,-3407.18746"/>
+				<POINT_2D XY="36,-3408.46102"/>
+				<POINT_2D XY="37,-3418.22525"/>
+			</SERIES_2D>
+		</DATA_2D>
+		<MARKERS_2D NumMarkers="0"/>
+		<CARTESIAN_2D_PLOT PlotType="Line" Visible="1" BackgroundColor="255,255,255" ForegroundColor="0,0,0" Box="1">
+			<TITLE Visible="1" Text="CASTEP SCF Energy"/>
+			<LEGEND Visible="0" Heading=""/>
+			<CARTESIAN_AXES_2D XVisible="1" YVisible="1" XReversed="0" YReversed="0" XLabel="Iteration" YLabel="Energy (eV)" XOriginPos="Min" YOriginPos="Min" XTickPos="Auto" YTickPos="Auto"/>
+			<CARTESIAN_GRID_2D XGrid="Off" YGrid="Off"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineWidth="1" LineStyle="Solid" LineColor="0,0,255" SymbolSize="6" SymbolShape="Dot" SymbolColor="0,0,255" BarOrientation="Horizontal" BarWidth="0.5" BarColor="0,0,255" DendrogramCursorColor="0,0,255" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+		</CARTESIAN_2D_PLOT>
+	</CHART_2D>
+</XCD>

@@ -1,0 +1,370 @@
+ Job started on host Stu23
+ at Mon Nov  4 19:34:41 2019
+
+ +-------------------------------------------------+
+ |                                                 |
+ |      CCC   AA    SSS  TTTTT  EEEEE  PPPP        |
+ |     C     A  A  S       T    E      P   P       |
+ |     C     AAAA   SS     T    EEE    PPPP        |
+ |     C     A  A     S    T    E      P           |
+ |      CCC  A  A  SSS     T    EEEEE  P           |
+ |                                                 |
+ +-------------------------------------------------+
+ |                                                 |
+ | Welcome to Materials Studio CASTEP version 7.0  |
+ | Ab Initio Total Energy Program                  |
+ |                                                 |
+ | Authors:                                        |
+ | M. Segall, M. Probert, C. Pickard, P. Hasnip,   |
+ | S. Clark, K. Refson, J. R. Yates, M. Payne      |
+ |                                                 |
+ | Contributors:                                   |
+ | P. Lindan, P. Haynes, J. White, V. Milman,      |
+ | N. Govind, M. Gibson, P. Tulip, V. Cocula,      |
+ | B. Montanari, D. Quigley, M. Glover,            |
+ | L. Bernasconi, A. Perlov, M. Plummer,           |
+ | E. McNellis, J. Meyer, J. Gale, D. Jochym       |
+ | J. Aarons, B. Walker, R. Gillen, D. Jones       |
+ |                                                 |
+ | Copyright (c) 2000 - 2013                       |
+ |                                                 |
+ | Please cite                                     |
+ |                                                 |
+ |     "First principles methods using CASTEP"     |
+ |                                                 |
+ |         Zeitschrift fuer Kristallographie       |
+ |           220(5-6) pp. 567-570 (2005)           |
+ |                                                 |
+ | S. J. Clark, M. D. Segall, C. J. Pickard,       |
+ | P. J. Hasnip, M. J. Probert, K. Refson,         |
+ | M. C. Payne                                     |
+ |                                                 |
+ |       in all publications arising from          |
+ |              your use of CASTEP                 |
+ |                                                 |
+ +-------------------------------------------------+
+ 
+ 
+ This version was compiled for x86_64-windows-msvc2008 on Nov 12 2013
+ Code version: 6201
+ 
+License checkout of MS_castep successful
+ 
+ +---------------------------------------------------+
+ |                                                   |
+ |  Using DFT-SEDC - the DFT Semi-Empirical          |
+ |  Dispersion interaction Correction module         |
+ |  Copyright (c) 2008 Erik McNellis and Joerg Meyer |
+ |  Fritz-Haber-Institut der MPG. Distributed under  |
+ |  the GNU Lesser General Public License (LGPL).    |
+ |                                                   |
+ | Please cite the following publications in all     |
+ | work arising from your use of CASTEP SEDC.        |
+ |                                                   |
+ | Erik R. McNellis, Joerg Meyer, and Karsten Reuter |
+ | Phys. Rev. B 80, 205414 (2009)                    |
+ +---------------------------------------------------+
+ 
+ 
+ Pseudo atomic calculation performed for Fe 3d6 4s2
+ 
+ Converged in 35 iterations to a total energy of -855.8900 eV
+ 
+ Calculation not parallelised.
+
+ ************************************ Title ************************************
+ CASTEP calculation from Materials Studio
+
+ ***************************** General Parameters ******************************
+  
+ output verbosity                               : normal  (1)
+ write checkpoint data to                       : FCC-Fe__1_0_0_.check
+ type of calculation                            : single point energy
+ stress calculation                             : off
+ density difference calculation                 : off
+ electron localisation func (ELF) calculation   : off
+ Hirshfeld analysis                             : on
+ unlimited duration calculation
+ timing information                             : on
+ memory usage estimate                          : on
+ write final potential to formatted file        : off
+ write final density to formatted file          : off
+ write BibTeX reference list                    : on
+  
+ output         length unit                     : A
+ output           mass unit                     : amu
+ output           time unit                     : ps
+ output         charge unit                     : e
+ output         energy unit                     : eV
+ output          force unit                     : eV/A
+ output       velocity unit                     : A/ps
+ output       pressure unit                     : GPa
+ output     inv_length unit                     : 1/A
+ output      frequency unit                     : cm-1
+ output force constant unit                     : eV/A**2
+ output         volume unit                     : A**3
+ output   IR intensity unit                     : (D/A)**2/amu
+ output         dipole unit                     : D
+ output         efield unit                     : eV/A/e
+ output        entropy unit                     : J/mol/K
+  
+ wavefunctions paging                           : none
+ random number generator seed                   : randomised (193443017)
+ data distribution                              : optimal for this architecture
+ optimization strategy                          : balance speed and memory
+
+ *********************** Exchange-Correlation Parameters ***********************
+  
+ using functional                               : Perdew Burke Ernzerhof
+ Divergence correction                          : off
+ DFT+D: Semi-empirical dispersion correction    : on
+ SEDC with                                      : G06 correction scheme
+
+ ************************* Pseudopotential Parameters **************************
+  
+ pseudopotential representation                 : reciprocal space
+ <beta|phi> representation                      : reciprocal space
+
+ **************************** Basis Set Parameters *****************************
+  
+ plane wave basis set cut-off                   :   400.0000   eV
+ size of standard grid                          :     1.7500
+ size of   fine   gmax                          :    17.9311   1/A
+ largest prime factor in FFT                    :          5
+ finite basis set correction                    : none
+
+ **************************** Electronic Parameters ****************************
+  
+ number of  electrons                           :  32.00    
+ net charge of system                           :  0.000    
+ net spin   of system                           :  4.000    
+ number of  up  spins                           :  18.00    
+ number of down spins                           :  14.00    
+ treating system as spin-polarized
+ number of bands                                :         36
+
+ ********************* Electronic Minimization Parameters **********************
+  
+ Method: Treating system as metallic with density mixing treatment of electrons,
+         and number of  SD  steps               :          1
+         and number of  CG  steps               :          4
+  
+ total energy / atom convergence tol.           : 0.1000E-05   eV
+ eigen-energy convergence tolerance             : 0.1111E-06   eV
+ max force / atom convergence tol.              : ignored
+ convergence tolerance window                   :          3   cycles
+ max. number of SCF cycles                      :        500
+ number of fixed-spin iterations                :          6
+ smearing scheme                                : Gaussian
+ smearing width                                 : 0.1000       eV
+ Fermi energy convergence tolerance             : 0.2721E-13   eV
+ periodic dipole correction                     : NONE
+
+ ************************** Density Mixing Parameters **************************
+  
+ density-mixing scheme                          : Pulay
+ max. length of mixing history                  :         20
+ charge density mixing amplitude                : 0.5000    
+   spin density mixing amplitude                :  2.000    
+ cut-off energy for mixing                      :  400.0       eV
+ charge density mixing g-vector                 :  1.500       1/A
+   spin density mixing g-vector                 :  1.500       1/A
+
+ *********************** Population Analysis Parameters ************************
+  
+ Population analysis with cutoff                :  3.000       A
+
+ *******************************************************************************
+  
+ 
+                           -------------------------------
+                                      Unit Cell
+                           -------------------------------
+        Real Lattice(A)                      Reciprocal Lattice(1/A)
+   4.9172206   0.0000000   0.0000000        1.2777920   0.0000000   0.0000000
+   0.0000000   4.9172206   0.0000000        0.0000000   1.2777920   0.0000000
+   0.0000000   0.0000000  20.0000000        0.0000000   0.0000000   0.3141593
+ 
+                       Lattice parameters(A)       Cell Angles
+                    a =    4.917221          alpha =   90.000000
+                    b =    4.917221          beta  =   90.000000
+                    c =   20.000000          gamma =   90.000000
+ 
+                       Current cell volume =  483.581161       A**3
+ 
+                           -------------------------------
+                                     Cell Contents
+                           -------------------------------
+                         Total number of ions in cell =    4
+                      Total number of species in cell =    1
+                        Max number of any one species =    4
+ 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            x  Element    Atom        Fractional coordinates of atoms  x
+            x            Number           u          v          w      x
+            x----------------------------------------------------------x
+            x  Fe           1         0.000000   0.000000   0.000000   x 
+            x  Fe           2         0.500000   0.000000   0.000000   x 
+            x  Fe           3         0.000000   0.500000   0.000000   x 
+            x  Fe           4         0.500000   0.500000   0.000000   x 
+            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+                         No user defined ionic velocities
+ 
+                           -------------------------------
+                                   Details of Species
+                           -------------------------------
+ 
+                               Mass of species in AMU
+                                    Fe   55.8470001
+ 
+                          Electric Quadrupole Moment (Barn)
+                                    Fe    0.1600000 Isotope 57
+         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         |  Element    Atom         Initial            Initial magnetic       |
+         |            Number    spin polarization        moment (uB)          |
+         |--------------------------------------------------------------------|
+         | Fe             1         0.125000              1.000               |
+         | Fe             2         0.125000              1.000               |
+         | Fe             3         0.125000              1.000               |
+         | Fe             4         0.125000              1.000               |
+         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+
+
+         Quantisation axis:    0.00000   0.00000   1.00000
+
+         Units for Hubbard U values are eV
+         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+         |  Element     Atom     Hubbard U   values by orbital type         |
+         |             Number      s          p          d          f       |
+         |------------------------------------------------------------------|
+         |Fe            1         0.00000    0.00000    3.00000    0.00000  |
+         |Fe            2         0.00000    0.00000    3.00000    0.00000  |
+         |Fe            3         0.00000    0.00000    3.00000    0.00000  |
+         |Fe            4         0.00000    0.00000    3.00000    0.00000  |
+         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+ 
+                          Files used for pseudopotentials:
+                                    Fe Fe_00PBE.uspcc
+ 
+                           -------------------------------
+                              k-Points For BZ Sampling
+                           -------------------------------
+                       MP grid size for SCF calculation is  3  3  1
+                         Number of kpoints used =           9
+ 
+             +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             +  Number       Fractional coordinates        Weight  +
+             +-----------------------------------------------------+
+             +     1   0.333333   0.333333   0.000000   0.1111111  +
+             +     2   0.333333   0.000000   0.000000   0.1111111  +
+             +     3   0.333333  -0.333333   0.000000   0.1111111  +
+             +     4   0.000000   0.333333   0.000000   0.1111111  +
+             +     5   0.000000   0.000000   0.000000   0.1111111  +
+             +     6   0.000000  -0.333333   0.000000   0.1111111  +
+             +     7  -0.333333   0.333333   0.000000   0.1111111  +
+             +     8  -0.333333   0.000000   0.000000   0.1111111  +
+             +     9  -0.333333  -0.333333   0.000000   0.1111111  +
+             +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+                           -------------------------------
+                               Symmetry and Constraints
+                           -------------------------------
+ 
+                      Cell is a supercell containing 4 primitive cells
+                      Maximum deviation from symmetry =  0.00000         ANG
+ 
+         There are no symmetry operations specified or generated for this cell
+         There are no ionic constraints specified or generated for this cell
+                      Point group of crystal =     1: C1, 1, 1
+ 
+ 
+                         Centre of mass is NOT constrained
+ 
+                         Number of cell constraints= 0
+                         Cell constraints are:  1 2 3 4 5 6
+ 
+                         External pressure/stress (GPa)
+                          0.00000   0.00000   0.00000
+                                    0.00000   0.00000
+                                              0.00000
+ 
+                                --------------------
+                                  DFT-D parameters
+                                --------------------
+ 
+                          Dispersion-correction scheme : G06                                                                             
+                        Parameter s6 :   0.750000 (default)
+                        Parameter d :  20.000000 (default)
+ 
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+        x              Atomic DFT-D parameters                             x
+        x  Species      C6            R0                                   x
+        x               eV A^6        Ang                                  x
+        x------------------------------------------------------------------x
+        x  Fe          111.9341       1.5620   (default)                   x
+        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 
+  
++---------------- MEMORY AND SCRATCH DISK ESTIMATES PER PROCESS --------------+
+|                                                     Memory          Disk    |
+| Model and support data                              149.9 MB        64.8 MB |
+| Electronic energy minimisation requirements         112.7 MB        87.1 MB |
+|                                               ----------------------------- |
+| Approx. total storage required per process          262.6 MB       151.9 MB |
+|                                                                             |
+| Requirements will fluctuate during execution and may exceed these estimates |
++-----------------------------------------------------------------------------+
+ 
+ Pseudo atomic calculation performed for Fe 3d6 4s2
+ 
+ Converged in 35 iterations to a total energy of -855.8900 eV
+ 
+------------------------------------------------------------------------ <-- SCF
+SCF loop      Energy           Fermi           Energy gain       Timer   <-- SCF
+                               energy          per atom          (sec)   <-- SCF
+------------------------------------------------------------------------ <-- SCF
+Initial  -9.27677927E+002  0.00000000E+000                         1.62  <-- SCF
+      1  -3.26842368E+003 -1.67484734E+000   5.85186438E+002      20.03  <-- SCF
+      2  -3.42835217E+003 -7.91526674E+000   3.99821234E+001      34.67  <-- SCF
+      3  -3.44147301E+003 -7.78408528E+000   3.28020877E+000      48.02  <-- SCF
+      4  -3.44160148E+003 -7.78057348E+000   3.21180877E-002      59.89  <-- SCF
+      5  -3.41626408E+003 -5.31642762E+000  -6.33434988E+000      74.59  <-- SCF
+      6  -3.41645656E+003 -5.08868518E+000   4.81183743E-002      87.84  <-- SCF
+      7  -3.41868546E+003 -5.75145962E+000   5.57226305E-001     102.19  <-- SCF
+      8  -3.43957887E+003 -5.15493293E+000   5.22335135E+000     118.25  <-- SCF
+      9  -3.43966428E+003 -5.16683008E+000   2.13527415E-002     130.05  <-- SCF
+     10  -3.43911402E+003 -5.23834601E+000  -1.37564090E-001     144.58  <-- SCF
+     11  -3.43895982E+003 -5.36924546E+000  -3.85513795E-002     159.69  <-- SCF
+     12  -3.43782835E+003 -5.40611170E+000  -2.82866335E-001     174.41  <-- SCF
+     13  -3.43697684E+003 -5.47296790E+000  -2.12877058E-001     189.67  <-- SCF
+     14  -3.43550023E+003 -5.58209438E+000  -3.69153080E-001     203.67  <-- SCF
+     15  -3.43290409E+003 -5.24114896E+000  -6.49034862E-001     218.77  <-- SCF
+     16  -3.42378649E+003 -4.75832657E+000  -2.27939898E+000     233.56  <-- SCF
+     17  -3.41192842E+003 -4.78632357E+000  -2.96451923E+000     249.95  <-- SCF
+     18  -3.41196900E+003 -4.78636883E+000   1.01444163E-002     263.22  <-- SCF
+     19  -3.41225884E+003 -4.79373511E+000   7.24602452E-002     279.69  <-- SCF
+     20  -3.41161797E+003 -4.78975792E+000  -1.60215575E-001     296.22  <-- SCF
+     21  -3.41462652E+003 -4.79743325E+000   7.52136500E-001     312.27  <-- SCF
+     22  -3.41486439E+003 -4.79461522E+000   5.94682480E-002     329.02  <-- SCF
+     23  -3.41489691E+003 -4.75698383E+000   8.12889347E-003     346.62  <-- SCF
+     24  -3.41455330E+003 -4.75704773E+000  -8.59020603E-002     363.14  <-- SCF
+     25  -3.41333418E+003 -4.74713697E+000  -3.04781040E-001     380.52  <-- SCF
+     26  -3.41344149E+003 -4.75507790E+000   2.68279996E-002     396.84  <-- SCF
+     27  -3.41551799E+003 -4.77737276E+000   5.19125785E-001     413.52  <-- SCF
+     28  -3.41584145E+003 -4.78272147E+000   8.08656840E-002     430.70  <-- SCF
+     29  -3.41585594E+003 -4.78049634E+000   3.62110053E-003     447.86  <-- SCF
+     30  -3.41278808E+003 -4.74118515E+000  -7.66964528E-001     465.20  <-- SCF
+     31  -3.41170920E+003 -4.73665167E+000  -2.69720219E-001     482.47  <-- SCF
+     32  -3.41147864E+003 -4.73075959E+000  -5.76396735E-002     499.80  <-- SCF
+     33  -3.40219896E+003 -4.57042133E+000  -2.31991956E+000     517.30  <-- SCF
+     34  -3.40357933E+003 -4.53045837E+000   3.45092475E-001     534.84  <-- SCF
+     35  -3.40718746E+003 -4.54348032E+000   9.02032843E-001     551.59  <-- SCF
+     36  -3.40846102E+003 -4.50060001E+000   3.18388610E-001     568.48  <-- SCF
+     37  -3.41822525E+003 -4.45376205E+000   2.44105904E+000     584.72  <-- SCF
+     38  -3.42928785E+003 -4.36512301E+000   2.76564903E+000     601.36  <-- SCF
+     39  -3.42932990E+003 -4.36462228E+000   1.05121378E-002     616.67  <-- SCF
+     40  -3.43106130E+003 -4.46195463E+000   4.32851345E-001     632.52  <-- SCF

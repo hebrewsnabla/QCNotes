@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XCD []>
+<XCD Version="7.0" NumCharts="1">
+	<CHART_2D>
+		<DATA_2D NumSeries="2">
+			<SERIES_2D UniqueID="0" Name="Energy Change (eV/atom)" NumPoints="37">
+				<POINT_2D XY="1,2.767294252569449"/>
+				<POINT_2D XY="2,1.601865855225182"/>
+				<POINT_2D XY="3,0.5159014854109593"/>
+				<POINT_2D XY="4,-1.493250320369108"/>
+				<POINT_2D XY="5,0.8017020481038943"/>
+				<POINT_2D XY="6,-1.317689053910454"/>
+				<POINT_2D XY="7,-0.2539683900106496"/>
+				<POINT_2D XY="8,0.7179492397435839"/>
+				<POINT_2D XY="9,-1.670546357552938"/>
+				<POINT_2D XY="10,-0.861494920389824"/>
+				<POINT_2D XY="11,-1.413960076795422"/>
+				<POINT_2D XY="12,-0.5484187365080883"/>
+				<POINT_2D XY="13,-0.6718711404446172"/>
+				<POINT_2D XY="14,-0.4327935037241816"/>
+				<POINT_2D XY="15,-0.187731975052329"/>
+				<POINT_2D XY="16,0.3578203495975415"/>
+				<POINT_2D XY="17,0.471954271835916"/>
+				<POINT_2D XY="18,-1.993772936800369"/>
+				<POINT_2D XY="19,-1.139900200679252"/>
+				<POINT_2D XY="20,-0.7952952672295293"/>
+				<POINT_2D XY="21,-0.1237033351833722"/>
+				<POINT_2D XY="22,-1.225714856105404"/>
+				<POINT_2D XY="23,-2.089968567884311"/>
+				<POINT_2D XY="24,-1.065996419798668"/>
+				<POINT_2D XY="25,-0.5160120533412669"/>
+				<POINT_2D XY="26,-1.571411708806628"/>
+				<POINT_2D XY="27,-0.2847273991598684"/>
+				<POINT_2D XY="28,-1.092235735633097"/>
+				<POINT_2D XY="29,-2.441159418011429"/>
+				<POINT_2D XY="30,-0.1152247216443735"/>
+				<POINT_2D XY="31,-0.569086496368774"/>
+				<POINT_2D XY="32,-1.239278487912697"/>
+				<POINT_2D XY="33,0.3654729265918598"/>
+				<POINT_2D XY="34,-0.462064510721864"/>
+				<POINT_2D XY="35,-0.04477764951570962"/>
+				<POINT_2D XY="36,-0.4970424770607116"/>
+				<POINT_2D XY="37,0.3875782834877058"/>
+			</SERIES_2D>
+			<SERIES_2D UniqueID="1" Name="" NumPoints="2">
+				<POINT_2D XY="1,-6"/>
+				<POINT_2D XY="37,-6"/>
+			</SERIES_2D>
+		</DATA_2D>
+		<MARKERS_2D NumMarkers="0"/>
+		<CARTESIAN_2D_PLOT PlotType="Line" Visible="1" BackgroundColor="255,255,255" ForegroundColor="0,0,0" Box="1">
+			<TITLE Visible="1" Text="CASTEP SCF Convergence"/>
+			<LEGEND Visible="1" Heading=""/>
+			<CARTESIAN_AXES_2D XVisible="1" YVisible="1" XReversed="0" YReversed="0" XLabel="Iteration" YLabel="Convergence (log10)" XOriginPos="Min" YOriginPos="Min" XTickPos="Auto" YTickPos="Auto"/>
+			<CARTESIAN_GRID_2D XGrid="Off" YGrid="Off"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineWidth="1" LineStyle="Solid" LineColor="255,0,0" SymbolSize="6" SymbolShape="Dot" SymbolColor="255,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="0,0,255" DendrogramCursorColor="0,0,255" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineWidth="1" LineStyle="Dash" LineColor="255,0,0" SymbolSize="6" SymbolShape="None" SymbolColor="255,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="255,0,0" DendrogramCursorColor="255,0,0" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+		</CARTESIAN_2D_PLOT>
+	</CHART_2D>
+</XCD>

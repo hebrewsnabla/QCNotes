@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="latin1"?>
+<!DOCTYPE XCD []>
+<XCD Version="7.0" NumCharts="1">
+	<CHART_2D>
+		<DATA_2D NumSeries="2">
+			<SERIES_2D UniqueID="0" Name="Energy Change (eV/atom)" NumPoints="19">
+				<POINT_2D XY="1,2.765565429981334"/>
+				<POINT_2D XY="2,1.609125616578431"/>
+				<POINT_2D XY="3,0.4573511007014606"/>
+				<POINT_2D XY="4,-1.538557549447054"/>
+				<POINT_2D XY="5,-0.3329035848128318"/>
+				<POINT_2D XY="6,0.09544641268199829"/>
+				<POINT_2D XY="7,-0.1405001658189788"/>
+				<POINT_2D XY="8,-0.3893429823631628"/>
+				<POINT_2D XY="9,-0.2318601419130285"/>
+				<POINT_2D XY="10,0.0816880016752931"/>
+				<POINT_2D XY="11,-0.9097745609511692"/>
+				<POINT_2D XY="12,-0.03137760786714385"/>
+				<POINT_2D XY="13,-0.4192134267317605"/>
+				<POINT_2D XY="14,-1.946405790381426"/>
+				<POINT_2D XY="15,-1.143664645107932"/>
+				<POINT_2D XY="16,-1.061449456018993"/>
+				<POINT_2D XY="17,-0.625371724607518"/>
+				<POINT_2D XY="18,-0.5417295880769624"/>
+				<POINT_2D XY="19,-1.22067269601617"/>
+			</SERIES_2D>
+			<SERIES_2D UniqueID="1" Name="" NumPoints="2">
+				<POINT_2D XY="1,-6"/>
+				<POINT_2D XY="19,-6"/>
+			</SERIES_2D>
+		</DATA_2D>
+		<MARKERS_2D NumMarkers="0"/>
+		<CARTESIAN_2D_PLOT PlotType="Line" Visible="1" BackgroundColor="255,255,255" ForegroundColor="0,0,0" Box="1">
+			<TITLE Visible="1" Text="CASTEP SCF Convergence"/>
+			<LEGEND Visible="1" Heading=""/>
+			<CARTESIAN_AXES_2D XVisible="1" YVisible="1" XReversed="0" YReversed="0" XLabel="Iteration" YLabel="Convergence (log10)" XOriginPos="Min" YOriginPos="Min" XTickPos="Auto" YTickPos="Auto"/>
+			<CARTESIAN_GRID_2D XGrid="Off" YGrid="Off"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineWidth="1" LineStyle="Solid" LineColor="255,0,0" SymbolSize="6" SymbolShape="Dot" SymbolColor="255,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="0,0,255" DendrogramCursorColor="0,0,255" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+			<CARTESIAN_GRAPH_2D_STYLE LineWidth="1" LineStyle="Dash" LineColor="255,0,0" SymbolSize="6" SymbolShape="None" SymbolColor="255,0,0" BarOrientation="Horizontal" BarWidth="0.5" BarColor="255,0,0" DendrogramCursorColor="255,0,0" DendrogramCursorWidth="1" DendrogramCursorPosition="0.5"/>
+		</CARTESIAN_2D_PLOT>
+	</CHART_2D>
+</XCD>

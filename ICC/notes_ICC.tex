@@ -210,4 +210,56 @@ SN2 with/without benzene/dichloromethane,
 barrier, charge population,
 NBO analysis -- charge transfer
 
+\section{Organometallic Chemistry}
+基元反应
+\subsection{Oxidative Addition 氧化加成}
+sigma-活化 $ \ce{Mg + R-X -> R-Mg-X} $\\
+
+\subsection{Reductive Elimination 还原消除}
+
+\subsection{Insertion Reaction}
+$ \ce{M-R + A=B -> M-A-B-R} $\\
+$ \ce{M-R + A=B -> M-A(=B)-R $
+
+HW\\
+Me3P-Pt-PMe3 + H2
+PMe3 + H2
+carbene
+modified-lan2dz,sol=benzene,smd
+	
+\section{Choosing Computation Level}
+NI Zhigang\\
+\subsection{SCF Conv Fail}
+For diff basis
+\begin{enumerate}
+	\item guess=read
+	\item raise int precision SCF=NoVarAcc
+	\item close Incremental Fock: SCF=noincFock
+\end{enumerate}
+others
+\begin{enumerate}
+	\item SCF=vshift=x (共轭，过渡金属)
+	\item guess=
+	\item SCF=QC/XQC
+	\item SCF=conver=6 (default is 8(1e-10), only single point)
+	\item SCF=maxcyc=N
+\end{enumerate}
+
+\subsection{}
+MP2 -- good for NMR, H-bond, bad for pi-pi\\
+G16 cannot RI-MP2\\
+过渡金属 SCAN, M06-L, MN15L, PWPB95(ORCA)\\
+
+\subsection{basis}
+pople basis 把L层用SP表示，共用指数
+
+PP
+DFT     
+post-HF
+
+\subsection{opt}
+震荡: maxstep=n (n=3-10)
+
+
+
 \end{document}
