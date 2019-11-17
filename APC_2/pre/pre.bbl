@@ -1,0 +1,72 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{nuc}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=41fd9aa0825121b5c811b1239a33efca}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Xiting},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{41fd9aa0825121b5c811b1239a33efca}
+      \strng{fullhash}{41fd9aa0825121b5c811b1239a33efca}
+      \strng{bibnamehash}{41fd9aa0825121b5c811b1239a33efca}
+      \strng{authorbibnamehash}{41fd9aa0825121b5c811b1239a33efca}
+      \strng{authornamehash}{41fd9aa0825121b5c811b1239a33efca}
+      \strng{authorfullhash}{41fd9aa0825121b5c811b1239a33efca}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Atomic Nuclear Physics}
+      \field{year}{2000}
+    \endentry
+    \entry{particle}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=57f5b607cec3b22885f854f4c4baf257}{%
+           family={Thomson},
+           familyi={T\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge Unversity Press}%
+      }
+      \strng{namehash}{57f5b607cec3b22885f854f4c4baf257}
+      \strng{fullhash}{57f5b607cec3b22885f854f4c4baf257}
+      \strng{bibnamehash}{57f5b607cec3b22885f854f4c4baf257}
+      \strng{authorbibnamehash}{57f5b607cec3b22885f854f4c4baf257}
+      \strng{authornamehash}{57f5b607cec3b22885f854f4c4baf257}
+      \strng{authorfullhash}{57f5b607cec3b22885f854f4c4baf257}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Modern Particle Physics}
+      \field{year}{2013}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -95,7 +95,7 @@
 %\usepackage{abstract}
 \usepackage{empheq}
 \usepackage{extarrows}
-\usepackage{cite}
+%\usepackage{cite}
 \usepackage{listings}
 \usepackage{multirow}
 \usepackage{xcolor}
@@ -105,6 +105,9 @@
 %\usepackage{unicode-math}
 %\usepackage[table,xcdraw]{xcolor}
 \usepackage{color}
+\usepackage{siunitx}
+\usepackage[isbn=false,doi=false,uniquename=init]{biblatex}
+\addbibresource{pre.bib}
 
 %\setmonofont{}
 \newfontfamily\Consolas{Consolas}
@@ -154,7 +157,7 @@
 	morekeywords={*,...}               % if you want to add more keywords to the set
 }
 
-\DeclareMathOperator{\p}{\prime}
+%\DeclareMathOperator{\p}{\prime}
 \DeclareMathOperator{\ti}{\times}
 \DeclareMathOperator{\s}{\sum_{n=1}^{\infty}}
 \DeclareMathOperator{\intinf}{\int_0^\infty}
@@ -169,6 +172,12 @@
 \DeclareMathOperator{\dlra}{\Leftrightarrow}
 \DeclareMathOperator{\dra}{\Rightarrow}
 \newcommand{\gq}{{\ooalign{$ > $\cr\hidewidth $ ? $ \hidewidth\cr}}}
+
+\DeclareMathOperator{\rp}{\mathrm{p}}
+\DeclareMathOperator{\rn}{\mathrm{n}}
+\DeclareMathOperator{\ru}{\mathrm{u}}
+\DeclareMathOperator{\rd}{\mathrm{d}}
+
 \newcommand{\dis}{\displaystyle}
 \newcommand{\ft}{\frametitle}
 \numberwithin{equation}{section}
@@ -235,7 +244,7 @@ However, \textbf{why} the $ g $-factors look \textbf{"anomalous"}?
 		\hline
 		& $ \ce{^1H} $ & $ \ce{^2H} $ & $ \ce{^7Li} $ & $ \ce{^19F} $ \\ \hline
 		$ g $ & 5.58 & 0.86 & 2.17 & 5.25 \\
-		$ \mu $(a.u.) & 2.79 & 0.86 & 3.25 & 2.63\\
+		$ \mu $($ \mu_N $) & 2.79 & 0.86 & 3.25 & 2.63\\
 		\hline
 	\end{tabular}
 \end{table}
@@ -247,27 +256,123 @@ However, \textbf{why} the $ g $-factors look \textbf{"anomalous"}?
 %\end{frame}
 
 
-\section{\textsl{Ab Initio} Calculation via QCD}
-\begin{frame}
-\frametitle{\textsl{Ab Initio} Calculation of Proton Magnetic Moment}
+\section{\textsl{Ab Initio} Calculation}
+\subsection{Proton/Neutron}
 
-\iffalse
-{
-the magnetic moment of the proton differs from
+\begin{frame}
+\frametitle{Calculation of Proton/Neutron Magnetic Moment\cite{particle}}
+The magnetic moment of the proton differs from
 that expected for a point-like Dirac fermion.\\
 Since quarks are fundamental Dirac fermions, the operators for the total magnetic moment and z-component of the magnetic moment are
 \begin{align}
-\bm\mu = \dfrac{Q}{m}\vb{S} & \bm\mu_z = \dfrac{Q}{m}\vb{S}_z
+\bm\mu = \dfrac{Q}{m}\vb{S} &  & \bm\mu_z = \dfrac{Q}{m}\vb{S}_z
 \end{align}
 thus
 \begin{align}
-\bm\mu_{u,z} &= \dfrac{2}{3}\dfrac{m_p}{m_u}\dfrac{1}{2} = 
+\mu_{u,z} &= \dfrac{2}{3}\dfrac{1}{m_u}\dfrac{1}{2} = \dfrac{1}{3m_u} =  \dfrac{2m_p}{3m_u}\mu_N \\
+\mu_{d,z} &= -\dfrac{1}{3}\dfrac{1}{m_d}\dfrac{1}{2} = -\dfrac{1}{6m_d} =  -\dfrac{m_p}{3m_d}\mu_N
 \end{align}
-}
-\fi
+where $ \mu_N = \dfrac{1}{2m_p} $
+
+\end{frame}
+
+\begin{frame}
+The proton wavefunction is
+\begin{equation}\label{key}
+\ket{\rp\uparrow} = \dfrac{1}{\sqrt{6}}(2\ru\uparrow\ru\uparrow\rd\downarrow - \ru\uparrow\ru\downarrow\rd\uparrow - \ru\downarrow\ru\uparrow\rd\uparrow)
+\end{equation}
+thus
+\begin{align}
+\mu_p &= \dfrac{1}{6}\Braket{\rp\uparrow | \hat\mu_z^{(1)} + \hat\mu_z^{(2)} + \hat\mu_z^{(3)} | \rp\uparrow} \notag\\
+&= \dfrac{4}{6}\Braket{\ru\uparrow\ru\uparrow\rd\downarrow | \hat\mu_z^{(1)} + \hat\mu_z^{(2)} + \hat\mu_z^{(3)} | \ru\uparrow\ru\uparrow\rd\downarrow} \notag\\
+&\quad {} + \dfrac{1}{6}\Braket{\ru\uparrow\ru\downarrow\rd\uparrow | \hat\mu_z^{(1)} + \hat\mu_z^{(2)} + \hat\mu_z^{(3)} | \ru\uparrow\ru\downarrow\rd\uparrow} \notag\\
+&\quad {} + \dfrac{1}{6}\Braket{\ru\downarrow\ru\uparrow\rd\uparrow | \hat\mu_z^{(1)} + \hat\mu_z^{(2)} + \hat\mu_z^{(3)} | \ru\downarrow\ru\uparrow\rd\uparrow} \notag\\
+&= \dfrac{2}{3}(\mu_{\ru} + \mu_{\ru} - \mu_{\rd}) + \dfrac{1}{6}(\mu_{\ru} - \mu_{\ru} + \mu_{\rd}) + \dfrac{1}{6}(-\mu_{\ru} + \mu_{\ru} + \mu_{\rd}) \notag\\
+&= \dfrac{4}{3}\mu_{\ru} - \dfrac{1}{3}\mu_{\rd}
+\end{align}
+thus
+\begin{align}
+\mu_{\rp} &= \dfrac{4}{3}\dfrac{2m_p}{3m_u}\mu_N - \dfrac{1}{3}\qty(-\dfrac{m_p}{3m_d}\mu_N) = \qty(\dfrac{8}{9}\dfrac{m_p}{m_u} + \dfrac{1}{9}\dfrac{m_p}{m_d})\mu_N
+\end{align}
+
+\end{frame}
+
+%\begin{frame}
+%Since
+%\begin{align}\label{key}
+%m_{\rp} = \SI{0.938272}{GeV} & & m_{\ru} = \SI{0.338}{GeV} & & m_{\rd} = %\SI{0.322}{GeV}
+%\end{align}
+%we have
+%\begin{equation}\label{key}
+%\mu_{\rp} = \qty(\dfrac{8}{9}\cross 2.775 + \dfrac{1}{9}\cross 2.913)\mu_N = 2.79\mu_N
+%\end{equation}
+%thus
+%\begin{equation}\label{key}
+%g_{\rp} = 5.58
+%\end{equation}
+%\end{frame}
+
+\begin{frame}
+Similarly, for neutron %(mass = $ \SI{0.939565}{GeV} $)
+\begin{align}
+\mu_{\rn}&= \dfrac{4}{3}\mu_{\rd} - \dfrac{1}{3}\mu_{\ru} \notag\\
+&= -\qty(\dfrac{4}{9}\dfrac{m_p}{m_d} + \dfrac{2}{9}\dfrac{m_p}{m_u})\mu_N %\notag\\
+%&= -\qty(\dfrac{4}{9}\cross 2.913 + \dfrac{2}{9}\cross 2.775)\mu_N \notag\\
+%&= 1.911\mu_N
+\end{align}
+Sadly, we cannot measure mass of quarks directly, due to "color confinement".\\
+More sadly, mass of quarks fitted from experiments varies with cases.\\
+By na\"ive estimation, we take $ m_{\ru} \approx m_{\rd} \approx \dfrac{1}{3}m_{\rp} \approx \dfrac{1}{3}m_{\rn} $, thus
+\begin{align}\label{key}
+\mu_{\rp} = 3\mu_N %&& g_{\rp} = 6\\
+&& \mu_{\rn} = -2\mu_N %&& g_{\rn} = 4
+\end{align}
+compared with experimental values
+\begin{align}
+\mu_{\rp} = 2.79\mu_N && \mu_{\rn} = -1.91\mu_N
+\end{align}
+The ratio between them is more accurate
+\begin{align}
+\qty(\dfrac{\mu_{\rp}}{\mu_{\rn}})^{(th)} = -1.5 && \qty(\dfrac{\mu_{\rp}}{\mu_{\rn}})^{(exp)} = -1.46
+\end{align}
+
+\end{frame}
+
+\subsection{Multi-baryon nucleus}
+\begin{frame}
+\frametitle{What about Multi-baryon nucleus?}
+classification of nucleus by number of protons and neutrons:
+\begin{itemize}
+	\item odd-odd
+	\item odd-even
+	\item even-even
+\end{itemize}
+Discussion based on Shell Model\cite{nuc}
+\begin{table}
+	\centering
+	\begin{tabular}{ccc}
+		\hline
+		& spin & magnetic moment\\ \hline
+		even-even & 0 & 0\\
+		odd-even & by last nucleon & by last nucleon\\
+		odd-odd & by coupling of last 2 nucleons & by coupling of last 2 nucleons\\ 
+		\hline
+	\end{tabular}
+\end{table}
+
 \end{frame}
 
 
+\begin{frame}
+References
+\printbibliography
+
+\end{frame}
+
+\begin{frame}
+\centering
+{\Large \textbf{Thank You}}
+\end{frame}
 %\section{References}
 
 %\bibliography{pre1}

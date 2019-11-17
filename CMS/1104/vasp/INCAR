@@ -1,19 +1,28 @@
-ALGO=Fast
-PREC=Normal
+# scf
+ALGO=Fast    # scf iteration algorithm
+PREC=Normal  # precision, FFT grid
 ENCUT=500
-EDIFF=1E-5
-EDIFFG=-0.05
-ISMEAR=0
-SIGMA=0.02
-LREAL=Auto
-NELM=100
+EDIFF=1E-5   # scf conv
+LREAL=Auto   # real/reciprocal
+NELM=100     # scf maxcycle
+ISPIN=2
+
 # opt
-IBRION=2
-ISIF=3
-NSW=600
+IBRION=-1     # opt algorithm. 2 for conj-grad. -1 for sp
+#ISIF=3       # calc force and opt cell
+#NSW=100      # opt maxcycle
+#EDIFFG=-0.05 # opt conv (max force)
 # print
 LORBIT=11
-LWAVE=.FALSE.
-LCHARGE=.FALSE.
+LWAVE=.FALSE.   # output wfn
+LCHARGE=.FALSE. # output chg density
+# +U
+LDAU=.TRUE.
+# hyb
+LHFCALC=.TRUE.
+HFSCREEN=0.2
 # vdw
-IVDW=11
+#IVDW=11
+#DOS
+ISMEAR=0    # ?ask cs
+SIGMA=0.2
