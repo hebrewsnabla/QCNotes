@@ -72,6 +72,33 @@
 \usepackage[utf8]{inputenc}
 \usepackage{tikz-feynman}
 \usepackage{feynmp}
+\usepackage{listings}
+\lstset{ %
+	%language=Python,                % the language of the code
+	basicstyle=\Consolas\footnotesize,           % the size of the fonts that are used for the code
+	numbers=left,                   % where to put the line-numbers
+	numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+	stepnumber=1,                   % the step between two line-numbers. If it's 1, each line 
+	% will be numbered
+	numbersep=5pt,                  % how far the line-numbers are from the code
+	backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+	showspaces=false,               % show spaces adding particular underscores
+	showstringspaces=false,         % underline spaces within strings
+	showtabs=false,                 % show tabs within strings adding particular underscores
+	frame=single,                   % adds a frame around the code
+	rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+	tabsize=4,                      % sets default tabsize to 2 spaces
+	captionpos=b,                   % sets the caption-position to bottom
+	breaklines=true,                % sets automatic line breaking
+	breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+	title=\lstname,                   % show the filename of files included with \lstinputlisting;
+	% also try caption instead of title
+	keywordstyle=\color{blue},          % keyword style
+	commentstyle=\color{dkgreen},       % comment style
+	stringstyle=\color{mauve},         % string literal style
+	escapeinside={\%*}{*)},            % if you want to add LaTeX within your code
+	morekeywords={*,...}               % if you want to add more keywords to the set
+}
 
 
 \DeclareMathOperator{\p}{\prime}
@@ -289,6 +316,85 @@ Herring
 -- USPP\\
 
 \subsection{Tricks}
+
+
+\section{}
+
+
+
+
+\section{FPMD}
+\subsection{Introduction}
+MD:
+\begin{enumerate}
+	\item classical
+	\item semi-classical (tight-binding)
+	\item FP
+\end{enumerate}
+
+Software: CPMD, VASP, CP2K
+
+\subsection{BOMD}
+Hellmann-Feynman force
+\begin{equation}\label{key}
+m\ddot{\vb{R}}_i = -\pdv{E}{\vb{R}_i}
+\end{equation}
+
+\subsection{CPMD}
+Extended Lagrangian
+\begin{equation}\label{key}
+\mathcal{L} = \sum_i^{N_e}\dfrac{\mu}{2}\int \abs{\dot{\psi}_i(\vb{r})}^2\dd r + \sum_I^{N_{atom}}\dfrac{M_I}{2}\ddot{\vb{R}}_I^2 - E[\{\psi_i\},\{\vb{R}_i\}] + \sum_{ij} \Lambda_{ij}[\int \psi_i^*\psi_j\dd r - \delta_{ij}]
+\end{equation}
+适合NVE\\
+
+
+\subsection{Gaussian Plane Waves (GPW) Method}
+Used by CP2K\\
+GTH pseudo potential\\
+\subsection{CP2K Quick Start}
+Max-Planck -> U of Zurich\\
+\subsubsection{}
+Input
+\begin{itemize}
+	\item *.inp
+	\item 
+	\item
+\end{itemize}
+Output
+\begin{itemize}
+	\item *.out (summary)
+	\item *.ener
+	\item *.xyz
+	\item *.restart
+	\item *.wfn
+\end{itemize}
+
+\subsection{inp}
+\begin{lstlisting}
+&BEGIN section_name [param]
+KEYWORD [value]=[...]
+...
+&END section_name
+\end{lstlisting}
+
+\begin{itemize}
+	\item GLOBAL        
+	\item EXT\_RESTART
+	\item MOTION
+	\item FORCE\_EVAL
+	\item DFT
+	\item SUBSYS
+\end{itemize}
+
+\begin{lstlisting}
+&GLOBAL
+  PRINT_LEVEL         LOW
+  PROJECT_NAME        XXX
+  RUN_TYPE            MD
+&END GLOBAL
+\end{lstlisting}
+
+
 
 
 \end{document}
