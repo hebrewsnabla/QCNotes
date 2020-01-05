@@ -1,0 +1,165 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4609,        155]
+NotebookOptionsPosition[      3697,        117]
+NotebookOutlinePosition[      4054,        133]
+CellTagsIndexPosition[      4011,        130]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"<<", "PhysicalConstants`"}]], "Input",
+ CellChangeTimes->{{3.7871244212593365`*^9, 3.7871244547647133`*^9}, {
+  3.7871246176889405`*^9, 3.7871246198381815`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","obspkg",
+   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"PhysicalConstants`\\\\\\\"\\\"}]\\) is now \
+obsolete. The legacy version being loaded may conflict with current \
+functionality. See the Compatibility Guide for updating information.\"",2,1,7,
+   24506880212992763773,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.787124470723033*^9, 3.78712462127334*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"R", "=", 
+  RowBox[{"QuantityMagnitude", "[", 
+   RowBox[{"UnitConvert", "[", 
+    RowBox[{"Quantity", "[", "\"\<MolarGasConstant\>\"", "]"}], "]"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.7871246391714783`*^9, 3.7871246806864357`*^9}, {
+  3.7871248192358913`*^9, 3.7871248417805915`*^9}, {3.787125051874587*^9, 
+  3.7871250936279044`*^9}, {3.7871251264431434`*^9, 3.7871251309660363`*^9}, {
+  3.7871253574701967`*^9, 3.7871253622324514`*^9}, {3.7871259847324514`*^9, 
+  3.7871260491570907`*^9}}],
+
+Cell[BoxData["8.314459799999999845`5.937562804821409"], "Output",
+ CellChangeTimes->{{3.7871248352310543`*^9, 3.787124842847681*^9}, 
+   3.7871250943400016`*^9, 3.787125127627963*^9, 3.787125363210832*^9, {
+   3.7871259908610168`*^9, 3.7871260116932964`*^9}, 3.787126049979966*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"u", "[", "T_", "]"}], ":=", 
+   RowBox[{"N", "[", 
+    RowBox[{"Sqrt", "[", 
+     RowBox[{"3", " ", "R", " ", 
+      RowBox[{"T", "/", 
+       RowBox[{"(", 
+        RowBox[{"28.02", "*", 
+         RowBox[{"10", "^", 
+          RowBox[{"(", 
+           RowBox[{"-", "3"}], ")"}]}]}], ")"}]}]}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"u", "[", "200", "]"}]}], "Input",
+ CellChangeTimes->{{3.787124848789795*^9, 3.7871248897432528`*^9}, {
+  3.787124978993536*^9, 3.7871249949219217`*^9}}],
+
+Cell[BoxData["421.9476560085799`"], "Output",
+ CellChangeTimes->{{3.787124985710559*^9, 3.787124996815852*^9}, 
+   3.7871251017721195`*^9, 3.787125377499794*^9, 3.787126054511766*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"u", "[", "300", "]"}]], "Input",
+ CellChangeTimes->{{3.7871261013903823`*^9, 3.787126112794871*^9}},
+ NumberMarks->False],
+
+Cell[BoxData["516.7782276922106`"], "Output",
+ CellChangeTimes->{3.7871261137772408`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"u", "[", "500", "]"}]], "Input",
+ CellChangeTimes->{{3.787126128486632*^9, 3.7871261299796686`*^9}}],
+
+Cell[BoxData["667.1578231781721`"], "Output",
+ CellChangeTimes->{3.78712613088321*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"u", "[", "1000", "]"}]], "Input",
+ CellChangeTimes->{{3.7871261319473643`*^9, 3.787126133937042*^9}}],
+
+Cell[BoxData["943.5036417818823`"], "Output",
+ CellChangeTimes->{3.7871261343269978`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.78712610752995*^9, 3.787126107541917*^9}}]
+},
+WindowSize->{759, 697},
+WindowMargins->{{Automatic, -36}, {Automatic, 24}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e747\:670828\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 185, 3, 30, "Input"],
+Cell[768, 27, 417, 8, 45, "Message"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1222, 40, 526, 10, 47, "Input"],
+Cell[1751, 52, 281, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2069, 60, 554, 16, 68, "Input"],
+Cell[2626, 78, 183, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2846, 85, 145, 3, 30, "Input"],
+Cell[2994, 90, 89, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3120, 96, 124, 2, 30, "Input"],
+Cell[3247, 100, 86, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3370, 106, 125, 2, 30, "Input"],
+Cell[3498, 110, 89, 1, 30, "Output"]
+}, Open  ]],
+Cell[3602, 114, 91, 1, 30, InheritFromParent]
+}
+]
+*)
+
+(* End of internal cache information *)
+
