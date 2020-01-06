@@ -278,11 +278,33 @@ z_A = \dfrac{4\times\num{0.230e-18} \times \num{6.022e23}}{\sqrt{\pi\times \num{
 \end{equation}
 
 
-
-
-
 \ex{25-37}
-
+The probability that an $ \ce{O_2} $ molecule will travel distance $ d $ without a collision is
+\begin{align}\label{key}
+P(d) &= 1 - \int_0^d p(x)\dd x = 1 - \int_0^d \dfrac{1}{l}\e^{-x/l}\dd x \notag\\
+&= 1 - \dfrac{1}{l}(-l\e^{-x/l})\Big|_0^d \notag\\
+&= 1 + (\e^{-d/l} - 1) \notag\\
+&= \e^{-d/l}
+\end{align}
+Since the MFP
+\begin{align}\label{key}
+l &= \dfrac{1}{\sqrt{2}\rho\sigma} = \dfrac{\kB T}{\sqrt{2}\sigma P} \notag\\
+&= \dfrac{\num{1.38e-23}\times 298.15}{\sqrt{2}\times\num{0.410e-18}\times\num{1e5}} \notag\\
+&= \SI{7.10e-8}{m} = \SI{7.10e-5}{mm}
+\end{align}
+we get
+\subex{(a)}
+\begin{equation}\label{key}
+P(\SI{1.00e-5}{mm}) = \e^{-\num{1.00e-5}/\num{7.10e-5}} = 0.869
+\end{equation}
+\subex{(b)}
+\begin{equation}\label{key}
+P(\SI{1.00e-3}{mm}) = \e^{-\num{1.00e-3}/\num{7.10e-5}} = \num{7.63e-7}
+\end{equation}
+\subex{(c)}
+\begin{equation}\label{key}
+P(\SI{1.00}{mm}) = \e^{-\num{1.00}/\num{7.10e-5}} = \num{4.20e-6118}
+\end{equation}
 
 
 \ex{25-42}
