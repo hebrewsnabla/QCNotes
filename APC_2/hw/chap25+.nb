@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      9875,        359]
-NotebookOptionsPosition[      8106,        291]
-NotebookOutlinePosition[      8463,        307]
-CellTagsIndexPosition[      8420,        304]
+NotebookDataLength[     10687,        389]
+NotebookOptionsPosition[      8809,        317]
+NotebookOutlinePosition[      9165,        333]
+CellTagsIndexPosition[      9122,        330]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -287,10 +287,36 @@ Cell[BoxData[
   "6117.37664192163001630466781642222657695593`15.954589770190857"}]], \
 "Output",
  CellChangeTimes->{3.7873291626511197`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"PP", "[", "l_", "]"}], ":=", 
+   RowBox[{"kB", "*", 
+    RowBox[{"293.15", "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"Sqrt", "[", "2", "]"}], "*", "0.230", "*", 
+       RowBox[{"10", "^", 
+        RowBox[{"(", 
+         RowBox[{"-", "18"}], ")"}]}], "*", "l"}], ")"}]}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"PP", "[", 
+  RowBox[{"100", "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"(", 
+     RowBox[{"-", "6"}], ")"}]}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.787390544528018*^9, 3.787390635611446*^9}}],
+
+Cell[BoxData["124.4314598483913`"], "Output",
+ CellChangeTimes->{3.7873906364352865`*^9}]
 }, Open  ]]
 },
 WindowSize->{759, 491},
-WindowMargins->{{Automatic, -44}, {Automatic, 52}},
+WindowMargins->{{Automatic, -7}, {Automatic, 91}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e747\:670828\
 \:65e5)",
 StyleDefinitions->"Default.nb"
@@ -359,11 +385,13 @@ Cell[7614, 272, 127, 2, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[7778, 279, 154, 3, 47, "Input"],
-Cell[7935, 284, 155, 4, 62, "Output"]
+Cell[7935, 284, 155, 4, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8127, 293, 574, 18, 68, "Input"],
+Cell[8704, 313, 89, 1, 62, "Output"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 

@@ -306,13 +306,33 @@ P(\SI{1.00e-3}{mm}) = \e^{-\num{1.00e-3}/\num{7.10e-5}} = \num{7.63e-7}
 P(\SI{1.00}{mm}) = \e^{-\num{1.00}/\num{7.10e-5}} = \num{4.20e-6118}
 \end{equation}
 
-
 \ex{25-42}
-
-
+Since 
+\begin{equation}\label{key}
+l = \dfrac{1}{\sqrt{2}\rho\sigma} = \dfrac{\kB T}{\sqrt{2}\sigma P} 
+\end{equation}
+we have
+\begin{equation}\label{key}
+P(l) = \dfrac{\kB T}{\sqrt{2}\sigma l}
+\end{equation}
+where $ \sigma=\SI{0.230e-18}{m^2} $, $ T=\SI{293.15}{K} $.\\
+thus
+\begin{align}
+P(\SI{100}{\mu m}) &= \SI{124}{Pa} \notag\\
+P(\SI{1.00}{mm}) &= \SI{12.4}{Pa} \notag\\
+P(\SI{1.00}{m}) &= \SI{0.0124}{Pa} 
+\end{align}
 
 \section{Chemical Kinetics I: Rate Laws}
-47\\
+\ex{26-47}
+\begin{align}
+\Delta^\ddagger G^\circ &= \Delta^\ddagger H^\circ - T\Delta^\ddagger S^\circ \notag\\
+&= 31.38 - 325\times \num{16.74e-3} \notag\\
+&= \SI{25.94}{kJ/mol}
+\end{align}
+\begin{align}
+k &= \dfrac{\kB T}{h c^\circ}\e^{-\Delta^\ddagger G^\circ/RT}
+\end{align}
 
 
 \setcounter{section}{27}
