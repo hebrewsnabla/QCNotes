@@ -154,7 +154,7 @@
 %\newcommand{\G}[2]{g^{#1#2}}
 
 \newcommand{\subsbul}{\subsection*{$ \bullet $}}
-\newcommand{\ex}[1]{\paragraph{#1}}
+\newcommand{\ex}[1]{\paragraph{28-#1}}
 \newcommand{\subex}[1]{\subparagraph{#1}}
 \newcommand{\dis}{\displaystyle}
 \newcommand{\iden}{{\large \bm{1}}}
@@ -174,7 +174,7 @@
 \newfontfamily\Consolas{Consolas}
 \newcommand{\code}[1]{\colorbox{codegray}{{\Consolas#1}}}
 
-\title{\textbf{Advanced Physical Chemistry II}\\HW   Part I}
+\title{\textbf{Advanced Physical Chemistry II}\\HW   Part II}
 \author{王石嵘
 \vspace{5pt}\\
 161240065\\
@@ -192,160 +192,67 @@
 
 %\newpage
 
-\setcounter{section}{24}
-\section{The Kinetic Theory of Gases}
-2,3,17,26,27,35,37,42\\
-\ex{25-2}
-\begin{equation}\label{key}
-u_{\rms} = \sqrt{\dfrac{3RT}{M}} = \sqrt{\dfrac{3 R T}{\num{28.02e-3}}}
-\end{equation}
-thus
-\begin{align}
-u_{\rms}(\SI{200}{K}) &= \SI{421.95}{m/s} \\
-u_{\rms}(\SI{300}{K}) &= \SI{516.78}{m/s} \\
-u_{\rms}(\SI{500}{K}) &= \SI{667.16}{m/s} \\
-u_{\rms}(\SI{1000}{K}) &= \SI{943.50}{m/s} 
-\end{align}
-
-\ex{25-3}
-Since
-\begin{equation}\label{key}
-u_{\rms} = \sqrt{\dfrac{3RT}{M}}
-\end{equation}
-The RMS speed is increased by $ \sqrt{2} $.
-
-
-\ex{25-17}
-Since
-\begin{equation}\label{key}
-f(u_x) = \sqrt{\dfrac{m}{2\pi\kB T}}\e^{-mu_x^2/2\kB T}
-\end{equation}
-when $ u_x>0 $
-\begin{align}
-\ev{u_x} &= \intinf u_x f(u_x)\dd u_x = \sqrt{\dfrac{m}{2\pi\kB T}} \intinf u_x\e^{-mu_x^2/2\kB T} \dd u_x \notag\\
-&= \sqrt{\dfrac{m}{2\pi\kB T}} \qty(-\dfrac{\kB T}{m})(0-1) \notag\\
-&= \sqrt{\dfrac{\kB T}{2\pi m}}
-\end{align}
-
-\ex{25-26}
-Since
-\begin{equation}\label{key}
-F(\varepsilon) = \dfrac{2\pi}{(\pi \kB T)^{3/2}}\varepsilon^{1/2}\e^{-\varepsilon/\kB T}
-\end{equation}
-Let $ \dv{F}{\varepsilon} = 0 $, we have
-\begin{equation}\label{key}
-\dfrac{1}{2}\varepsilon^{-1/2}\e^{-\varepsilon/\kB T} + \varepsilon^{1/2}(-\dfrac{1}{\kB T})\e^{-\varepsilon/\kB T} = 0
-\end{equation}
-\begin{equation}\label{key}
-\varepsilon = \dfrac{\kB T}{2}
-\end{equation}
-
-\ex{25-27}
-\begin{align}
-\ev{\varepsilon} &= \intinf \varepsilon F(\varepsilon)\dd\varepsilon \notag\\
-&= \intinf \dfrac{2\pi}{(\pi \kB T)^{3/2}} \varepsilon^{3/2}\e^{-\varepsilon/\kB T}\dd\varepsilon \notag\\
-&= \dfrac{2\pi}{(\pi \kB T)^{3/2}} \dfrac{3}{4}(\kB T)^{5/2}\sqrt{\pi} \notag\\
-&= \dfrac{3}{2}\kB T
-\end{align}
-\begin{align}
-\ev{\varepsilon^2} &= \intinf \varepsilon^2 F(\varepsilon)\dd\varepsilon \notag\\
-&= \intinf \dfrac{2\pi}{(\pi \kB T)^{3/2}} \varepsilon^{5/2}\e^{-\varepsilon/\kB T}\dd\varepsilon \notag\\
-&= \dfrac{2\pi}{(\pi \kB T)^{3/2}} \dfrac{15}{8}(\kB T)^{7/2}\sqrt{\pi} \notag\\
-&=  \dfrac{15}{4}(\kB T)^2
-\end{align}
-\begin{equation}\label{key}
-\sigma_\varepsilon^2 = \ev{\varepsilon^2} - \ev{\varepsilon}^2 = \dfrac{3}{2}(\kB T)^2
-\end{equation}
-thus
-\begin{equation}\label{key}
-\dfrac{\sigma_\varepsilon}{\ev{\varepsilon}} = \sqrt{\dfrac{3}{2}}{\Big /}\dfrac{3}{2} = \sqrt{\dfrac{2}{3}}
-\end{equation}
-which means the fluctuations in $ \varepsilon $ are large with respect to $ \varepsilon $.
-
-\ex{25-35}
-\begin{align}\label{key}
-z_A &= \rho\sigma\sqrt{2}\sqrt{\dfrac{8RT}{\pi M}} = \dfrac{P \NA}{R T}\sigma \cdot 4\sqrt{\dfrac{RT}{\pi M}} \notag\\
-&= \dfrac{4\sigma \NA}{\sqrt{\pi M RT}}P 
-\end{align}
-where $ \sigma = \SI{0.230e-18}{m^2} $
-\subex{(a)}
-\begin{equation}\label{key}
-z_A = \dfrac{4\times\num{0.230e-18} \times \num{6.022e23}}{\sqrt{\pi\times \num{2.016e-3} \times\num{8.3145}\times 298.15}}\times 133.32 = \SI{1.86e7}{s^{-1}}
-\end{equation}
-\subex{(b)}
-\begin{equation}\label{key}
-z_A = \dfrac{4\times\num{0.230e-18} \times \num{6.022e23}}{\sqrt{\pi\times \num{2.016e-3} \times\num{8.3145}\times 298.15}}\times \num{1e5} = \SI{1.40e10}{Hz}
-\end{equation}
-
-
-\ex{25-37}
-The probability that an $ \ce{O_2} $ molecule will travel distance $ d $ without a collision is
-\begin{align}\label{key}
-P(d) &= 1 - \int_0^d p(x)\dd x = 1 - \int_0^d \dfrac{1}{l}\e^{-x/l}\dd x \notag\\
-&= 1 - \dfrac{1}{l}(-l\e^{-x/l})\Big|_0^d \notag\\
-&= 1 + (\e^{-d/l} - 1) \notag\\
-&= \e^{-d/l}
-\end{align}
-Since the MFP
-\begin{align}\label{key}
-l &= \dfrac{1}{\sqrt{2}\rho\sigma} = \dfrac{\kB T}{\sqrt{2}\sigma P} \notag\\
-&= \dfrac{\num{1.38e-23}\times 298.15}{\sqrt{2}\times\num{0.410e-18}\times\num{1e5}} \notag\\
-&= \SI{7.10e-8}{m} = \SI{7.10e-5}{mm}
-\end{align}
-we get
-\subex{(a)}
-\begin{equation}\label{key}
-P(\SI{1.00e-5}{mm}) = \e^{-\num{1.00e-5}/\num{7.10e-5}} = 0.869
-\end{equation}
-\subex{(b)}
-\begin{equation}\label{key}
-P(\SI{1.00e-3}{mm}) = \e^{-\num{1.00e-3}/\num{7.10e-5}} = \num{7.63e-7}
-\end{equation}
-\subex{(c)}
-\begin{equation}\label{key}
-P(\SI{1.00}{mm}) = \e^{-\num{1.00}/\num{7.10e-5}} = \num{4.20e-6118}
-\end{equation}
-
-\ex{25-42}
-Since 
-\begin{equation}\label{key}
-l = \dfrac{1}{\sqrt{2}\rho\sigma} = \dfrac{\kB T}{\sqrt{2}\sigma P} 
-\end{equation}
-we have
-\begin{equation}\label{key}
-P(l) = \dfrac{\kB T}{\sqrt{2}\sigma l}
-\end{equation}
-where $ \sigma=\SI{0.230e-18}{m^2} $, $ T=\SI{293.15}{K} $.\\
-thus
-\begin{align}
-P(\SI{100}{\mu m}) &= \SI{124}{Pa} \notag\\
-P(\SI{1.00}{mm}) &= \SI{12.4}{Pa} \notag\\
-P(\SI{1.00}{m}) &= \SI{0.0124}{Pa} 
-\end{align}
-
-\section{Chemical Kinetics I: Rate Laws}
-\ex{26-47}
-\begin{align}
-\Delta^\ddagger G^\circ &= \Delta^\ddagger H^\circ - T\Delta^\ddagger S^\circ \notag\\
-&= 31.38 - 325\times \num{16.74e-3} \notag\\
-&= \SI{25.94}{kJ/mol}
-\end{align}
-\begin{align}
-k &= \dfrac{\kB T}{h c^\circ}\e^{-\Delta^\ddagger G^\circ/RT} \notag\\
-&= \dfrac{\num{1.38e-23}\times 325}{6.626e-34\times 1} \e^{\num{-25.94e3}/8.314\times 325} \notag\\
-&= \SI{4.59}{s^{-1}}
-\end{align}
-
-
 \setcounter{section}{27}
 \section{The Rate of a Bimolecular Gas-Phase Reaction}
-1,4,6,10\\
+15,18,21,22,23,27,28,29,30,32,33,34,37,43,44\\
 
-Additional Problems\\
-\ex{1.} 对于单分子气相反应，活化熵变往往可忽略不计，试计算按室温(\SI{200}{K})附近活化焓分别为60,80,100$ \si{kJ.mol^{-1}} $时之反应比速及$ t_{1/2} $。
+\ex{15}
+
+\ex{18}
 
 
-\ex{2}
+\ex{21}
+
+
+
+\ex{22}
+
+
+
+
+\ex{23}
+
+
+
+
+\ex{27}
+
+
+
+
+\ex{28}
+
+
+
+\ex{29}
+
+
+\ex{30}
+
+
+
+\ex{32}
+
+
+
+\ex{33}
+
+
+
+\ex{34}
+
+
+\ex{37}
+
+
+\ex{43}
+
+
+
+\ex{44}
+
+
+\ex{extra}
 
 
 
