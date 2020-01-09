@@ -372,10 +372,39 @@ the ratio
 \end{equation}
 
 \ex{28-4}
-
+The threshold energy
+\begin{align}
+E_0 &= E_a - \dfrac{1}{2}RT \notag\\
+&= 10.5 - \dfrac{1}{2}\times \num{8.3145e-3}\times 1000 \notag\\
+&= \SI{6.34}{kJ/mol} 
+\end{align}
+Since %$ \ev{u_r} = \dfrac{A}{\sigma\NA \sqrt{\e}} $, we need to derive
+\begin{equation}\label{key}
+\mu = \dfrac{30.006\times 47.998}{30.006 + 47.998} = \SI{18.4635}{amu} = \SI{3.0659e-26}{kg}
+\end{equation}
+\begin{align}
+\ev{u_r} &= \sqrt{\dfrac{8\kB T}{\pi \mu}} = \sqrt{\dfrac{8\kB \times 1000}{\pi \times \num{3.0659e-26}}} \notag\\
+&= \SI{1070.8}{m/s}
+\end{align}
+the hard-sphere reaction cross section is
+\begin{equation}\label{key}
+\sigma = \dfrac{A}{\ev{u_r}\NA \sqrt{\e}} = \dfrac{\num{7.94e6}}{\sqrt{\e}\times \NA \times 1070.8} = \SI{7.47e-21}{m^2}
+\end{equation}
 
 \ex{28-6}
-
+\begin{equation}\label{key}
+E_0 = \SI{70.0}{KJ/mol} = \SI{5851}{cm^{-1}}
+\end{equation}
+Since 
+\begin{equation}\label{key}
+G(v) = \tilde{\nu}_e(v + 1/2) - \tilde{x}_e\tilde{\nu}_e(v+1/2)^2
+\end{equation}
+Let
+\begin{equation}\label{key}
+5851 < 2321.7(v+1/2) - 66.2(v+1/2)^2
+\end{equation}
+we get
+$ 2.23 < v < 31.8 $, thus $ v_{min} = 3 $
 
 
 \ex{28-10}
