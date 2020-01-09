@@ -692,6 +692,49 @@ k(T) = \dfrac{\kB T}{h c^\circ}\e^{-\Delta^\ddagger G^\circ/RT}
 
 
 \section{Gas Phase Reaction Dynamics}
+\subsection{Hard-sphere Collision Theory}
+Na\"ive hard-sphere rate cons.
+\begin{equation}\label{key}
+k = \sigma_{AB} \NA \ev{u_r}     \quad (\si{dm^3.mol^{-1}.s^{-1}})
+\end{equation}
+experimental
+\begin{equation}\label{key}
+k = A\e^{-E_a/RT}
+\end{equation}
+Taking into account the dependence of the rate on $ \ev{u_r} $\\
+\begin{equation}\label{key}
+\sigma_r(E_r) = \left\{
+\mqty{0            & E_r<E_0\\
+	  \pi d_{AB}^2 & E_r \geq E_0}\right.
+\end{equation}
+...
+\begin{equation}\label{key}
+k = \sigma_{AB}\NA \ev{u_r} \e^{-E_0/\kB T}\qty(1 + \dfrac{E_0}{\kB T})
+\end{equation}
+
+\subsection{Reaction Cross Section Depending on the Impact Parameter}
+\paragraph{line-of-centers model}~\\
+energy dependence of the reaction CS
+\begin{equation}\label{key}
+\sigma_r(E_r) = \left\{
+\mqty{0            & E_r<E_0\\
+	\pi d_{AB}^2\qty(1-\dfrac{E_0}{E_r}) & E_r \geq E_0}\right.
+\end{equation}
+\begin{equation}\label{LoC_k}
+k = \sigma_{AB}\NA \ev{u_r} \e^{-E_0/\kB T}
+\end{equation}
+\paragraph{Example 28-3}
+\begin{equation}\label{key}
+k = A\e^{-E_a/\kB T} \dra E_a = \kB T^2\dv{\ln k}{T}
+\end{equation}
+...
+\begin{equation}\label{key}
+E_a = E_0 + \dfrac{1}{2}\kB T
+\end{equation}
+with $ \eqref{LoC_k} $,
+\begin{equation}\label{key}
+\sigma_{AB}\NA \ev{u_r} = A\e^{-1/2} \dra A = \sigma_{AB}\NA \ev{u_r}\e^{1/2}
+\end{equation}
 
 
 \end{document}

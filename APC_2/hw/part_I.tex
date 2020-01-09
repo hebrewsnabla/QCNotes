@@ -354,7 +354,22 @@ thus
 \begin{equation}\label{key}
 \ev{u_r} = \sqrt{\dfrac{8\kB T}{\pi \mu}} = \sqrt{\dfrac{8\times \kB\times 300}{\pi\times \num{3.5010e-26}}} = \SI{548.88}{m/s}
 \end{equation}
-
+the hard-sphere collision theory rate constant is
+\begin{align}\label{key}
+k_{theo} &= \sigma \NA \ev{u_r} \notag\\
+&= \num{6.50e-19}\times \num{6.022e23}\times 548.88 \notag\\
+&= \SI{2.15e8}{m^3.mol^{-1}.s^{-1}} = \SI{2.15e11}{dm^3.mol^{-1}.s^{-1}} 
+\end{align}
+and the experimental rate constant is
+\begin{align}
+k_{exp} &= A\e^{-E_a/RT} \notag\\
+&= \num{3.981e9}\e^{-84900/(8.3145\times 300)} \notag\\
+&= \SI{6.57e-6}{dm^3.mol^{-1}.s^{-1}}
+\end{align}
+the ratio
+\begin{equation}\label{key}
+\dfrac{k_{theo}}{k_{exp}} = \dfrac{\num{2.15e11}}{\num{6.57e-6}} = \num{3.27e13}
+\end{equation}
 
 \ex{28-4}
 
