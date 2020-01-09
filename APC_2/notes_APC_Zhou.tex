@@ -1,0 +1,316 @@
+%\documentclass[UTF8]{ctexart} % use larger type; default would be 10pt
+\documentclass[a4paper]{article}
+\usepackage{xeCJK}
+%\usepackage{ctex}
+%\usepackage{luatexja-fontspec}
+%\setmainjfont{FandolSong}
+%\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\setlength{\parindent}{0pt}
+\usepackage{physics}
+\usepackage{amsmath}
+%\usepackage{symbols}
+\usepackage{AMSFonts}
+\usepackage{bm}
+%\usepackage{eucal}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{multicol}
+\usepackage{abstract}
+\usepackage{empheq}
+\usepackage{extarrows}
+\usepackage{textcomp}
+\usepackage{mhchem}
+\usepackage{braket}
+\usepackage{siunitx}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz-feynman}
+\usepackage{feynmp}
+
+
+\DeclareMathOperator{\p}{\prime}
+\DeclareMathOperator{\ti}{\times}
+
+\DeclareMathOperator{\e}{\mathrm{e}}
+\DeclareMathOperator{\I}{\mathrm{i}}
+\DeclareMathOperator{\Arg}{\mathrm{Arg}}
+\newcommand{\NA}{N_\mathrm{A}}
+\newcommand{\kB}{k_\mathrm{B}}
+
+\DeclareMathOperator{\ra}{\rightarrow}
+\DeclareMathOperator{\llra}{\longleftrightarrow}
+\DeclareMathOperator{\lra}{\longrightarrow}
+\DeclareMathOperator{\dlra}{\;\Leftrightarrow\;}
+\DeclareMathOperator{\dra}{\;\Rightarrow\;}
+
+%%%%%%%%%%%% QUANTUM MECHANICS %%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\bkk}[1]{\Braket{#1|#1}}
+\newcommand{\bk}[2]{\Braket{#1|#2}}
+\newcommand{\bkev}[2]{\Braket{#2|#1|#2}}
+
+\DeclareMathOperator{\na}{\bm{\nabla}}
+\DeclareMathOperator{\nna}{\nabla^2}
+\DeclareMathOperator{\drrr}{\dd[3]\vb{r}}
+
+\DeclareMathOperator{\psis}{\psi^\ast}
+\DeclareMathOperator{\Psis}{\Psi^\ast}
+\DeclareMathOperator{\hi}{\hat{\vb{i}}}
+\DeclareMathOperator{\hj}{\hat{\vb{j}}}
+\DeclareMathOperator{\hk}{\hat{\vb{k}}}
+\DeclareMathOperator{\hr}{\hat{\vb{r}}}
+\DeclareMathOperator{\hT}{\hat{\vb{T}}}
+\DeclareMathOperator{\hH}{\hat{H}}
+
+\DeclareMathOperator{\hL}{\hat{\vb{L}}}
+\DeclareMathOperator{\hp}{\hat{\vb{p}}}
+\DeclareMathOperator{\hx}{\hat{\vb{x}}}
+\DeclareMathOperator{\ha}{\hat{\vb{a}}}
+\DeclareMathOperator{\hS}{\hat{\vb{S}}}
+\DeclareMathOperator{\hSigma}{\hat{\bm\Sigma}}
+\DeclareMathOperator{\hJ}{\hat{\vb{J}}}
+
+\DeclareMathOperator{\Tdv}{-\dfrac{\hbar^2}{2m}\dv[2]{x}}
+\DeclareMathOperator{\Tna}{-\dfrac{\hbar^2}{2m}\nabla^2}
+
+%\DeclareMathOperator{\s}{\sum_{n=1}^{\infty}}
+\DeclareMathOperator{\intinf}{\int_0^\infty}
+\DeclareMathOperator{\intdinf}{\int_{-\infty}^\infty}
+%\DeclareMathOperator{\suminf}{\sum_{n=0}^\infty}
+\DeclareMathOperator{\sumnzinf}{\sum_{n=0}^\infty}
+\DeclareMathOperator{\sumnoinf}{\sum_{n=1}^\infty}
+\DeclareMathOperator{\sumndinf}{\sum_{n=-\infty}^\infty}
+\DeclareMathOperator{\sumizinf}{\sum_{i=0}^\infty}
+
+%%%%%%%%%%%%%%%%% PARTICLE PHYSICS %%%%%%%%%%%%%%%%
+\DeclareMathOperator{\hh}{\hat{h}}               % helicity
+\DeclareMathOperator{\hP}{\hat{\vb{P}}}          % Parity
+\DeclareMathOperator{\hU}{\hat{U}}
+\DeclareMathOperator{\hG}{\hat{G}}
+
+\DeclareMathOperator{\GeV}{\si{GeV}}
+\DeclareMathOperator{\LI}{\mathscr{L}.I.}
+%\DeclareMathOperator{\g5}{\gamma^5}
+\DeclareMathOperator{\gmuu}{\gamma^\mu}
+\DeclareMathOperator{\gmud}{\gamma_\mu}
+\DeclareMathOperator{\gnuu}{\gamma^\nu}
+\DeclareMathOperator{\gnud}{\gamma_\nu}
+
+\renewcommand{\u}{\mathrm{u}}
+\renewcommand{\d}{\mathrm{d}}
+\DeclareMathOperator{\s}{\mathrm{s}}
+
+\DeclareMathOperator{\q}{\mathrm{q}}
+\DeclareMathOperator{\bq}{\bar{\mathrm{q}}}
+
+\DeclareMathOperator{\g}{\mathrm{g}}
+\DeclareMathOperator{\W}{\mathrm{W}}
+\DeclareMathOperator{\Z}{\mathrm{Z}}
+
+%%% Feynman Diagram
+\newcommand{\pa}{particle}
+\newcommand{\mo}{momentum}
+\newcommand{\el}{edge label}
+
+%%% APC
+\DeclareMathOperator{\hR}{\hat{\vb{R}}}
+\DeclareMathOperator{\trans}{\mathrm{trans}}
+\DeclareMathOperator{\rot}{\mathrm{rot}}
+\DeclareMathOperator{\vib}{\mathrm{vib}}
+\DeclareMathOperator{\elec}{\mathrm{elec}}
+
+\newcommand{\dis}{\displaystyle}
+\numberwithin{equation}{section}
+\setcounter{tocdepth}{4}
+
+\title{Notes of \textbf{Advanced Physical Chemistry II}}
+\author{hebrewsnabla}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+% \boldmath
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+
+\setcounter{section}{24}
+\section{The Kinetic Theory of Gases}
+\subsection{}
+\subsection{Speed Distribution}
+\begin{equation}\label{key}
+f(u_x) = \sqrt{\dfrac{m}{2\pi\kB T}}\e^{-m u_x^2/2\kB T}
+\end{equation}
+\begin{equation}\label{key}
+\ev{u_x^2} = \dfrac{\kB T}{m} = \dfrac{R T}{M}
+\end{equation}
+
+\subsection{Maxwell Distribution}
+\begin{equation}\label{key}
+F(u) = 4\pi u^2 \qty(\dfrac{m}{2\pi\kB T})^{3/2}\e^{-m u^2/2\kB T}
+\end{equation}
+\begin{equation}\label{key}
+\ev{u} = \sqrt{\dfrac{8\kB T}{\pi m}}
+\end{equation}
+\begin{equation}\label{key}
+\ev{u^2} = \dfrac{3\kB T}{m}
+\end{equation}
+\begin{equation}\label{key}
+u_{mp} = \sqrt{\dfrac{2\kB T}{m}}
+\end{equation}
+\begin{equation}\label{key}
+F(\varepsilon) = \dfrac{2\pi}{(\pi \kB T)^{3/2}}\varepsilon^{1/2}\e^{-\varepsilon/\kB T}
+\end{equation}
+\begin{equation}\label{key}
+\ev{\varepsilon} = \dfrac{3}{2}\kB T
+\end{equation}
+
+\subsection{The Frequency of Collisions with a Wall}
+\begin{equation}\label{key}
+\dd z = \dfrac{1}{A}\dv{N}{t}
+\end{equation}
+freq per area
+\begin{equation}\label{key}
+z = \dfrac{\rho}{4}\ev{u}
+\end{equation}
+
+\subsection{}
+\subsection{Inter-collision and MFP}
+\begin{equation}\label{key}
+z_A  = \rho \sigma \ev{u_r} = \rho\sigma \sqrt{2}\ev{u}
+\end{equation}
+\begin{equation}\label{key}
+l = \dfrac{u}{z_A} = \dfrac{1}{\sqrt{2}\rho\sigma}
+\end{equation}
+\begin{equation}\label{key}
+p(x)\dd x = \dfrac{1}{l}\e^{-x/l}\dd x
+\end{equation}
+
+
+
+
+
+
+
+
+\section{Chemical Kinetics I: Rate Laws}
+\setcounter{subsection}{7}
+\subsection{Reaction Rate Constants}
+\begin{equation}\label{key}
+k(T) = \dfrac{\kB T}{h c^\circ}\e^{-\Delta^\ddagger G^\circ/RT}
+\end{equation}
+
+\section{}
+
+
+\section{Gas Phase Reaction Dynamics}
+\subsection{Hard-sphere Collision Theory}
+Na\"ive hard-sphere rate cons.
+\begin{equation}\label{key}
+k = \sigma_{AB} \NA \ev{u_r}     \quad (\si{dm^3.mol^{-1}.s^{-1}})
+\end{equation}
+experimental
+\begin{equation}\label{key}
+k = A\e^{-E_a/RT}
+\end{equation}
+Taking into account the dependence of the rate on $ \ev{u_r} $\\
+\begin{equation}\label{key}
+\sigma_r(E_r) = \left\{
+\mqty{0            & E_r<E_0\\
+	  \pi d_{AB}^2 & E_r \geq E_0}\right.
+\end{equation}
+...
+\begin{equation}\label{key}
+k = \sigma_{AB}\NA \ev{u_r} \e^{-E_0/\kB T}\qty(1 + \dfrac{E_0}{\kB T})
+\end{equation}
+
+\subsection{Reaction Cross Section Depending on the Impact Parameter}
+\paragraph{line-of-centers model}~\\
+energy dependence of the reaction CS
+\begin{equation}\label{key}
+\sigma_r(E_r) = \left\{
+\mqty{0            & E_r<E_0\\
+	\pi d_{AB}^2\qty(1-\dfrac{E_0}{E_r}) & E_r \geq E_0}\right.
+\end{equation}
+\begin{equation}\label{LoC_k}
+k = \sigma_{AB}\NA \ev{u_r} \e^{-E_0/\kB T}
+\end{equation}
+\paragraph{Example 28-3}
+\begin{equation}\label{key}
+k = A\e^{-E_a/\kB T} \dra E_a = \kB T^2\dv{\ln k}{T}
+\end{equation}
+...
+\begin{equation}\label{key}
+E_a = E_0 + \dfrac{1}{2}\kB T
+\end{equation}
+with $ \eqref{LoC_k} $,
+\begin{equation}\label{key}
+\sigma_{AB}\NA \ev{u_r} = A\e^{-1/2} \dra A = \sigma_{AB}\NA \ev{u_r}\e^{1/2}
+\end{equation}
+
+\subsection{}
+
+\subsection{The Internal Energy of the Reactants}
+
+\subsection{CoM Coordinate System}
+
+\subsection{}
+
+\subsection{}
+
+\subsection{}
+
+\subsection{}
+\subsection{}
+
+
+
+\end{document}
