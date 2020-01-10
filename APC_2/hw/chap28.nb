@@ -10,16 +10,22 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1973,         76]
-NotebookOptionsPosition[      1544,         55]
-NotebookOutlinePosition[      1900,         71]
-CellTagsIndexPosition[      1857,         68]
+NotebookDataLength[     13277,        451]
+NotebookOptionsPosition[     11012,        364]
+NotebookOutlinePosition[     11369,        380]
+CellTagsIndexPosition[     11326,        377]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"28", "-", "1"}], " ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7875864469663706`*^9, 3.7875864524188337`*^9}}],
 
 Cell[CellGroupData[{
+
 Cell[BoxData[{
  RowBox[{
   RowBox[{"ma", "=", "70.906"}], ";"}], "\[IndentingNewLine]", 
@@ -40,21 +46,324 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"muu", "=", 
+  RowBox[{"QuantityMagnitude", "[", 
+   RowBox[{"UnitConvert", "[", 
+    RowBox[{
+     RowBox[{"Quantity", "[", 
+      RowBox[{"mu", ",", "\"\<AtomicMassUnit\>\""}], "]"}], ",", 
+     "\"\<Kilograms\>\""}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7874932021204925`*^9, 3.787493277565734*^9}, {
+  3.7874937951695385`*^9, 3.7874938007286725`*^9}}],
+
+Cell[BoxData["3.501042381673361`*^-26"], "Output",
+ CellChangeTimes->{3.787493278302721*^9, 3.787493801249278*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ur", "=", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{"8", "*", "kB", "*", 
+    RowBox[{"300", "/", 
+     RowBox[{"(", 
+      RowBox[{"Pi", "*", "muu"}], ")"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7874937387324653`*^9, 3.787493807454688*^9}}],
+
+Cell[BoxData["548.8751468309126`"], "Output",
+ CellChangeTimes->{3.7874938096637774`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["NA"], "Input",
+ CellChangeTimes->{{3.787567046535083*^9, 3.7875670468552275`*^9}}],
+
+Cell[BoxData["6.02214085700000015187968`7.609489193985438*^23"], "Output",
+ CellChangeTimes->{3.787567049776466*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sigma", "=", 
+  RowBox[{"6.50", "*", 
+   RowBox[{"10", "^", 
+    RowBox[{"(", 
+     RowBox[{"-", "19"}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.787567053884426*^9, 3.787567079198772*^9}}],
+
+Cell[BoxData["6.5`*^-19"], "Output",
+ CellChangeTimes->{3.78756708050424*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kt", "=", 
+  RowBox[{"sigma", "*", "NA", "*", "ur"}]}]], "Input",
+ CellChangeTimes->{{3.787567084525526*^9, 3.7875670952468176`*^9}}],
+
+Cell[BoxData["2.1485122406295037`*^8"], "Output",
+ CellChangeTimes->{3.787567096588228*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ke", "=", 
+  RowBox[{"3.981", "*", 
+   RowBox[{"10", "^", "9"}], "*", 
+   RowBox[{"E", "^", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "84900"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"R", "*", "300"}], ")"}]}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.787567457712816*^9, 3.7875674969588833`*^9}}],
+
+Cell[BoxData["6.57465052858381`*^-6"], "Output",
+ CellChangeTimes->{3.7875674978784003`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["R"], "Input",
+ CellChangeTimes->{3.787567499840162*^9}],
+
+Cell[BoxData["8.314459799999999845`5.937562804821409"], "Output",
+ CellChangeTimes->{3.7875675003906507`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"kt", "/", "ke"}]], "Input",
+ CellChangeTimes->{{3.7875678036797547`*^9, 3.7875678081019683`*^9}}],
+
+Cell[BoxData["3.2678729177903492`*^13"], "Output",
+ CellChangeTimes->{3.787567808967616*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"28", "-", "4"}], " ", "*)"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
+  RowBox[{"E0", "=", 
+   RowBox[{"10.5", "-", 
+    RowBox[{"0.5", "*", "R", "*", "0.001", "*", "1000"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.787584469412632*^9, 3.7875844975852957`*^9}, {
+  3.7875862562908554`*^9, 3.7875862693429546`*^9}}],
+
+Cell[BoxData["6.3427701`"], "Output",
+ CellChangeTimes->{3.7875844988558965`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"mu2", "=", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"30.006", "+", "47.998"}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{"30.006", "*", "47.998"}], ")"}]}], ")"}], "^", 
+   RowBox[{"(", 
+    RowBox[{"-", "1"}], ")"}]}]}]], "Input",
+ CellChangeTimes->{{3.7875849248863897`*^9, 3.787584961097595*^9}, {
+  3.7875850327080536`*^9, 3.7875850401611695`*^9}}],
+
+Cell[BoxData["18.463514537716016`"], "Output",
+ CellChangeTimes->{3.7875849624591866`*^9, 3.787585040981924*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"muu2", "=", 
   RowBox[{"UnitConvert", "[", 
    RowBox[{
     RowBox[{"Quantity", "[", 
-     RowBox[{"mu", ",", "\"\<AtomicMassUnit\>\""}], "]"}], ",", 
+     RowBox[{"mu2", ",", "\"\<AtomicMassUnit\>\""}], "]"}], ",", 
     "\"\<Kilograms\>\""}], "]"}]}]], "Input",
- CellChangeTimes->{{3.7874932021204925`*^9, 3.787493277565734*^9}}],
+ CellChangeTimes->{{3.7875849651965876`*^9, 3.787584996061052*^9}}],
 
 Cell[BoxData[
- TemplateBox[{"3.501042381673361`*^-26","\"kg\"","kilograms","\"Kilograms\""},
+ TemplateBox[{"3.0659386705485`*^-26","\"kg\"","kilograms","\"Kilograms\""},
   "Quantity"]], "Output",
- CellChangeTimes->{3.787493278302721*^9}]
+ CellChangeTimes->{3.787585000933022*^9, 3.787585043324664*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ur2", "=", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{"8", "*", "kB", "*", 
+    RowBox[{"1000", "/", 
+     RowBox[{"(", 
+      RowBox[{"Pi", "*", "muu2"}], ")"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7875851485842166`*^9, 3.787585178245861*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{"1070.8530830911366`",RowBox[{"\"/\"", "\[InvisibleSpace]", 
+     SqrtBox["\"kg\""]}],"per square root kilograms",FractionBox["1", 
+    SqrtBox["\"Kilograms\""]]},
+  "QuantityPostfix"]], "Output",
+ CellChangeTimes->{3.7875851787205906`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"sigma2", "=", 
+  RowBox[{"7.94", "*", 
+   RowBox[{
+    RowBox[{"10", "^", "6"}], "/", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"Sqrt", "[", "E", "]"}], "*", "NA", "*", "ur2"}], 
+     ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.787586242631383*^9, 3.7875862470066824`*^9}, {
+  3.7875862800692687`*^9, 3.787586311724618*^9}, {3.7875863549275074`*^9, 
+  3.787586357028882*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{"7.467796258182176`*^-21",RowBox[{
+     SqrtBox["\"kg\""]}],"square root kilograms",SqrtBox["\"Kilograms\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.787586315403778*^9, 3.7875863575355244`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"28", "-", "6"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"h", "=", 
+     RowBox[{"UnitConvert", "[", 
+      RowBox[{"Quantity", "[", "\"\<PlanckConstant\>\"", "]"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"c", "=", 
+     RowBox[{"UnitConvert", "[", 
+      RowBox[{"Quantity", "[", "\"\<SppedOfLight\>\"", "]"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"na", "=", 
+     RowBox[{"UnitConvert", "[", 
+      RowBox[{"Quantity", "[", "\"\<AvogadroConstant\>\"", "]"}], "]"}]}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"E00", "=", 
+    RowBox[{"UnitConvert", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Quantity", "[", 
+        RowBox[{"70.0", ",", "\"\<kJ/mol\>\""}], "]"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"na", "*", "h", "*", "c"}], ")"}]}], ",", "\"\<cm^-1\>\""}], 
+     "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.7875864593153477`*^9, 3.787586472630741*^9}, {
+  3.787587003902037*^9, 3.7875870698926215`*^9}, {3.7875871006124687`*^9, 
+  3.787587223356183*^9}, {3.7875872968433948`*^9, 3.7875873503483524`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "5851.543063268107`",RowBox[{"\"/\"", "\[InvisibleSpace]", "\"cm\""}],
+   "reciprocal centimeters",FractionBox["1", "\"Centimeters\""]},
+  "QuantityPostfix"]], "Output",
+ CellChangeTimes->{{3.787587058051236*^9, 3.7875870720547857`*^9}, {
+  3.787587153118041*^9, 3.787587224017413*^9}, {3.78758733530155*^9, 
+  3.7875873510673876`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Reduce", "[", 
+  RowBox[{"5851", "<", 
+   RowBox[{
+    RowBox[{"2321.7", " ", 
+     RowBox[{"(", 
+      RowBox[{"v", "+", 
+       RowBox[{"1", "/", "2"}]}], ")"}]}], "-", 
+    RowBox[{"66.2", " ", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"v", "+", 
+        RowBox[{"1", "/", "2"}]}], ")"}], "^", "2"}]}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7875901423675413`*^9, 3.787590183182432*^9}, {
+  3.7875902495988274`*^9, 3.78759040258972*^9}, {3.7875905954569483`*^9, 
+  3.787590631561363*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Reduce","ratnz",
+   "\"Reduce was unable to solve the system with inexact coefficients. The \
+answer was obtained by solving a corresponding exact system and numericizing \
+the result.\"",2,93,32,24507579330668772544,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.787590329739482*^9, 3.787590394819445*^9}, {
+  3.7875906048059072`*^9, 3.7875906323512473`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"2.233133088178226`", "<", "v", "<", 
+  "31.837863890673738`"}]], "Output",
+ CellChangeTimes->{
+  3.7875901624678273`*^9, {3.7875902543062553`*^9, 3.7875902803495564`*^9}, {
+   3.787590315710993*^9, 3.7875903948862967`*^9}, {3.787590604869793*^9, 
+   3.7875906323751826`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"28", "-", "10"}], " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"mF", "=", 
+   RowBox[{"UnitConvert", "[", 
+    RowBox[{
+     RowBox[{"Quantity", "[", 
+      RowBox[{"18.998", ",", "\"\<AtomicMassUnit\>\""}], "]"}], ",", 
+     "\"\<kg\>\""}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.787595484906499*^9, 3.787595522878009*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{"3.154692068192`*^-26","\"kg\"","kilograms","\"Kilograms\""},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.7875955233838315`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"um", "=", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{"2", "*", "435.6", "*", 
+    RowBox[{"1000", "/", 
+     RowBox[{"(", 
+      RowBox[{"mF", "*", "NA"}], ")"}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.787595672588035*^9, 3.7875957000874977`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{"6771.813545251936`",RowBox[{"\"/\"", "\[InvisibleSpace]", 
+     SqrtBox["\"kg\""]}],"per square root kilograms",FractionBox["1", 
+    SqrtBox["\"Kilograms\""]]},
+  "QuantityPostfix"]], "Output",
+ CellChangeTimes->{3.787595702032296*^9}]
 }, Open  ]]
 },
 WindowSize->{759, 677},
-WindowMargins->{{Automatic, -2}, {Automatic, 33}},
+WindowMargins->{{Automatic, -12}, {Automatic, 19}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e747\:670828\
 \:65e5)",
 StyleDefinitions->"Default.nb"
@@ -70,17 +379,81 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[558, 20, 215, 4, 69, "Input"],
 Cell[CellGroupData[{
-Cell[580, 22, 370, 10, 69, "Input"],
-Cell[953, 34, 88, 1, 30, "Output"]
+Cell[798, 28, 370, 10, 69, "Input"],
+Cell[1171, 40, 88, 1, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1078, 40, 287, 7, 47, "Input"],
-Cell[1368, 49, 160, 3, 76, "Output"]
+Cell[1296, 46, 389, 9, 47, "Input"],
+Cell[1688, 57, 114, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1839, 63, 267, 7, 47, "Input"],
+Cell[2109, 72, 89, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2235, 78, 96, 1, 30, "Input"],
+Cell[2334, 81, 116, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2487, 87, 217, 6, 30, "Input"],
+Cell[2707, 95, 77, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2821, 101, 157, 3, 30, "Input"],
+Cell[2981, 106, 91, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3109, 112, 338, 10, 47, "Input"],
+Cell[3450, 124, 92, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3579, 130, 69, 1, 30, "Input"],
+Cell[3651, 133, 109, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3797, 139, 121, 2, 30, "Input"],
+Cell[3921, 143, 92, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4050, 149, 425, 9, 107, "Input"],
+Cell[4478, 160, 81, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4596, 166, 414, 12, 30, "Input"],
+Cell[5013, 180, 112, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5162, 186, 289, 7, 47, "Input"],
+Cell[5454, 195, 180, 3, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5671, 203, 270, 7, 47, "Input"],
+Cell[5944, 212, 268, 5, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6249, 222, 405, 11, 47, "Input"],
+Cell[6657, 235, 230, 4, 48, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6924, 244, 1253, 31, 234, "Input"],
+Cell[8180, 277, 367, 7, 39, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8584, 289, 527, 15, 47, "Input"],
+Cell[9114, 306, 418, 8, 45, "Message"],
+Cell[9535, 316, 299, 6, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9871, 327, 388, 10, 66, "Input"],
+Cell[10262, 339, 159, 3, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10458, 347, 270, 7, 47, "Input"],
+Cell[10731, 356, 265, 5, 80, "Output"]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
