@@ -210,20 +210,102 @@ u_{\text{peak}}(\ce{Ne}) = \sqrt{\dfrac{2\times 8.3145\times 300}{0.02018}}\sqrt
 \end{equation}
 
 \ex{18}
-
+\subex{$ \bullet $} No vibrational motion:\\
+Since 
+\begin{equation}\label{key}
+\dfrac{1}{2}\mu u_r^2(R) = E_{\text{int}}(P) + \dfrac{1}{2}\mu u_r^2(P) -  E_{\text{int}}(R) \geq E_{\text{int}}(P)  -  E_{\text{int}}(R) 
+\end{equation}
+we have
+\begin{align}
+u_{r,min} &= \sqrt{\dfrac{2 (E_{\text{int}}(P)  -  E_{\text{int}}(R) )}{\mu}} \notag\\
+&= \sqrt{\dfrac{2\times 12400}{\dfrac{35.453\times 2.016}{35.453+2.016}\times 10^{-3}}} \notag\\
+&= \SI{3606}{m/s}
+\end{align}
+\subex{$ \bullet $} Hard-sphere harmonic oscillators:\\
+\begin{align}\label{key}
+\dfrac{1}{2}\mu u_r^2(R) &\geq E_{\text{int}}(P)  -  E_{\text{int}}(R) = D_e(\ce{H_2}) - D_e(\ce{HCl}) + E_{\text{vib}}(P) - E_{\text{vib}}(R) \notag\\
+&= \SI{12.4}{kJ/mol} + hc\NA(\SI{2886}{cm^{-1}} - \SI{4159}{cm^{-1}})\dfrac{1}{2} \notag\\
+&= \SI{4.79}{kJ/mol}
+\end{align}
+thus
+\begin{align}
+u_{r,min} %&= \sqrt{\dfrac{2 (E_{\text{int}}(P)  -  E_{\text{int}}(R) )}{\mu}} \notag\\
+&= \sqrt{\dfrac{2\times 47900}{\dfrac{35.453\times 2.016}{35.453+2.016}\times 10^{-3}}} \notag\\
+&= \SI{2241}{m/s}
+\end{align}
 
 \ex{21}
-
+\begin{align}
+\dfrac{1}{2}\mu u_r^2(P) &= \dfrac{1}{2}\mu u_r^2(R) + E_{\text{vib}}(R) - E_{\text{vib}}(P) + D_e(\ce{DF}) - D_e(\ce{D_2}) \notag\\
+&= \SI{7.62}{kJ/mol} + \dfrac{1}{2}hc\NA(2990-2907)\si{cm^{-1}} + \SI{140}{kJ/mol} \notag\\
+&= \SI{148}{kJ/mol}
+\end{align}
+thus
+\begin{equation}\label{key}
+u_r(P) = \sqrt{\dfrac{2\times \num{148e3}}{\num{3.05e-27}}} = \SI{1.27e4}{m/s}
+\end{equation}
+thus $ \abs{\vb{u}_{\ce{DF}} - \vb{u}_{cm}}, \abs{\vb{u}_{\ce{D}} - \vb{u}_{cm}}  $ remains the same as Example 28-5, as follows
+\begin{equation}\label{key}
+\abs{\vb{u}_{\ce{DF}} - \vb{u}_{cm}} = \dfrac{m_{\ce{D}}}{M}u_r(P) = \SI{1.16e3}{m/s}
+\end{equation}
+\begin{equation}\label{key}
+\abs{\vb{u}_{\ce{D}} - \vb{u}_{cm}} = \dfrac{m_{\ce{DF}}}{M}u_r(P) = \SI{1.21e4}{m/s}
+\end{equation}
 
 
 \ex{22}
-
-
-
+\begin{equation}\label{key}
+E_{\text{vib}} = \tilde{\nu}_e(1/2) - \tilde{x}_e\tilde{\nu}_e(1/2)^2 = \SI{1313.2}{cm^{-1}} = \SI{15.71}{kJ/mol}
+\end{equation}
+$ \therefore $
+\begin{equation}\label{key}
+E_{\text{trans}}' = E_{\text{trans}} + E_{\text{vib}} - E_{\text{vib}}' - [ D_e(\ce{HBr}) - D_e(\ce{HCl})] > 0
+\end{equation}
+\begin{equation}\label{key}
+9.21 + 15.71 - E_{\text{vib}}' + 67.2 > 0
+\end{equation}
+\begin{equation}\label{key}
+E_{\text{vib}}' < \SI{92.12}{kJ/mol} = \SI{7701.2}{cm^{-1}}
+\end{equation}
+$ \therefore $
+\begin{equation}\label{key}
+2990.95 (v + 1/2) - 52.82 (v+1/2)^2 < 7701.2
+\end{equation}
+\begin{equation}\label{key}
+v < 2.20 
+\end{equation}
+i.e. $ v=0,1,2 $\\
+The energy diagram is as follows
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{28-22.png}
+\end{figure}
 
 \ex{23}
-
-
+From 28-22, we have
+\begin{equation}\label{key}
+E_{\text{trans}}' = E_{\text{trans}} + E_{\text{vib}} - E_{\text{vib}}' - [ D_e(\ce{HBr}) - D_e(\ce{HCl})] = \SI{92.12}{kJ/mol} - E_{\text{vib}}' 
+\end{equation}
+thus
+\begin{align}\label{key}
+u_r' &= \sqrt{\dfrac{2[92120 - \tilde{\nu}_e(v+1/2) + \tilde{\nu}_e\tilde{x}_e(v+1/2)^2}{\mu'}} \notag\\
+&= \sqrt{\dfrac{2[92120 - 35772(v+1/2) + 631.7(v+1/2)^2}{\num{2.504e-2}}} \si{m/s}
+\end{align}
+\begin{align}
+\abs{\vb{u}_{\ce{HCl}} - \vb{u}_{cm}} &= \dfrac{m_{\ce{Br}}}{M}u_r' \notag\\
+&= \dfrac{79.904}{116.365}u_r' = 0.68667u_r' 
+\end{align}
+$ \therefore $
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ccc}
+		\hline
+		$ v $ & $ u_r' \;/\; \si{m/s} $ & $ \abs{\vb{u}_{\ce{HCl}} - \vb{u}_{cm}} \;/\; \si{m/s} $ \\ \hline
+		0 & 2438 & 1674 \\
+		1 & 1785 & 1226 \\
+		2 & 728.1 & 500.0\\ \hline
+	\end{tabular}
+\end{table}
 
 
 \ex{27}
