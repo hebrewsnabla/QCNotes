@@ -423,10 +423,36 @@ u_{min} = \sqrt{\dfrac{2 D_0}{m\NA}} = \sqrt{\dfrac{2\times \num{435.6e3}}{\num{
 
 
 Additional Problems\\
-\ex{1.} 对于单分子气相反应，活化熵变往往可忽略不计，试计算按室温(\SI{200}{K})附近活化焓分别为60,80,100$ \si{kJ.mol^{-1}} $时之反应比速及$ t_{1/2} $。
-
+\ex{1.} 对于单分子气相反应，活化熵变往往可忽略不计，试计算按室温(\SI{300}{K})附近活化焓分别为60,80,100$ \si{kJ.mol^{-1}} $时之反应比速及$ t_{1/2} $。\\
+\begin{equation}\label{key}
+k(\Delta^\ddagger H^\circ) = \dfrac{\kB T}{hc^\circ}\e^{-\Delta^\ddagger H^\circ / RT}
+\end{equation}
+\begin{align}
+k(\SI{60}{kJ/mol}) &= \dfrac{\kB \times 300}{h \times 1}\e^{-60000 / R\times 300} = \SI{223.47}{s^{-1}} \\
+k(\SI{80}{kJ/mol}) &= \dfrac{\kB \times 300}{h \times 1}\e^{-80000 / R\times 300} = \SI{0.07362}{s^{-1}} \\
+k(\SI{100}{kJ/mol}) &= \dfrac{\kB \times 300}{h \times 1}\e^{-100000 / R\times 300} = \SI{2.425e-5}{s^{-1}} 
+\end{align}
+\begin{align}
+t_{1/2}(\SI{60}{kJ/mol}) &= \dfrac{\ln 2}{k(\SI{60}{kJ/mol})} = \dfrac{\ln 2}{223.47} = \SI{3.102e-3}{s}\\
+t_{1/2}(\SI{80}{kJ/mol}) &= \dfrac{\ln 2}{k(\SI{80}{kJ/mol})} = \dfrac{\ln 2}{0.07362} = \SI{9.416}{s}\\
+t_{1/2}(\SI{100}{kJ/mol}) &= \dfrac{\ln 2}{k(\SI{100}{kJ/mol})} = \dfrac{\ln 2}{\num{2.425e-5}} = \SI{2.858e4}{s}
+\end{align}
 
 \ex{2}
+Use activated complex theory to determine the temperature dependence of the Arrhenius pre-exponential factors for the following three gas-phase reactions at constant $ T $ and $ P $.
+\begin{enumerate}
+	\item [a.] $ \ce{O + N_2 -> NO + N }$
+	\item [b.] $ \ce{OH + H_2 -> H_2O + H} $
+	\item [c.] $ \ce{CH_3 + CH_3 -> C_2H_6} $
+\end{enumerate}
+In other words, for $ A\propto T^n $, find $ n $ for each equation. You may assume that the activated complex is linear for reaction (a) and nonlinear for reaction (b) and (c), and use the following formula to calculate the partition functions.\\
+Hint:
+\begin{equation}\label{key}
+q_{\text{vib}} \approx \dfrac{\kB T}{h\nu}; \quad q_{\text{elec}} \approx 1
+\end{equation}
+\begin{equation}\label{key}
+A\propto \dfrac{T q_{\text{int}}/V}{(q_A/V)(q_B/V)}
+\end{equation}
 
 
 
