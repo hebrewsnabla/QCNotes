@@ -1,22 +1,43 @@
-# TPOC
-## Intermediates
+# Intermediates
 * stability -- thermodynamically
-* persistency -- dynamically
+* persistency -- kinetically
 
-### carbocation
+## Carbocation
 stability -- hydride ion affinity (HIA)
-#### ways to stablize:
+### Ways to stablize:
 * alkyl subst. -- hyperconjugative interaction
 * conjugative
 
-#### carbocations in solution:
+### In solution:
 $\ce{RX + 2SbF_5 -> R^+ + Sb_2F_10X^-}$
 
-#### generation
+### Generation
 * Lewis acid grabs $\ce{H^-}$ or $\ce{X^-}$
 * Acidic dehydratization
 * Heterolytic dissociation in SN1 or E1
+* Addition of $\ce{H^+}$, etc.
+### Fate
+* Combine with lone-pair
+* Lose a proton
+* Rearrangement
+* Addition
 
-
+## Free Radical
+Long life free radicals: Galvinoxyl, DPPH
+### Ways to stablize:
+* (hyper)conjugation
+* steric
+* captodative (push-pull) effect
+### Characterization
+* Mass Spec
+* Step-Scan Time-Resolved IR Spec
+* ESR
+* Chemically Induced Dynamic Nuclear Polarization (CIDNP)
+### Generation
+* Thermal cleavage
+* Photochemical cleavage
+* From other radicals
+* By oxidation or reduction
+### Radical clock
 
 
