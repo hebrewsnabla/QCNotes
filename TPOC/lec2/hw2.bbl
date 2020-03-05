@@ -1,0 +1,217 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{lucas}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1fd3891de07fc7728fd6cc8ad418df1e}{%
+           family={Lucas},
+           familyi={L\bibinitperiod},
+           given={Howard\bibnamedelima J.},
+           giveni={H\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{1fd3891de07fc7728fd6cc8ad418df1e}
+      \strng{fullhash}{1fd3891de07fc7728fd6cc8ad418df1e}
+      \strng{bibnamehash}{1fd3891de07fc7728fd6cc8ad418df1e}
+      \strng{authorbibnamehash}{1fd3891de07fc7728fd6cc8ad418df1e}
+      \strng{authornamehash}{1fd3891de07fc7728fd6cc8ad418df1e}
+      \strng{authorfullhash}{1fd3891de07fc7728fd6cc8ad418df1e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Am. Chem. Soc.}
+      \field{number}{2}
+      \field{title}{A NEW TEST FOR DISTINGUISHING THE PRIMARY, SECONDARY AND TERTIARY SATURATED ALCOHOLS}
+      \field{volume}{52}
+      \field{year}{1930}
+      \field{pages}{802\bibrangedash 804}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1021/ja01365a053
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/ja01365a053
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/ja01365a053
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/ja01365a053
+      \endverb
+    \endentry
+    \entry{fittig}{article}{}
+      \name{author}{1}{}{%
+        {{hash=04acc473dbf62f6d49c97d99390006a0}{%
+           family={Fittig},
+           familyi={F\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{04acc473dbf62f6d49c97d99390006a0}
+      \strng{fullhash}{04acc473dbf62f6d49c97d99390006a0}
+      \strng{bibnamehash}{04acc473dbf62f6d49c97d99390006a0}
+      \strng{authorbibnamehash}{04acc473dbf62f6d49c97d99390006a0}
+      \strng{authornamehash}{04acc473dbf62f6d49c97d99390006a0}
+      \strng{authorfullhash}{04acc473dbf62f6d49c97d99390006a0}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Justus Liebigs Annalen der Chemie}
+      \field{number}{1}
+      \field{title}{Ueber einige Producte der trockenen Destillation essigsaurer Salze}
+      \field{volume}{110}
+      \field{year}{1859}
+      \field{pages}{17\bibrangedash 23}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1002/jlac.18591100103
+      \endverb
+      \verb{eprint}
+      \verb https://onlinelibrary.wiley.com/doi/pdf/10.1002/jlac.18591100103
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jlac.18591100103
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/jlac.18591100103
+      \endverb
+    \endentry
+    \entry{neff}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a133d7491a1511f46a7cadbe50033964}{%
+           family={Neff},
+           familyi={N\bibinitperiod},
+           given={Robynne\bibnamedelima K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=691ab56a86a7a0a41582ffc835428b5a}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Yong-Liang},
+           giveni={Y\bibinithyphendelim L\bibinitperiod}}}%
+        {{hash=5c3d2410d1b70c89e3c83553913c4863}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Siqi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a676ec5cc4834a855f5eefb8a28b8dfc}{%
+           family={Rosado},
+           familyi={R\bibinitperiod},
+           given={Melina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=99144b35fe07bf8409fc90820c9b7ab7}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xinhao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=acb2c6e2bc8a2c53d8d6265741e3ce52}{%
+           family={Doyle},
+           familyi={D\bibinitperiod},
+           given={Michael\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{49e0416b4b206e15f2f9ed8194678d44}
+      \strng{fullhash}{795bf8bbfece295ab3d3a7078493fbb0}
+      \strng{bibnamehash}{795bf8bbfece295ab3d3a7078493fbb0}
+      \strng{authorbibnamehash}{795bf8bbfece295ab3d3a7078493fbb0}
+      \strng{authornamehash}{49e0416b4b206e15f2f9ed8194678d44}
+      \strng{authorfullhash}{795bf8bbfece295ab3d3a7078493fbb0}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Am. Chem. Soc.}
+      \field{number}{42}
+      \field{title}{Generation of Halomethyl Radicals by Halogen Atom Abstraction and Their Addition Reactions with Alkenes}
+      \field{volume}{141}
+      \field{year}{2019}
+      \field{pages}{16643\bibrangedash 16650}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1021/jacs.9b05921
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/jacs.9b05921
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/jacs.9b05921
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/jacs.9b05921
+      \endverb
+    \endentry
+    \entry{yao}{article}{}
+      \name{author}{4}{}{%
+        {{hash=03d7f2556156b5727735489f435eae94}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Chengbo},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d40715daabe18f3238281befdb32fb12}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d3d049db375fb45613d9218052941013}{%
+           family={Norton},
+           familyi={N\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=229dff6093d6295b70f77718142e5e44}{%
+           family={Hammond},
+           familyi={H\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{29264a6bccbe1828448a9f75ad1b270d}
+      \strng{fullhash}{2f3dde1a3b724a05fe42d2d3b33b6db3}
+      \strng{bibnamehash}{2f3dde1a3b724a05fe42d2d3b33b6db3}
+      \strng{authorbibnamehash}{2f3dde1a3b724a05fe42d2d3b33b6db3}
+      \strng{authornamehash}{29264a6bccbe1828448a9f75ad1b270d}
+      \strng{authorfullhash}{2f3dde1a3b724a05fe42d2d3b33b6db3}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{J. Am. Chem. Soc.}
+      \field{number}{0}
+      \field{title}{Catalyzing the Hydrodefluorination of CF3-Substituted Alkenes by PhSiH3. H• Transfer from a Nickel Hydride}
+      \field{volume}{0}
+      \field{year}{2020}
+      \field{pages}{null}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1021/jacs.9b13757
+      \endverb
+      \verb{eprint}
+      \verb https://doi.org/10.1021/jacs.9b13757
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1021/jacs.9b13757
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1021/jacs.9b13757
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
